@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}最新英超賽果 · EPL Predictor{% endblock %}
+
+{% block content %}
+  <section class="intro fixtures-intro">
+    <p class="eyebrow">LATEST RESULTS</p>
+    <h1>最新英超賽果</h1>
+    <p>模型目前載入的最近 30 場已完成比賽。</p>
+  </section>
+
+  <section class="fixtures-list" aria-label="最新英超賽果">
+    {% for match in fixtures %}
+      <article class="fixture-row">
+        <time datetime="{{ match.played_on.isoformat() }}">{{ match.played_on.strftime('%d %b') }}</time>
+        <div class="fixture-teams">
+          <span>{{ match.home_team }}</span>
+          <span>{{ match.away_team }}</span>
+        </div>
+        <strong class="fixture-score">
+          <span>{{ match.home_goals }}</span>
+          <span>{{ match.away_goals }}</span>
+        </strong>
+      </article>
+    {% else %}
+      <p class="empty-state">暫時沒有可顯示的賽果。</p>
+    {% endfor %}
+  </section>
+{% endblock %}
+

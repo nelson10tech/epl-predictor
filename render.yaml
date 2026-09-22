@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: epl-predictor
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: HISTORY_SEASONS
+        value: 6
+
