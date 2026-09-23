@@ -6,4 +6,6 @@ venv/
 .env
 .DS_Store
 data/raw/*.tmp
-
+data/raw/.refresh_status.json
+data/raw/.refresh_status.json.tmp
+reports/*.tmp

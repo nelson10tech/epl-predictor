@@ -1,0 +1,279 @@
+{
+  "model_version": "2.0",
+  "generated_from_data_through": "2026-09-20",
+  "training_start_season": "2122",
+  "calibration_season": "2324",
+  "evaluation_seasons": [
+    "2425",
+    "2526",
+    "2627"
+  ],
+  "sample_size": 810,
+  "chronological_walk_forward": true,
+  "same_day_results_withheld_until_day_complete": true,
+  "leakage_check_passed": true,
+  "live_calibration_temperature": 1.2,
+  "temperature_by_evaluation_season": {
+    "2425": 1.08,
+    "2526": 1.16,
+    "2627": 1.2
+  },
+  "models": {
+    "v1": {
+      "name": "Elo + Poisson V1",
+      "sample_size": 810,
+      "accuracy": 0.5024691358024691,
+      "log_loss": 1.02316551679427,
+      "brier_score": 0.20435151469852678,
+      "ranked_probability_score": 0.20883928234277496
+    },
+    "v2": {
+      "name": "Enhanced Dixon-Coles V2",
+      "sample_size": 810,
+      "accuracy": 0.49753086419753084,
+      "log_loss": 1.0081629701820434,
+      "brier_score": 0.20135686174835676,
+      "ranked_probability_score": 0.20557157829069472
+    },
+    "bookmaker": {
+      "name": "Normalized bookmaker implied probabilities (benchmark only)",
+      "sample_size": 810,
+      "accuracy": 0.5098765432098765,
+      "log_loss": 0.998212846019192,
+      "brier_score": 0.199169228808194,
+      "ranked_probability_score": 0.2017927954203901
+    }
+  },
+  "calibration": {
+    "home_win": [
+      {
+        "range": "0.0-0.1",
+        "predicted_probability": 0.06443958534312437,
+        "actual_frequency": 0.0,
+        "sample_count": 15
+      },
+      {
+        "range": "0.1-0.2",
+        "predicted_probability": 0.15972660456369386,
+        "actual_frequency": 0.14814814814814814,
+        "sample_count": 54
+      },
+      {
+        "range": "0.2-0.3",
+        "predicted_probability": 0.2522862445130495,
+        "actual_frequency": 0.23333333333333334,
+        "sample_count": 120
+      },
+      {
+        "range": "0.3-0.4",
+        "predicted_probability": 0.35254185987555603,
+        "actual_frequency": 0.36942675159235666,
+        "sample_count": 157
+      },
+      {
+        "range": "0.4-0.5",
+        "predicted_probability": 0.44564237720292316,
+        "actual_frequency": 0.3988439306358382,
+        "sample_count": 173
+      },
+      {
+        "range": "0.5-0.6",
+        "predicted_probability": 0.545188333446225,
+        "actual_frequency": 0.5348837209302325,
+        "sample_count": 129
+      },
+      {
+        "range": "0.6-0.7",
+        "predicted_probability": 0.6535932336757941,
+        "actual_frequency": 0.5979381443298969,
+        "sample_count": 97
+      },
+      {
+        "range": "0.7-0.8",
+        "predicted_probability": 0.7517476427091472,
+        "actual_frequency": 0.6086956521739131,
+        "sample_count": 46
+      },
+      {
+        "range": "0.8-0.9",
+        "predicted_probability": 0.8440347850659381,
+        "actual_frequency": 0.875,
+        "sample_count": 16
+      },
+      {
+        "range": "0.9-1.0",
+        "predicted_probability": 0.9100022150127524,
+        "actual_frequency": 1.0,
+        "sample_count": 3
+      }
+    ],
+    "draw": [
+      {
+        "range": "0.0-0.1",
+        "predicted_probability": 0.08063623999443877,
+        "actual_frequency": 0.09090909090909091,
+        "sample_count": 11
+      },
+      {
+        "range": "0.1-0.2",
+        "predicted_probability": 0.16743647244790044,
+        "actual_frequency": 0.21951219512195122,
+        "sample_count": 123
+      },
+      {
+        "range": "0.2-0.3",
+        "predicted_probability": 0.25666342993986047,
+        "actual_frequency": 0.26738794435857804,
+        "sample_count": 647
+      },
+      {
+        "range": "0.3-0.4",
+        "predicted_probability": 0.30667710756591526,
+        "actual_frequency": 0.41379310344827586,
+        "sample_count": 29
+      }
+    ],
+    "away_win": [
+      {
+        "range": "0.0-0.1",
+        "predicted_probability": 0.06888392028815822,
+        "actual_frequency": 0.05555555555555555,
+        "sample_count": 54
+      },
+      {
+        "range": "0.1-0.2",
+        "predicted_probability": 0.15191324407847015,
+        "actual_frequency": 0.20125786163522014,
+        "sample_count": 159
+      },
+      {
+        "range": "0.2-0.3",
+        "predicted_probability": 0.2513633268897356,
+        "actual_frequency": 0.2623762376237624,
+        "sample_count": 202
+      },
+      {
+        "range": "0.3-0.4",
+        "predicted_probability": 0.34413850941378116,
+        "actual_frequency": 0.3151515151515151,
+        "sample_count": 165
+      },
+      {
+        "range": "0.4-0.5",
+        "predicted_probability": 0.4456617644551692,
+        "actual_frequency": 0.41739130434782606,
+        "sample_count": 115
+      },
+      {
+        "range": "0.5-0.6",
+        "predicted_probability": 0.5446198442964594,
+        "actual_frequency": 0.6231884057971014,
+        "sample_count": 69
+      },
+      {
+        "range": "0.6-0.7",
+        "predicted_probability": 0.6425667658777351,
+        "actual_frequency": 0.5833333333333334,
+        "sample_count": 24
+      },
+      {
+        "range": "0.7-0.8",
+        "predicted_probability": 0.7380993514791128,
+        "actual_frequency": 0.8,
+        "sample_count": 15
+      },
+      {
+        "range": "0.8-0.9",
+        "predicted_probability": 0.8297035667997396,
+        "actual_frequency": 0.8,
+        "sample_count": 5
+      },
+      {
+        "range": "0.9-1.0",
+        "predicted_probability": 0.9027986184148995,
+        "actual_frequency": 0.5,
+        "sample_count": 2
+      }
+    ]
+  },
+  "by_season": [
+    {
+      "season": "2425",
+      "sample_size": 380,
+      "calibration_temperature": 1.08,
+      "v1": {
+        "sample_size": 380,
+        "accuracy": 0.5078947368421053,
+        "log_loss": 1.004443253312417,
+        "brier_score": 0.19974959364675596,
+        "ranked_probability_score": 0.20665023564720514
+      },
+      "v2": {
+        "sample_size": 380,
+        "accuracy": 0.5157894736842106,
+        "log_loss": 0.9886928558720792,
+        "brier_score": 0.19673124209142404,
+        "ranked_probability_score": 0.20312507801039212
+      },
+      "bookmaker": {
+        "sample_size": 380,
+        "accuracy": 0.5394736842105263,
+        "log_loss": 0.9707576734366724,
+        "brier_score": 0.19288793421961034,
+        "ranked_probability_score": 0.19723507363339546
+      }
+    },
+    {
+      "season": "2526",
+      "sample_size": 380,
+      "calibration_temperature": 1.16,
+      "v1": {
+        "sample_size": 380,
+        "accuracy": 0.5,
+        "log_loss": 1.0407208709808038,
+        "brier_score": 0.20852866651247978,
+        "ranked_probability_score": 0.21208411310842884
+      },
+      "v2": {
+        "sample_size": 380,
+        "accuracy": 0.4842105263157895,
+        "log_loss": 1.0263896510293953,
+        "brier_score": 0.2057021621174431,
+        "ranked_probability_score": 0.20917502334895588
+      },
+      "bookmaker": {
+        "sample_size": 380,
+        "accuracy": 0.48947368421052634,
+        "log_loss": 1.018547433594443,
+        "brier_score": 0.20383740257377933,
+        "ranked_probability_score": 0.20574653794193817
+      }
+    },
+    {
+      "season": "2627",
+      "sample_size": 50,
+      "calibration_temperature": 1.2,
+      "v1": {
+        "sample_size": 50,
+        "accuracy": 0.48,
+        "log_loss": 1.0320340274386717,
+        "brier_score": 0.20757976090594327,
+        "ranked_probability_score": 0.20081532341013852
+      },
+      "v2": {
+        "sample_size": 50,
+        "accuracy": 0.46,
+        "log_loss": 1.0176130644978953,
+        "brier_score": 0.20348728833599034,
+        "ranked_probability_score": 0.19677879797821057
+      },
+      "bookmaker": {
+        "sample_size": 50,
+        "accuracy": 0.44,
+        "log_loss": 1.0523292920743959,
+        "brier_score": 0.21142894706298068,
+        "ranked_probability_score": 0.20638303783778167
+      }
+    }
+  ]
+}

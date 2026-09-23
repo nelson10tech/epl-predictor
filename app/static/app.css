@@ -78,7 +78,7 @@ button, a, select { -webkit-tap-highlight-color: transparent; }
 
 .primary-nav {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--line);
 }
@@ -118,7 +118,7 @@ button, a, select { -webkit-tap-highlight-color: transparent; }
   letter-spacing: 0.16em;
 }
 
-.prediction-panel, .result-card, .data-panel, .fixtures-list {
+.prediction-panel, .result-card, .data-panel, .fixtures-list, .diagnostic-card, .method-panel {
   border: 1px solid var(--line);
   background: linear-gradient(145deg, rgba(16, 37, 56, 0.98), rgba(9, 26, 41, 0.98));
   box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.22);
@@ -195,11 +195,36 @@ button:disabled { cursor: wait; opacity: 0.6; }
 .score-block { display: flex; flex-direction: column; justify-content: space-between; }
 .score-block strong { color: var(--lime); font-size: 2rem; letter-spacing: 0.04em; white-space: nowrap; }
 
+.scorelines-block {
+  margin-top: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: rgba(4, 15, 25, 0.42);
+}
+.scorelines-block > p { margin: 0 0 0.75rem; color: var(--muted); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.scoreline-list { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.45rem; margin: 0; padding: 0; list-style: none; }
+.scoreline-list li { display: grid; gap: 0.18rem; padding: 0.55rem 0.2rem; border: 1px solid var(--line); border-radius: 0.65rem; text-align: center; }
+.scoreline-list strong { color: var(--ink); font-size: 0.95rem; }
+.scoreline-list span { color: var(--muted); font-size: 0.68rem; }
+
+.why-panel { margin-top: 0.75rem; border-top: 1px solid var(--line); }
+.why-panel summary { padding: 1rem 0 0.25rem; color: var(--cyan); cursor: pointer; font-size: 0.9rem; font-weight: 800; }
+.why-panel > p { margin: 0.6rem 0; color: var(--muted); font-size: 0.78rem; line-height: 1.5; }
+.factor-list { display: grid; grid-template-columns: auto 1fr; gap: 0.55rem 0.85rem; margin: 0.8rem 0 0; font-size: 0.82rem; }
+.factor-list dt { color: var(--muted); }
+.factor-list dd { margin: 0; text-align: right; }
+
 .data-panel { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 1rem; margin-top: 1rem; }
 .data-panel p:last-child { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.78rem; }
 .data-panel .refresh-status { grid-column: 1 / -1; color: var(--muted); }
+.freshness-line.is-stale { color: var(--orange) !important; }
+.data-badge { padding: 0.5rem 0.65rem; border: 1px solid var(--line); border-radius: 99px; color: var(--cyan); font-size: 0.72rem; font-weight: 800; white-space: nowrap; }
 
 .fixtures-intro { padding-bottom: 1rem; }
+.fixture-section + .fixture-section { margin-top: 1.5rem; }
+.section-heading { margin: 0 0 0.65rem 0.25rem; }
+.section-heading h2 { margin: 0.25rem 0 0; font-size: 1.2rem; }
 .fixtures-list { overflow: hidden; border-radius: 1.25rem; }
 .fixture-row { display: grid; grid-template-columns: 3.4rem 1fr auto; align-items: center; gap: 0.85rem; padding: 1rem; border-bottom: 1px solid var(--line); }
 .fixture-row:last-child { border-bottom: 0; }
@@ -207,7 +232,24 @@ button:disabled { cursor: wait; opacity: 0.6; }
 .fixture-teams, .fixture-score { display: grid; gap: 0.42rem; }
 .fixture-teams { font-size: 0.9rem; font-weight: 700; }
 .fixture-score { min-width: 2rem; color: var(--lime); text-align: center; }
+.fixture-time { color: var(--cyan); font-size: 0.8rem; }
 .empty-state { padding: 2rem; color: var(--muted); text-align: center; }
+.empty-state strong { color: var(--ink); }
+.empty-state p { margin: 0.5rem auto 0; max-width: 30rem; font-size: 0.85rem; line-height: 1.55; }
+
+.diagnostic-grid { display: grid; gap: 0.75rem; }
+.diagnostic-card, .method-panel { padding: 1.15rem; border-radius: 1.1rem; }
+.diagnostic-card h2, .method-panel h2 { margin: 0.3rem 0 1rem; font-size: 1.05rem; }
+.feature-card { border-color: rgba(49, 230, 255, 0.35); }
+.info-list, .metric-grid { display: grid; gap: 0.65rem; margin: 0; }
+.info-list > div, .metric-grid > div { display: flex; justify-content: space-between; gap: 1rem; }
+.info-list dt, .metric-grid dt { color: var(--muted); font-size: 0.8rem; }
+.info-list dd, .metric-grid dd { margin: 0; font-size: 0.85rem; font-weight: 800; text-align: right; }
+.metric-grid { grid-template-columns: 1fr 1fr; }
+.metric-grid > div { display: grid; gap: 0.2rem; padding: 0.75rem; border: 1px solid var(--line); border-radius: 0.75rem; }
+.metric-grid dd { color: var(--lime); text-align: left; font-size: 1.1rem; }
+.method-panel { margin-top: 0.75rem; }
+.method-panel p { color: var(--muted); font-size: 0.88rem; line-height: 1.55; }
 
 .site-footer { padding: 2rem 0 0.5rem; color: #6e879a; font-size: 0.74rem; line-height: 1.45; text-align: center; }
 .site-footer p { margin: 0.25rem 0; }
@@ -217,6 +259,7 @@ button:disabled { cursor: wait; opacity: 0.6; }
   .prediction-panel, .result-card, .data-panel { padding: 1.5rem; }
   .team-form { grid-template-columns: 1fr auto 1fr auto; }
   .primary-button { grid-column: auto; margin-top: 0; padding-inline: 1.2rem; }
+  .diagnostic-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 380px) {
@@ -224,9 +267,9 @@ button:disabled { cursor: wait; opacity: 0.6; }
   .forecast-grid { grid-template-columns: 1fr; }
   .data-panel { grid-template-columns: 1fr; }
   .secondary-button { width: 100%; }
+  .scoreline-list { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
-

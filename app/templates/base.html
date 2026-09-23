@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#07121f">
-    <meta name="description" content="以 Elo 與 Poisson 模型估算英超主勝、和局及客勝機率。">
+    <meta name="description" content="以 Elo、近期狀態與 Dixon-Coles 模型估算英超主勝、和局及客勝機率。">
     <title>{% block title %}EPL Predictor{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
   </head>
@@ -15,12 +15,13 @@
           <span class="brand-mark">EP</span>
           <span><strong>EPL</strong> PREDICTOR</span>
         </a>
-        <span class="model-chip">V1 · ELO + POISSON</span>
+        <span class="model-chip">V2 · DIXON–COLES</span>
       </header>
 
       <nav class="primary-nav" aria-label="主要導覽">
         <a href="{{ url_for('web.index') }}" {% if request.endpoint == 'web.index' %}aria-current="page"{% endif %}>賽果預測</a>
-        <a href="{{ url_for('web.fixtures') }}" {% if request.endpoint == 'web.fixtures' %}aria-current="page"{% endif %}>最新賽果</a>
+        <a href="{{ url_for('web.fixtures') }}" {% if request.endpoint == 'web.fixtures' %}aria-current="page"{% endif %}>賽程／賽果</a>
+        <a href="{{ url_for('web.model_info') }}" {% if request.endpoint == 'web.model_info' %}aria-current="page"{% endif %}>模型資訊</a>
       </nav>
 
       <main>{% block content %}{% endblock %}</main>
@@ -33,4 +34,3 @@
     {% block scripts %}{% endblock %}
   </body>
 </html>
-

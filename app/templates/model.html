@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}V2 模型資訊 · EPL Predictor{% endblock %}
+
+{% block content %}
+  <section class="intro fixtures-intro">
+    <p class="eyebrow">MODEL DIAGNOSTICS</p>
+    <h1>V2 模型資訊</h1>
+    <p>回測以時間順序逐場向前推進，評估時不會看到未來賽果。</p>
+  </section>
+
+  <section class="diagnostic-grid">
+    <article class="diagnostic-card feature-card">
+      <p class="kicker">LIVE MODEL</p>
+      <h2>{{ live_model }}</h2>
+      <dl class="info-list">
+        <div><dt>版本</dt><dd>2.0</dd></div>
+        <div><dt>比賽數</dt><dd>{{ matches }}</dd></div>
+        <div><dt>活躍球季</dt><dd>{{ active_season }}</dd></div>
+        <div><dt>真實 xG</dt><dd>{% if xg.enabled %}啟用（{{ xg.matches_with_xg }} 場）{% else %}未啟用{% endif %}</dd></div>
+        <div><dt>資料截至</dt><dd>{{ freshness.data_through or '未知' }}</dd></div>
+      </dl>
+    </article>
+
+    {% set models = report.get('models', {}) %}
+    {% for key in ['v1', 'v2', 'bookmaker'] %}
+      {% set item = models.get(key, {}) %}
+      <article class="diagnostic-card">
+        <p class="kicker">{% if key == 'bookmaker' %}BENCHMARK{% else %}{{ key|upper }} BACKTEST{% endif %}</p>
+        <h2>{{ item.get('name', key|upper) }}</h2>
+        <dl class="metric-grid">
+          <div><dt>Log Loss</dt><dd>{{ '%.4f'|format(item.log_loss) if item.get('log_loss') is not none else '—' }}</dd></div>
+          <div><dt>Brier</dt><dd>{{ '%.4f'|format(item.brier_score) if item.get('brier_score') is not none else '—' }}</dd></div>
+          <div><dt>Accuracy</dt><dd>{{ '%.1f%%'|format(item.accuracy * 100) if item.get('accuracy') is not none else '—' }}</dd></div>
+          <div><dt>樣本</dt><dd>{{ item.get('sample_size', 0) }}</dd></div>
+        </dl>
+      </article>
+    {% endfor %}
+  </section>
+
+  <section class="method-panel">
+    <p class="kicker">METHOD</p>
+    <h2>模型包含的資料</h2>
+    <p>Elo、主客場攻防、近 5／10 場狀態、休息日、過去 7／14 日的 EPL 比賽密度，以及資料實際存在時的射門、射正和 xG。</p>
+    <p>{{ xg.limitation }}</p>
+    <p>這是機率模型；例如 54% 並不代表球隊一定會勝出。</p>
+  </section>
+{% endblock %}

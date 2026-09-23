@@ -10,4 +10,5 @@ services:
         value: 3.12.7
       - key: HISTORY_SEASONS
         value: 6
-
+      - key: DATA_MAX_AGE_HOURS
+        value: 12

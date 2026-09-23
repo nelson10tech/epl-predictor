@@ -5,7 +5,7 @@
   <section class="intro">
     <p class="eyebrow">MATCHDAY FORECAST</p>
     <h1>英超 1X2 機率</h1>
-    <p>選擇兩隊，即時計算主勝、和局與客勝機率。</p>
+    <p>選擇兩隊，以 V2 模型計算主勝、和局與客勝機率。</p>
   </section>
 
   <section class="prediction-panel" aria-labelledby="matchup-title">
@@ -72,20 +72,32 @@
         <strong id="likely-score">— : —</strong>
       </div>
     </div>
+
+    <div class="scorelines-block">
+      <p>最可能的 5 個比數</p>
+      <ol id="top-scorelines" class="scoreline-list"></ol>
+    </div>
+
+    <details class="why-panel">
+      <summary>這項預測考慮了甚麼？</summary>
+      <p>以下是模型輸入與相關指標，不代表因果關係。</p>
+      <dl id="model-factors" class="factor-list"></dl>
+    </details>
   </section>
 
   <section class="data-panel">
     <div>
       <p class="kicker">資料狀態</p>
-      <h2>更新歷史賽果</h2>
-      <p>上次更新：{% if last_updated %}{{ last_updated.strftime('%Y-%m-%d %H:%M UTC') }}{% else %}未知{% endif %}</p>
+      <h2>資料新鮮度</h2>
+      <p>資料截至：{{ freshness.data_through or '未知' }}</p>
+      <p class="freshness-line {% if freshness.data_stale %}is-stale{% endif %}">
+        {% if freshness.data_stale %}資料可能已過期；現正使用最後可用快照。{% else %}啟動檢查已完成，資料狀態正常。{% endif %}
+      </p>
     </div>
-    <button id="refresh-data" class="secondary-button" type="button">更新資料</button>
-    <p id="refresh-status" class="refresh-status" role="status"></p>
+    <span class="data-badge">自動更新 · 12 小時</span>
   </section>
 {% endblock %}
 
 {% block scripts %}
   <script src="{{ url_for('static', filename='app.js') }}" defer></script>
 {% endblock %}
-

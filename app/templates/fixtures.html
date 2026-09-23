@@ -1,15 +1,44 @@
 {% extends "base.html" %}
-{% block title %}最新英超賽果 · EPL Predictor{% endblock %}
+{% block title %}英超賽程與賽果 · EPL Predictor{% endblock %}
 
 {% block content %}
   <section class="intro fixtures-intro">
-    <p class="eyebrow">LATEST RESULTS</p>
-    <h1>最新英超賽果</h1>
-    <p>模型目前載入的最近 30 場已完成比賽。</p>
+    <p class="eyebrow">FIXTURES & RESULTS</p>
+    <h1>賽程與賽果</h1>
+    <p>未來賽程只會在可靠來源提供實際日期時顯示。</p>
   </section>
 
-  <section class="fixtures-list" aria-label="最新英超賽果">
-    {% for match in fixtures %}
+  <section class="fixture-section">
+    <div class="section-heading">
+      <p class="kicker">UPCOMING</p>
+      <h2>即將舉行</h2>
+    </div>
+    <div class="fixtures-list" aria-label="即將舉行的英超賽事">
+    {% for fixture in upcoming %}
+      <article class="fixture-row upcoming-row">
+        <time datetime="{{ fixture.played_on.isoformat() }}">{{ fixture.played_on.strftime('%d %b') }}</time>
+        <div class="fixture-teams">
+          <span>{{ fixture.home_team }}</span>
+          <span>{{ fixture.away_team }}</span>
+        </div>
+        <strong class="fixture-time">{{ fixture.kickoff or 'TBC' }}</strong>
+      </article>
+    {% else %}
+      <div class="empty-state">
+        <strong>未能取得即將舉行的賽程</strong>
+        <p>Football-Data.co.uk 目前的 EPL CSV 沒有提供可靠未來賽程。你仍可在預測頁手動選擇兩隊。</p>
+      </div>
+    {% endfor %}
+    </div>
+  </section>
+
+  <section class="fixture-section">
+    <div class="section-heading">
+      <p class="kicker">RESULTS</p>
+      <h2>最近完成</h2>
+    </div>
+    <div class="fixtures-list" aria-label="最近完成的英超賽果">
+    {% for match in results %}
       <article class="fixture-row">
         <time datetime="{{ match.played_on.isoformat() }}">{{ match.played_on.strftime('%d %b') }}</time>
         <div class="fixture-teams">
@@ -22,8 +51,9 @@
         </strong>
       </article>
     {% else %}
-      <p class="empty-state">暫時沒有可顯示的賽果。</p>
+      <p class="empty-state">暫時沒有已完成賽果。</p>
     {% endfor %}
+    </div>
   </section>
 {% endblock %}
 

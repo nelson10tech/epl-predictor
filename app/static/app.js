@@ -1,5 +1,4 @@
 const form = document.querySelector("#prediction-form");
-const refreshButton = document.querySelector("#refresh-data");
 
 const percent = (value) => `${(value * 100).toFixed(1)}%`;
 
@@ -26,6 +25,26 @@ function renderPrediction(data) {
   document.querySelector("#home-xg").textContent = data.expected_goals.home.toFixed(2);
   document.querySelector("#away-xg").textContent = data.expected_goals.away.toFixed(2);
   document.querySelector("#likely-score").textContent = `${data.most_likely_score.home} : ${data.most_likely_score.away}`;
+  document.querySelector("#top-scorelines").replaceChildren(
+    ...data.top_scorelines.map((scoreline) => {
+      const item = document.createElement("li");
+      const score = document.createElement("strong");
+      const probability = document.createElement("span");
+      score.textContent = `${scoreline.home}–${scoreline.away}`;
+      probability.textContent = percent(scoreline.probability);
+      item.append(score, probability);
+      return item;
+    }),
+  );
+  document.querySelector("#model-factors").replaceChildren(
+    ...data.factors.flatMap((factor) => {
+      const term = document.createElement("dt");
+      const detail = document.createElement("dd");
+      term.textContent = factor.label;
+      detail.textContent = factor.value;
+      return [term, detail];
+    }),
+  );
 }
 
 async function loadPrediction(homeOverride, awayOverride) {
@@ -62,26 +81,6 @@ form?.addEventListener("submit", (event) => {
   loadPrediction().catch(() => {});
 });
 
-refreshButton?.addEventListener("click", async () => {
-  const status = document.querySelector("#refresh-status");
-  refreshButton.disabled = true;
-  refreshButton.textContent = "更新中…";
-  status.textContent = "正在從 Football-Data.co.uk 取得最新賽果。";
-
-  try {
-    const response = await fetch("/api/refresh", { method: "POST" });
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.error || "更新失敗");
-    status.textContent = `更新完成：已載入 ${data.matches} 場比賽。`;
-    await loadPrediction();
-  } catch (caught) {
-    status.textContent = `更新失敗：${caught.message}`;
-  } finally {
-    refreshButton.disabled = false;
-    refreshButton.textContent = "更新資料";
-  }
-});
-
 function registerPredictionTool() {
   const context = document.modelContext;
   if (!context?.registerTool || !form) return;
@@ -95,7 +94,7 @@ function registerPredictionTool() {
       context.registerTool({
         name: "predict_epl_match",
         title: "預測英超賽果",
-        description: "使用 EPL Predictor 的 Elo + Poisson V1 模型預測指定主隊與客隊的 1X2 機率，並同步更新畫面。",
+        description: "使用 EPL Predictor 的 Enhanced Dixon-Coles V2 模型預測指定主隊與客隊的 1X2 機率，並同步更新畫面。",
         inputSchema: {
           type: "object",
           properties: {
@@ -122,6 +121,9 @@ function registerPredictionTool() {
             probabilities: data.probabilities,
             expected_goals: data.expected_goals,
             most_likely_score: data.most_likely_score,
+            top_scorelines: data.top_scorelines,
+            model: data.model,
+            version: data.version,
           };
         },
       }),

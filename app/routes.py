@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from flask import Blueprint, current_app, jsonify, render_template, request
 
-from .model import EloPoissonPredictor
+from .model import DixonColesPredictor
 
 
 web = Blueprint("web", __name__)
@@ -12,8 +12,8 @@ def _repository():
     return current_app.extensions["match_repository"]
 
 
-def _predictor() -> EloPoissonPredictor:
-    return current_app.extensions["predictor"]
+def _predictors():
+    return current_app.extensions["predictors"]
 
 
 @web.get("/")
@@ -28,6 +28,7 @@ def index():
         default_home=default_home,
         default_away=default_away,
         last_updated=repository.last_updated,
+        freshness=repository.freshness_metadata(),
     )
 
 
@@ -36,8 +37,25 @@ def fixtures():
     repository = _repository()
     return render_template(
         "fixtures.html",
-        fixtures=repository.latest_fixtures(),
+        upcoming=repository.upcoming_fixtures(),
+        results=repository.latest_results(),
         last_updated=repository.last_updated,
+        freshness=repository.freshness_metadata(),
+    )
+
+
+@web.get("/model")
+def model_info():
+    repository = _repository()
+    predictor: DixonColesPredictor = _predictors()["v2"]
+    return render_template(
+        "model.html",
+        report=current_app.extensions.get("backtest_report", {}),
+        matches=len(repository.matches),
+        active_season=repository.active_season,
+        live_model="Enhanced Dixon-Coles V2",
+        xg=predictor.xg_provider.metadata(),
+        freshness=repository.freshness_metadata(),
     )
 
 
@@ -47,20 +65,38 @@ def predict():
     away_team = request.args.get("away", "").strip()
     if not home_team or not away_team:
         return jsonify({"error": "home and away query parameters are required"}), 400
+    model_key = request.args.get("model", "v2").lower()
+    if model_key not in _predictors():
+        return jsonify({"error": "model must be v1 or v2"}), 400
     try:
-        prediction = _predictor().predict(home_team, away_team)
+        prediction = _predictors()[model_key].predict(home_team, away_team)
     except ValueError as exc:
         return jsonify({"error": str(exc)}), 400
+    freshness = _repository().freshness_metadata()
+    prediction["data_stale"] = freshness["data_stale"]
+    prediction["metadata"]["freshness"] = freshness
+    prediction["metadata"]["live_model"] = model_key == "v2"
     return jsonify(prediction)
 
 
 @web.get("/api/fixtures")
 def api_fixtures():
     limit = min(max(request.args.get("limit", 20, type=int), 1), 100)
-    matches = _repository().latest_fixtures(limit)
+    repository = _repository()
+    matches = repository.latest_results(limit)
+    upcoming = repository.upcoming_fixtures(limit)
     return jsonify(
         {
-            "fixtures": [
+            "upcoming": [
+                {
+                    "date": fixture.played_on.isoformat(),
+                    "kickoff": fixture.kickoff,
+                    "home_team": fixture.home_team,
+                    "away_team": fixture.away_team,
+                }
+                for fixture in upcoming
+            ],
+            "results": [
                 {
                     "date": match.played_on.isoformat(),
                     "home_team": match.home_team,
@@ -75,27 +111,28 @@ def api_fixtures():
     )
 
 
-@web.post("/api/refresh")
-def refresh():
+@web.get("/api/model")
+def api_model():
     repository = _repository()
-    try:
-        summary = repository.refresh()
-        current_app.extensions["predictor"] = EloPoissonPredictor(repository.matches)
-    except RuntimeError as exc:
-        return jsonify({"error": str(exc)}), 502
-    return jsonify({"status": "ok", **summary})
+    predictor: DixonColesPredictor = _predictors()["v2"]
+    return jsonify({
+        "version": "2.0",
+        "live_model": "Enhanced Dixon-Coles V2",
+        "matches": len(repository.matches),
+        "active_season": repository.active_season,
+        "xg": predictor.xg_provider.metadata(),
+        "backtest": current_app.extensions.get("backtest_report", {}),
+        "freshness": repository.freshness_metadata(),
+    })
 
 
 @web.get("/health")
 def health():
     repository = _repository()
-    return jsonify(
-        {
-            "status": "ok",
-            "matches": len(repository.matches),
-            "last_updated": repository.last_updated.isoformat()
-            if repository.last_updated
-            else None,
-        }
-    )
-
+    return jsonify({
+        "status": "ok",
+        "model_version": "2.0",
+        "matches": len(repository.matches),
+        "active_season": repository.active_season,
+        **repository.freshness_metadata(),
+    })
