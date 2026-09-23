@@ -4,7 +4,7 @@ from datetime import date
 
 import pytest
 
-from app.backtest import _walk_season
+from app.backtest import _walk_season, run_smoke_backtest
 from app.data import Match
 from app.features import PreMatchFeatureBuilder
 from app.model import dixon_coles_score_matrix, outcome_probabilities
@@ -57,3 +57,10 @@ def test_walk_forward_backtest_never_trains_on_future_matches():
     assert len(same_day) == 2
     assert len({record["training_through"] for record in same_day}) == 1
 
+
+def test_ci_smoke_backtest_passes(app):
+    matches = app.extensions["prediction_runtime"].snapshot().repository.matches
+    result = run_smoke_backtest(matches)
+    assert result["sample_size"] > 0
+    assert result["probabilities_normalized"] is True
+    assert result["leakage_check_passed"] is True

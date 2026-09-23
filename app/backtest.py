@@ -105,6 +105,49 @@ def run_walk_forward_backtest(
     }
 
 
+def run_smoke_backtest(matches: list[Match], max_matches: int = 30) -> dict:
+    """Small chronological validation for CI; it is not a published evaluation."""
+    ordered = sorted(matches, key=lambda item: (item.played_on, item.home_team))
+    seasons = sorted({match.season for match in ordered})
+    if len(seasons) < 2:
+        raise ValueError("Smoke backtest requires at least two seasons")
+    target_season = seasons[-1]
+    target = [match for match in ordered if match.season == target_season]
+    selected: list[Match] = []
+    selected_dates: set[date] = set()
+    for match in target:
+        if len(selected) >= max_matches and match.played_on not in selected_dates:
+            break
+        selected.append(match)
+        selected_dates.add(match.played_on)
+    if not selected:
+        raise ValueError("Smoke backtest found no target matches")
+    first_date = selected[0].played_on
+    history = [match for match in ordered if match.played_on < first_date][-300:]
+    records = _walk_season(
+        history + selected,
+        target_season,
+        temperature=1.0,
+        include_v1=True,
+    )
+    normalized = all(
+        abs(sum(record[model].values()) - 1.0) < 1e-9
+        for record in records
+        for model in ("v1_probabilities", "v2_probabilities")
+    )
+    leakage_ok = all(
+        record["training_through"] < record["match_date"] for record in records
+    )
+    return {
+        "target_season": target_season,
+        "sample_size": len(records),
+        "probabilities_normalized": normalized,
+        "leakage_check_passed": leakage_ok,
+        "v1": calculate_metrics(records, "v1_probabilities"),
+        "v2": calculate_metrics(records, "v2_probabilities"),
+    }
+
+
 def _walk_season(
     matches: list[Match],
     target_season: str,

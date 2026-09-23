@@ -12,3 +12,5 @@ services:
         value: 6
       - key: DATA_MAX_AGE_HOURS
         value: 12
+      - key: REFRESH_CHECK_INTERVAL_SECONDS
+        value: 300

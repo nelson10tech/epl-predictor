@@ -124,6 +124,8 @@ function registerPredictionTool() {
             top_scorelines: data.top_scorelines,
             model: data.model,
             version: data.version,
+            app_version: data.app_version,
+            model_version: data.model_version,
           };
         },
       }),

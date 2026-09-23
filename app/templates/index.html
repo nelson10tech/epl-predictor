@@ -91,7 +91,7 @@
       <h2>資料新鮮度</h2>
       <p>資料截至：{{ freshness.data_through or '未知' }}</p>
       <p class="freshness-line {% if freshness.data_stale %}is-stale{% endif %}">
-        {% if freshness.data_stale %}資料可能已過期；現正使用最後可用快照。{% else %}啟動檢查已完成，資料狀態正常。{% endif %}
+        {% if freshness.refresh_in_progress %}資料可能已過期；正在背景更新，現有預測不受阻塞。{% elif freshness.data_stale %}資料可能已過期；現正使用最後可用快照。{% else %}資料狀態正常；系統會持續自動檢查。{% endif %}
       </p>
     </div>
     <span class="data-badge">自動更新 · 12 小時</span>

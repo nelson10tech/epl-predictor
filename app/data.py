@@ -267,8 +267,25 @@ class MatchRepository:
             if self.last_refresh_success else None,
             "data_stale": self.data_stale,
             "refresh_source": REFRESH_SOURCE,
-            "refresh_error": self.last_refresh_error,
+            "last_refresh_error": self.last_refresh_error,
         }
+
+    def check_stale(
+        self, max_age_hours: float = 12.0, now: Optional[datetime] = None
+    ) -> bool:
+        self._update_stale_flag(max_age_hours, now)
+        return self.data_stale
+
+    def mark_refresh_started(self, now: datetime) -> None:
+        self.last_refresh_attempt = now
+        self.last_refresh_error = None
+        self.data_stale = True
+
+    def mark_refresh_failure(self, now: datetime, error: str) -> None:
+        self.last_refresh_attempt = now
+        self.last_refresh_error = error
+        self.data_stale = True
+        self._write_refresh_state()
 
     def active_teams(self) -> list[str]:
         latest_season = self.active_season
@@ -302,7 +319,9 @@ class MatchRepository:
                 payload = json.loads(path.read_text(encoding="utf-8"))
                 self.last_refresh_attempt = _parse_iso_datetime(payload.get("last_refresh_attempt"))
                 self.last_refresh_success = _parse_iso_datetime(payload.get("last_refresh_success"))
-                self.last_refresh_error = payload.get("refresh_error")
+                self.last_refresh_error = payload.get(
+                    "last_refresh_error", payload.get("refresh_error")
+                )
                 return
             except (OSError, ValueError, TypeError):
                 continue
@@ -313,7 +332,7 @@ class MatchRepository:
             if self.last_refresh_attempt else None,
             "last_refresh_success": self.last_refresh_success.isoformat()
             if self.last_refresh_success else None,
-            "refresh_error": self.last_refresh_error,
+            "last_refresh_error": self.last_refresh_error,
             "refresh_source": REFRESH_SOURCE,
         }
         filenames = [REFRESH_STATE_FILE]

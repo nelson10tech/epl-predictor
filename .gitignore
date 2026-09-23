@@ -9,3 +9,4 @@ data/raw/*.tmp
 data/raw/.refresh_status.json
 data/raw/.refresh_status.json.tmp
 reports/*.tmp
+reports/live_predictions/*.tmp

@@ -238,9 +238,13 @@ button:disabled { cursor: wait; opacity: 0.6; }
 .empty-state p { margin: 0.5rem auto 0; max-width: 30rem; font-size: 0.85rem; line-height: 1.55; }
 
 .diagnostic-grid { display: grid; gap: 0.75rem; }
+.diagnostic-heading { margin: 1.6rem 0 0.7rem 0.25rem; }
+.diagnostic-heading h2 { margin: 0.3rem 0 0.25rem; font-size: 1.2rem; }
+.diagnostic-heading p:last-child { margin: 0; color: var(--muted); font-size: 0.8rem; line-height: 1.5; }
 .diagnostic-card, .method-panel { padding: 1.15rem; border-radius: 1.1rem; }
 .diagnostic-card h2, .method-panel h2 { margin: 0.3rem 0 1rem; font-size: 1.05rem; }
 .feature-card { border-color: rgba(49, 230, 255, 0.35); }
+.warning-card { border-color: rgba(255, 156, 82, 0.55); }
 .info-list, .metric-grid { display: grid; gap: 0.65rem; margin: 0; }
 .info-list > div, .metric-grid > div { display: flex; justify-content: space-between; gap: 1rem; }
 .info-list dt, .metric-grid dt { color: var(--muted); font-size: 0.8rem; }
@@ -250,6 +254,7 @@ button:disabled { cursor: wait; opacity: 0.6; }
 .metric-grid dd { color: var(--lime); text-align: left; font-size: 1.1rem; }
 .method-panel { margin-top: 0.75rem; }
 .method-panel p { color: var(--muted); font-size: 0.88rem; line-height: 1.55; }
+.diagnostic-note, .sample-warning { margin: 1rem 0 0; color: var(--orange); font-size: 0.8rem; line-height: 1.5; }
 
 .site-footer { padding: 2rem 0 0.5rem; color: #6e879a; font-size: 0.74rem; line-height: 1.45; text-align: center; }
 .site-footer p { margin: 0.25rem 0; }

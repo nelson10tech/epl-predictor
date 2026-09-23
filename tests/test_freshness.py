@@ -86,5 +86,6 @@ def test_app_starts_after_startup_refresh_failure(tmp_path, monkeypatch):
     health = client.get("/health")
     assert health.status_code == 200
     assert health.get_json()["data_stale"] is True
+    assert "Football-Data unavailable" in health.get_json()["last_refresh_error"]
+    assert health.get_json()["refresh_in_progress"] is False
     assert client.get("/api/predict?home=Arsenal&away=Chelsea").status_code == 200
-
