@@ -2,7 +2,7 @@
   "source": "openfootball/football.json",
   "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
   "license": "Public Domain",
-  "fetched_at": "2026-09-24T17:10:19.895312+00:00",
+  "fetched_at": "2026-09-24T21:30:18.353294+00:00",
   "fixtures": [
     {
       "date": "2026-10-10",
