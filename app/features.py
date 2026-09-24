@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 from datetime import date, timedelta
 from typing import Optional, TYPE_CHECKING
 
-from .data import Match
+from .data import Match, current_season_code
 
 if TYPE_CHECKING:
     from .xg import XGProvider
@@ -14,6 +14,7 @@ if TYPE_CHECKING:
 @dataclass(frozen=True)
 class Performance:
     played_on: date
+    season: str
     venue: str
     goals_for: float
     goals_against: float
@@ -95,7 +96,13 @@ class PreMatchFeatureBuilder:
             self.update_day(grouped[played_on])
         return self
 
-    def snapshot(self, home_team: str, away_team: str, as_of: date) -> FeatureSnapshot:
+    def snapshot(
+        self,
+        home_team: str,
+        away_team: str,
+        as_of: date,
+        season: Optional[str] = None,
+    ) -> FeatureSnapshot:
         if home_team == away_team:
             raise ValueError("Home and away teams must be different")
         if self.latest_processed_date is not None and self.latest_processed_date >= as_of:
@@ -112,6 +119,16 @@ class PreMatchFeatureBuilder:
         away_5 = self._summary(away.matches, as_of, limit=5)
         home_10 = self._summary(home.matches, as_of, limit=10)
         away_10 = self._summary(away.matches, as_of, limit=10)
+
+        home_xg_5 = self._optional_rate(home_5, "xg")
+        home_xga_5 = self._optional_rate(home_5, "xga")
+        away_xg_5 = self._optional_rate(away_5, "xg")
+        away_xga_5 = self._optional_rate(away_5, "xga")
+        home_xg_10 = self._optional_rate(home_10, "xg")
+        home_xga_10 = self._optional_rate(home_10, "xga")
+        away_xg_10 = self._optional_rate(away_10, "xg")
+        away_xga_10 = self._optional_rate(away_10, "xga")
+        season = season or current_season_code(as_of)
 
         values = {
             "home_elo": home.elo,
@@ -135,14 +152,29 @@ class PreMatchFeatureBuilder:
             "away_recent5_shots": self._optional_rate(away_5, "shots"),
             "home_recent5_sot": self._optional_rate(home_5, "shots_on_target"),
             "away_recent5_sot": self._optional_rate(away_5, "shots_on_target"),
-            "home_recent5_xg": self._optional_rate(home_5, "xg"),
-            "home_recent5_xga": self._optional_rate(home_5, "xga"),
-            "away_recent5_xg": self._optional_rate(away_5, "xg"),
-            "away_recent5_xga": self._optional_rate(away_5, "xga"),
-            "home_recent10_xg": self._optional_rate(home_10, "xg"),
-            "home_recent10_xga": self._optional_rate(home_10, "xga"),
-            "away_recent10_xg": self._optional_rate(away_10, "xg"),
-            "away_recent10_xga": self._optional_rate(away_10, "xga"),
+            "home_recent5_xg": home_xg_5,
+            "home_recent5_xga": home_xga_5,
+            "away_recent5_xg": away_xg_5,
+            "away_recent5_xga": away_xga_5,
+            "home_recent10_xg": home_xg_10,
+            "home_recent10_xga": home_xga_10,
+            "away_recent10_xg": away_xg_10,
+            "away_recent10_xga": away_xga_10,
+            # Explicit feature-store names retained alongside the V2-compatible names.
+            "home_xg_for_5": home_xg_5,
+            "home_xg_against_5": home_xga_5,
+            "away_xg_for_5": away_xg_5,
+            "away_xg_against_5": away_xga_5,
+            "home_xg_for_10": home_xg_10,
+            "home_xg_against_10": home_xga_10,
+            "away_xg_for_10": away_xg_10,
+            "away_xg_against_10": away_xga_10,
+            "home_xg_difference": self._difference(home_xg_5, home_xga_5),
+            "away_xg_difference": self._difference(away_xg_5, away_xga_5),
+            "home_xg_trend": self._difference(home_xg_5, home_xg_10),
+            "away_xg_trend": self._difference(away_xg_5, away_xg_10),
+            "home_finishing_difference": self._finishing_difference(home_5),
+            "away_finishing_difference": self._finishing_difference(away_5),
             "home_xg_samples": self._available_count(home_10, "xg"),
             "away_xg_samples": self._available_count(away_10, "xg"),
             "home_rest_days": self._rest_days(home.matches, as_of),
@@ -153,6 +185,14 @@ class PreMatchFeatureBuilder:
             "away_matches_14d": self._congestion(away.matches, as_of, 14),
             "home_sample_count": len(home.matches),
             "away_sample_count": len(away.matches),
+            "home_season_matches": sum(item.season == season for item in home.matches),
+            "away_season_matches": sum(item.season == season for item in away.matches),
+            "early_season": int(
+                min(
+                    sum(item.season == season for item in home.matches),
+                    sum(item.season == season for item in away.matches),
+                ) < 6
+            ),
         }
         return FeatureSnapshot(
             as_of=as_of,
@@ -195,6 +235,7 @@ class PreMatchFeatureBuilder:
             home_xg, away_xg = provider_xg or (match.home_xg, match.away_xg)
             self.teams[match.home_team].matches.append(Performance(
                 played_on=match.played_on,
+                season=match.season,
                 venue="home",
                 goals_for=match.home_goals,
                 goals_against=match.away_goals,
@@ -205,6 +246,7 @@ class PreMatchFeatureBuilder:
             ))
             self.teams[match.away_team].matches.append(Performance(
                 played_on=match.played_on,
+                season=match.season,
                 venue="away",
                 goals_for=match.away_goals,
                 goals_against=match.home_goals,
@@ -269,6 +311,27 @@ class PreMatchFeatureBuilder:
     @staticmethod
     def _available_count(summary: list[tuple[Performance, float]], field_name: str) -> int:
         return sum(1 for item, _ in summary if getattr(item, field_name) is not None)
+
+    @staticmethod
+    def _difference(first: Optional[float], second: Optional[float]) -> Optional[float]:
+        if first is None or second is None:
+            return None
+        return first - second
+
+    @staticmethod
+    def _finishing_difference(
+        summary: list[tuple[Performance, float]],
+    ) -> Optional[float]:
+        values = [
+            (item.goals_for - item.xg, weight)
+            for item, weight in summary
+            if item.xg is not None
+        ]
+        if not values:
+            return None
+        return sum(value * weight for value, weight in values) / sum(
+            weight for _, weight in values
+        )
 
     @staticmethod
     def _rest_days(history: list[Performance], as_of: date) -> int:

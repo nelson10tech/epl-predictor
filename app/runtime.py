@@ -6,11 +6,13 @@ from datetime import datetime, timedelta, timezone
 from typing import Mapping, Optional
 
 from .data import MatchRepository
+from .ml import V3EnsemblePredictor, V3MLPredictor
 from .model import DixonColesPredictor, EloPoissonPredictor
 
 
-APP_VERSION = "2.1"
+APP_VERSION = "3.0"
 MODEL_VERSION = "2.0"
+CHALLENGER_MODEL_VERSION = "3.0"
 
 
 @dataclass(frozen=True)
@@ -20,15 +22,33 @@ class RuntimeState:
 
 
 def build_predictors(
-    repository: MatchRepository, calibration_temperature: float
+    repository: MatchRepository,
+    calibration_temperature: float,
+    v3_config: Optional[dict] = None,
 ) -> dict[str, object]:
-    return {
+    predictors: dict[str, object] = {
         "v1": EloPoissonPredictor(repository.matches),
         "v2": DixonColesPredictor(
             repository.matches,
             calibration_temperature=calibration_temperature,
         ),
     }
+    if len(repository.matches) >= 100:
+        config = v3_config or {}
+        ml = V3MLPredictor(
+            repository.matches,
+            predictors["v2"],  # type: ignore[arg-type]
+            calibration_temperature=float(config.get("ml_temperature", 1.0)),
+            max_iter=int(config.get("max_iter", 80)),
+            feature_importance=config.get("feature_importance", []),
+        )
+        predictors["ml"] = ml
+        predictors["v3"] = V3EnsemblePredictor(
+            predictors["v2"],  # type: ignore[arg-type]
+            ml,
+            v2_weight=float(config.get("v2_weight", 1.0)),
+        )
+    return predictors
 
 
 class PredictionRuntime:
@@ -41,14 +61,18 @@ class PredictionRuntime:
         max_age_hours: float = 12.0,
         check_interval_seconds: float = 300.0,
         auto_refresh: bool = True,
+        v3_config: Optional[dict] = None,
     ) -> None:
         self.calibration_temperature = calibration_temperature
         self.max_age_hours = max_age_hours
         self.check_interval = timedelta(seconds=max(check_interval_seconds, 1.0))
         self.auto_refresh = auto_refresh
+        self.v3_config = v3_config or {}
         self._state = RuntimeState(
             repository=repository,
-            predictors=build_predictors(repository, calibration_temperature),
+            predictors=build_predictors(
+                repository, calibration_temperature, self.v3_config
+            ),
         )
         self._state_lock = threading.RLock()
         self._control_lock = threading.Lock()
@@ -122,7 +146,9 @@ class PredictionRuntime:
         )
         candidate.load()
         candidate.refresh(now=started_at)
-        predictors = build_predictors(candidate, self.calibration_temperature)
+        predictors = build_predictors(
+            candidate, self.calibration_temperature, self.v3_config
+        )
         return RuntimeState(repository=candidate, predictors=predictors)
 
     def wait_for_refresh(self, timeout: float = 5.0) -> bool:

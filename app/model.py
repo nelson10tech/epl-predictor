@@ -239,7 +239,14 @@ class DixonColesPredictor:
         home *= context_multiplier
         away /= context_multiplier
 
-        if value["home_xg_samples"] >= 3 and value["away_xg_samples"] >= 3:
+        if (
+            value["home_xg_samples"] >= 3
+            and value["away_xg_samples"] >= 3
+            and value["home_recent5_xg"] is not None
+            and value["away_recent5_xga"] is not None
+            and value["away_recent5_xg"] is not None
+            and value["home_recent5_xga"] is not None
+        ):
             xg_home = (value["home_recent5_xg"] + value["away_recent5_xga"]) / 2.0
             xg_away = (value["away_recent5_xg"] + value["home_recent5_xga"]) / 2.0
             home = 0.85 * home + 0.15 * xg_home

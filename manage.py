@@ -9,6 +9,11 @@ from app.backtest import (
     run_walk_forward_backtest,
     write_backtest_report,
 )
+from app.backtest_v3 import (
+    run_v3_backtest,
+    run_v3_smoke_backtest,
+    write_v3_backtest_report,
+)
 from app.live import score_predictions, snapshot_predictions
 
 
@@ -19,6 +24,7 @@ def main() -> None:
         choices=[
             "refresh",
             "backtest",
+            "backtest_v3",
             "run",
             "snapshot_predictions",
             "score_predictions",
@@ -43,10 +49,27 @@ def main() -> None:
         report = run_walk_forward_backtest(state.repository.matches)
         json_path, csv_path = write_backtest_report(report, reports_dir)
         print(f"Wrote {json_path} and {csv_path} for {report['sample_size']} matches.")
+    elif args.command == "backtest_v3":
+        report = run_v3_backtest(
+            state.repository.matches,
+            v2_report=app.extensions.get("backtest_v2_report", {}),
+        )
+        json_path, csv_path = write_v3_backtest_report(report, reports_dir)
+        print(f"Wrote {json_path} and {csv_path} for {report['sample_size']} matches.")
     elif args.command == "snapshot_predictions":
+        provider = app.extensions["fixture_provider"]
+        fixtures = provider.fetch_upcoming(
+            known_teams=set(state.repository.active_teams())
+        )
+        if fixtures:
+            state.repository.fixtures = fixtures
         summary = snapshot_predictions(
             state.repository,
-            state.predictors["v2"],
+            {
+                key: state.predictors[key]
+                for key in ("v2", "v3")
+                if key in state.predictors
+            },
             reports_dir,
         )
         print(json.dumps(summary, indent=2))
@@ -54,7 +77,10 @@ def main() -> None:
         summary = score_predictions(
             state.repository,
             reports_dir,
-            historical_report=app.extensions.get("backtest_report", {}),
+            historical_report=(
+                app.extensions.get("backtest_v3_report")
+                or app.extensions.get("backtest_report", {})
+            ),
         )
         print(json.dumps(summary, indent=2))
     elif args.command == "smoke_test":
@@ -68,6 +94,13 @@ def main() -> None:
         smoke = run_smoke_backtest(state.repository.matches)
         if not smoke["probabilities_normalized"] or not smoke["leakage_check_passed"]:
             raise RuntimeError("Chronological smoke backtest failed")
+        v3_smoke = run_v3_smoke_backtest(state.repository.matches)
+        if (
+            not v3_smoke["probabilities_normalized"]
+            or not v3_smoke["leakage_check_passed"]
+        ):
+            raise RuntimeError("V3 chronological smoke backtest failed")
+        smoke["v3"] = v3_smoke
         print(json.dumps(smoke, indent=2))
     else:
         app.run(host=args.host, port=args.port, debug=False)

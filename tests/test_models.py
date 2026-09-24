@@ -5,9 +5,12 @@ from datetime import date
 import pytest
 
 from app.backtest import _walk_season, run_smoke_backtest
+from app.backtest_v3 import run_v3_smoke_backtest, select_ensemble_weight
 from app.data import Match
 from app.features import PreMatchFeatureBuilder
+from app.feature_store import ChronologicalFeatureStore
 from app.model import dixon_coles_score_matrix, outcome_probabilities
+from app.xg import FootballDataXGProvider
 
 
 def match(day, season, home, away, home_goals, away_goals):
@@ -42,6 +45,24 @@ def test_feature_builder_uses_only_pre_match_information():
     assert after.values["home_recent5_ga"] > before.values["home_recent5_ga"]
 
 
+def test_target_match_xg_is_not_a_feature():
+    first = Match(
+        played_on=date(2025, 8, 10), season="A", home_team="Arsenal",
+        away_team="Chelsea", home_goals=2, away_goals=0, home_xg=1.2, away_xg=0.4,
+    )
+    target = Match(
+        played_on=date(2025, 8, 17), season="A", home_team="Arsenal",
+        away_team="Chelsea", home_goals=0, away_goals=4, home_xg=9.0, away_xg=8.0,
+    )
+    store = ChronologicalFeatureStore(
+        [first, target], xg_provider=FootballDataXGProvider()
+    )
+    target_row = store.rows[1]
+    assert target_row.snapshot.training_through == first.played_on
+    assert target_row.snapshot.values["home_xg_samples"] == 1
+    assert target_row.snapshot.values["home_recent5_xg"] == pytest.approx(1.2)
+
+
 def test_walk_forward_backtest_never_trains_on_future_matches():
     matches = [
         match(date(2024, 8, 1), "A", "Arsenal", "Chelsea", 2, 1),
@@ -64,3 +85,25 @@ def test_ci_smoke_backtest_passes(app):
     assert result["sample_size"] > 0
     assert result["probabilities_normalized"] is True
     assert result["leakage_check_passed"] is True
+    v3 = run_v3_smoke_backtest(matches, max_matches=10)
+    assert v3["sample_size"] > 0
+    assert v3["probabilities_normalized"] is True
+    assert v3["leakage_check_passed"] is True
+
+
+def test_ensemble_weight_uses_only_passed_validation_rows():
+    validation = [
+        {
+            "result": "H",
+            "v2_probabilities": {"home_win": 0.7, "draw": 0.2, "away_win": 0.1},
+            "ml_probabilities": {"home_win": 0.2, "draw": 0.3, "away_win": 0.5},
+        },
+        {
+            "result": "A",
+            "v2_probabilities": {"home_win": 0.2, "draw": 0.2, "away_win": 0.6},
+            "ml_probabilities": {"home_win": 0.6, "draw": 0.2, "away_win": 0.2},
+        },
+    ] * 60
+    weight, candidates = select_ensemble_weight(validation)
+    assert weight == 1.0
+    assert len(candidates) == 11

@@ -3,6 +3,89 @@
   "historical_backtest_included": false,
   "predictions_recorded": 0,
   "settled_predictions": 0,
+  "models": {
+    "2.0": {
+      "model": "Enhanced Dixon-Coles V2",
+      "predictions_recorded": 0,
+      "settled_predictions": 0,
+      "overall": {
+        "sample_size": 0,
+        "accuracy": null,
+        "log_loss": null,
+        "brier_score": null,
+        "ranked_probability_score": null
+      },
+      "rolling": {
+        "last_20": {
+          "sample_size": 0,
+          "accuracy": null,
+          "log_loss": null,
+          "brier_score": null,
+          "ranked_probability_score": null
+        },
+        "last_50": {
+          "sample_size": 0,
+          "accuracy": null,
+          "log_loss": null,
+          "brier_score": null,
+          "ranked_probability_score": null
+        }
+      },
+      "season_to_date": {
+        "season": null,
+        "sample_size": 0,
+        "accuracy": null,
+        "log_loss": null,
+        "brier_score": null,
+        "ranked_probability_score": null
+      },
+      "status": {
+        "level": "insufficient",
+        "message": "Small sample \u2014 no reliable live conclusion yet."
+      }
+    },
+    "3.0": {
+      "model": "V3 Ensemble",
+      "predictions_recorded": 0,
+      "settled_predictions": 0,
+      "overall": {
+        "sample_size": 0,
+        "accuracy": null,
+        "log_loss": null,
+        "brier_score": null,
+        "ranked_probability_score": null
+      },
+      "rolling": {
+        "last_20": {
+          "sample_size": 0,
+          "accuracy": null,
+          "log_loss": null,
+          "brier_score": null,
+          "ranked_probability_score": null
+        },
+        "last_50": {
+          "sample_size": 0,
+          "accuracy": null,
+          "log_loss": null,
+          "brier_score": null,
+          "ranked_probability_score": null
+        }
+      },
+      "season_to_date": {
+        "season": null,
+        "sample_size": 0,
+        "accuracy": null,
+        "log_loss": null,
+        "brier_score": null,
+        "ranked_probability_score": null
+      },
+      "status": {
+        "level": "insufficient",
+        "message": "Small sample \u2014 no reliable live conclusion yet."
+      }
+    }
+  },
+  "default_live_model_version": "2.0",
   "overall": {
     "sample_size": 0,
     "accuracy": null,
@@ -36,6 +119,7 @@
   },
   "status": {
     "level": "insufficient",
-    "message": "Small sample — live performance is not yet statistically reliable."
-  }
+    "message": "Small sample \u2014 no reliable live conclusion yet."
+  },
+  "updated_at": "2026-09-23T17:49:23.224943+00:00"
 }

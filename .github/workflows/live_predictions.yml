@@ -38,7 +38,7 @@ jobs:
         run: |
           git restore --source=HEAD --staged --worktree data/raw
           git clean -f data/raw
-          git add reports/live_predictions reports/live_results.json reports/live_performance.json
+          git add data/cache/upcoming_fixtures.json reports/live_predictions reports/live_results.json reports/live_performance.json
           if git diff --cached --quiet; then
             echo "No prediction or score changes"
             exit 0

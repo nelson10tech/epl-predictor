@@ -1,0 +1,21 @@
+{
+  "app_version": "3.0",
+  "live_model": {
+    "key": "v2",
+    "name": "Enhanced Dixon-Coles V2",
+    "version": "2.0"
+  },
+  "challenger_model": {
+    "key": "v3",
+    "name": "V3 Ensemble",
+    "version": "3.0",
+    "shadow_only": true
+  },
+  "promotion_rule": {
+    "requires_lower_log_loss_than_v2": true,
+    "requires_lower_brier_than_v2": true,
+    "allows_serious_calibration_regression": false,
+    "latest_backtest_eligible": false,
+    "latest_report": "reports/backtest_v3.json"
+  }
+}

@@ -1,11 +1,11 @@
 {% extends "base.html" %}
-{% block title %}V2.1 模型診斷 · EPL Predictor{% endblock %}
+{% block title %}V3 模型診斷 · EPL Predictor{% endblock %}
 
 {% block content %}
   <section class="intro fixtures-intro">
     <p class="eyebrow">MODEL DIAGNOSTICS</p>
     <h1>模型診斷</h1>
-    <p>歷史 walk-forward 回測與真實賽前記錄分開呈現，兩組數字不會混合。</p>
+    <p>V3 是 challenger；歷史 walk-forward 與真實賽前表現完全分開。</p>
   </section>
 
   <section class="diagnostic-grid">
@@ -14,11 +14,12 @@
       <h2>{{ live_model }}</h2>
       <dl class="info-list">
         <div><dt>應用程式</dt><dd>{{ app_version }}</dd></div>
-        <div><dt>統計模型</dt><dd>{{ model_version }}</dd></div>
+        <div><dt>Live 模型</dt><dd>{{ model_version }}</dd></div>
+        <div><dt>Challenger</dt><dd>{{ challenger_version }}</dd></div>
         <div><dt>比賽數</dt><dd>{{ matches }}</dd></div>
         <div><dt>活躍球季</dt><dd>{{ active_season }}</dd></div>
-        <div><dt>真實 xG</dt><dd>{% if xg.enabled %}啟用（{{ xg.matches_with_xg }} 場）{% else %}未啟用{% endif %}</dd></div>
       </dl>
+      <p class="diagnostic-note">V3 未達 promotion rule，因此預設仍使用 V2；V3 可用 <code>?model=v3</code> 查詢。</p>
     </article>
 
     <article class="diagnostic-card {% if freshness.data_stale %}warning-card{% endif %}">
@@ -28,26 +29,28 @@
         <div><dt>資料截至</dt><dd>{{ freshness.data_through or '未知' }}</dd></div>
         <div><dt>最後成功更新</dt><dd>{{ freshness.last_refresh_success or '未知' }}</dd></div>
         <div><dt>背景更新</dt><dd>{% if freshness.refresh_in_progress %}進行中{% else %}閒置{% endif %}</dd></div>
+        <div><dt>V2 真實 xG</dt><dd>{% if xg.enabled %}啟用（{{ xg.matches_with_xg }} 場）{% else %}未啟用{% endif %}</dd></div>
       </dl>
       {% if freshness.last_refresh_error %}<p class="diagnostic-note">最近更新失敗；現正安全使用上一個有效模型。</p>{% endif %}
     </article>
   </section>
 
+  {% set models = v3_report.get('models', {}) %}
   <div class="diagnostic-heading">
     <p class="kicker">HISTORICAL BACKTEST</p>
     <h2>歷史 Walk-forward 回測</h2>
-    <p>以下數字來自已完成的歷史賽事，不是 live performance。</p>
+    <p>Ensemble 權重只用 {{ v3_report.get('validation_season', 'validation') }} 選擇；最終評估球季沒有參與選權重。</p>
   </div>
   <section class="diagnostic-grid">
-    {% set models = report.get('models', {}) %}
-    {% for key in ['v1', 'v2', 'bookmaker'] %}
+    {% for key in ['v1', 'v2', 'ml', 'v3_ensemble', 'bookmaker'] %}
       {% set item = models.get(key, {}) %}
-      <article class="diagnostic-card">
-        <p class="kicker">{% if key == 'bookmaker' %}BENCHMARK{% else %}{{ key|upper }}{% endif %}</p>
+      <article class="diagnostic-card {% if key == 'v2' %}feature-card{% endif %}">
+        <p class="kicker">{% if key == 'bookmaker' %}BENCHMARK{% elif key == 'v3_ensemble' %}CHALLENGER{% else %}{{ key|upper }}{% endif %}</p>
         <h2>{{ item.get('name', key|upper) }}</h2>
         <dl class="metric-grid">
           <div><dt>Log Loss</dt><dd>{{ '%.4f'|format(item.log_loss) if item.get('log_loss') is not none else '—' }}</dd></div>
           <div><dt>Brier</dt><dd>{{ '%.4f'|format(item.brier_score) if item.get('brier_score') is not none else '—' }}</dd></div>
+          <div><dt>RPS</dt><dd>{{ '%.4f'|format(item.ranked_probability_score) if item.get('ranked_probability_score') is not none else '—' }}</dd></div>
           <div><dt>Accuracy</dt><dd>{{ '%.1f%%'|format(item.accuracy * 100) if item.get('accuracy') is not none else '—' }}</dd></div>
           <div><dt>樣本</dt><dd>{{ item.get('sample_size', 0) }}</dd></div>
         </dl>
@@ -55,59 +58,60 @@
     {% endfor %}
   </section>
 
-  {% set live = live_report.get('overall', {}) %}
+  {% set comparison = v3_report.get('v3_vs_v2', {}) %}
+  {% set promotion = v3_report.get('promotion', {}) %}
+  <section class="method-panel">
+    <p class="kicker">V3 VS V2</p>
+    <h2>{% if promotion.get('eligible') %}符合 promotion 指標{% else %}未符合 promotion 指標{% endif %}</h2>
+    <p>Log Loss 差：{{ '%+.5f'|format(comparison.log_loss_difference) if comparison.get('log_loss_difference') is not none else '—' }}；Brier 差：{{ '%+.5f'|format(comparison.brier_difference) if comparison.get('brier_difference') is not none else '—' }}；RPS 差：{{ '%+.5f'|format(comparison.rps_difference) if comparison.get('rps_difference') is not none else '—' }}。負數代表 V3 較佳。</p>
+    <p>Validation 選出的組合：V2 {{ '%.0f%%'|format(v3_report.get('ensemble', {}).get('v2_weight', 1) * 100) }} + ML {{ '%.0f%%'|format(v3_report.get('ensemble', {}).get('ml_weight', 0) * 100) }}。</p>
+  </section>
+
   <div class="diagnostic-heading">
     <p class="kicker">LIVE PERFORMANCE</p>
-    <h2>Live／Prospective 表現</h2>
-    <p>只計算在開賽前保存、其後才取得賽果的不可變預測。</p>
+    <h2>Live shadow performance</h2>
+    <p>只計算開賽前保存、其後才取得賽果的預測；V2 與 V3 永不合併計分。</p>
   </div>
   <section class="diagnostic-grid">
-    <article class="diagnostic-card feature-card">
-      <p class="kicker">ALL RECORDED</p>
-      <h2>真實賽前追蹤</h2>
-      <dl class="metric-grid">
-        <div><dt>已記錄</dt><dd>{{ live_report.get('predictions_recorded', 0) }}</dd></div>
-        <div><dt>已結算</dt><dd>{{ live_report.get('settled_predictions', 0) }}</dd></div>
-        <div><dt>Log Loss</dt><dd>{{ '%.4f'|format(live.log_loss) if live.get('log_loss') is not none else '—' }}</dd></div>
-        <div><dt>Brier</dt><dd>{{ '%.4f'|format(live.brier_score) if live.get('brier_score') is not none else '—' }}</dd></div>
-        <div><dt>Accuracy</dt><dd>{{ '%.1f%%'|format(live.accuracy * 100) if live.get('accuracy') is not none else '—' }}</dd></div>
-        <div><dt>RPS</dt><dd>{{ '%.4f'|format(live.ranked_probability_score) if live.get('ranked_probability_score') is not none else '—' }}</dd></div>
-      </dl>
-      <p class="sample-warning">{{ live_report.get('status', {}).get('message', 'Small sample — live performance is not yet statistically reliable.') }}</p>
-    </article>
-
-    {% for key, label in [('last_20', '最近 20 個預測'), ('last_50', '最近 50 個預測')] %}
-      {% set rolling = live_report.get('rolling', {}).get(key, {}) %}
-      <article class="diagnostic-card">
-        <p class="kicker">ROLLING</p>
-        <h2>{{ label }}</h2>
+    {% set live_models = live_report.get('models', {}) %}
+    {% for version, label in [('2.0', 'V2 Live'), ('3.0', 'V3 Shadow')] %}
+      {% set live = live_models.get(version, {}) %}
+      {% set overall = live.get('overall', {}) %}
+      <article class="diagnostic-card {% if version == '2.0' %}feature-card{% endif %}">
+        <p class="kicker">{{ label }}</p>
+        <h2>{{ live.get('model', label) }}</h2>
         <dl class="metric-grid">
-          <div><dt>Log Loss</dt><dd>{{ '%.4f'|format(rolling.log_loss) if rolling.get('log_loss') is not none else '—' }}</dd></div>
-          <div><dt>Brier</dt><dd>{{ '%.4f'|format(rolling.brier_score) if rolling.get('brier_score') is not none else '—' }}</dd></div>
-          <div><dt>Accuracy</dt><dd>{{ '%.1f%%'|format(rolling.accuracy * 100) if rolling.get('accuracy') is not none else '—' }}</dd></div>
-          <div><dt>樣本</dt><dd>{{ rolling.get('sample_size', 0) }}</dd></div>
+          <div><dt>已記錄</dt><dd>{{ live.get('predictions_recorded', 0) }}</dd></div>
+          <div><dt>已結算</dt><dd>{{ live.get('settled_predictions', 0) }}</dd></div>
+          <div><dt>Log Loss</dt><dd>{{ '%.4f'|format(overall.log_loss) if overall.get('log_loss') is not none else '—' }}</dd></div>
+          <div><dt>Brier</dt><dd>{{ '%.4f'|format(overall.brier_score) if overall.get('brier_score') is not none else '—' }}</dd></div>
+          <div><dt>RPS</dt><dd>{{ '%.4f'|format(overall.ranked_probability_score) if overall.get('ranked_probability_score') is not none else '—' }}</dd></div>
+          <div><dt>Accuracy</dt><dd>{{ '%.1f%%'|format(overall.accuracy * 100) if overall.get('accuracy') is not none else '—' }}</dd></div>
         </dl>
+        <p class="sample-warning">{{ live.get('status', {}).get('message', 'Small sample — no reliable live conclusion yet.') }}</p>
       </article>
     {% endfor %}
-
-    {% set season_live = live_report.get('season_to_date', {}) %}
-    <article class="diagnostic-card">
-      <p class="kicker">SEASON TO DATE</p>
-      <h2>球季至今{% if season_live.get('season') %} · {{ season_live.season }}{% endif %}</h2>
-      <dl class="metric-grid">
-        <div><dt>Log Loss</dt><dd>{{ '%.4f'|format(season_live.log_loss) if season_live.get('log_loss') is not none else '—' }}</dd></div>
-        <div><dt>Brier</dt><dd>{{ '%.4f'|format(season_live.brier_score) if season_live.get('brier_score') is not none else '—' }}</dd></div>
-        <div><dt>Accuracy</dt><dd>{{ '%.1f%%'|format(season_live.accuracy * 100) if season_live.get('accuracy') is not none else '—' }}</dd></div>
-        <div><dt>樣本</dt><dd>{{ season_live.get('sample_size', 0) }}</dd></div>
-      </dl>
-    </article>
   </section>
 
   <section class="method-panel">
-    <p class="kicker">METHOD</p>
-    <h2>模型包含的資料</h2>
-    <p>Elo、主客場攻防、近 5／10 場狀態、休息日、過去 7／14 日的 EPL 比賽密度，以及資料實際存在時的射門、射正和 xG。</p>
-    <p>{{ xg.limitation }}</p>
-    <p>這是機率模型；例如 54% 並不代表球隊一定會勝出。</p>
+    <p class="kicker">FEATURE IMPORTANCE</p>
+    <h2>ML 最具預測訊息的指標</h2>
+    {% if feature_importance %}
+      <ol>
+        {% for item in feature_importance[:5] %}
+          <li><code>{{ item.feature }}</code> — {{ '%.4f'|format(item.importance) }}</li>
+        {% endfor %}
+      </ol>
+      <p>以上為時序 holdout 的 permutation Log Loss importance，只描述模型使用情況，不代表因果關係。</p>
+    {% else %}
+      <p>尚未產生離線 feature importance。</p>
+    {% endif %}
+  </section>
+
+  <section class="method-panel">
+    <p class="kicker">METHOD & LIMITS</p>
+    <h2>可追溯、可缺失的資料層</h2>
+    <p>V3 使用賽前 Elo、近 5／10 場狀態、主客場攻防、射門／射正、休息與 EPL 賽程密度，以及真實來源存在時的 xG/xGA。傷停、正選陣容與全競賽擁擠度 provider 目前停用，不會以傳聞或猜測補值。</p>
+    <p>這是機率模型；例如 54% 並不代表球隊一定會勝出，亦不構成投注建議。</p>
   </section>
 {% endblock %}

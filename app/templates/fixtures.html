@@ -30,6 +30,9 @@
       </div>
     {% endfor %}
     </div>
+    {% if fixture_source.available %}
+      <p class="diagnostic-note">賽程來源：{{ fixture_source.provider }}（{{ fixture_source.license }}）；只顯示來源提供的日期及開賽時間。</p>
+    {% endif %}
   </section>
 
   <section class="fixture-section">
@@ -56,4 +59,3 @@
     </div>
   </section>
 {% endblock %}
-

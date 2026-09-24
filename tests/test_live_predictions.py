@@ -14,10 +14,14 @@ class FixtureRepository:
 
 
 class FixedPredictor:
+    def __init__(self, version="2.0", model="Enhanced Dixon-Coles V2"):
+        self.version = version
+        self.model = model
+
     def predict(self, home_team, away_team, as_of=None):
         return {
-            "model": "Enhanced Dixon-Coles V2",
-            "version": "2.0",
+            "model": self.model,
+            "version": self.version,
             "probabilities": {"home_win": 0.5, "draw": 0.3, "away_win": 0.2},
             "expected_goals": {"home": 1.6, "away": 0.9},
             "most_likely_score": {"home": 1, "away": 0},
@@ -106,3 +110,36 @@ def test_scoring_attaches_result_without_overwriting_probabilities(tmp_path):
     assert results[0]["actual_result"] == "H"
     assert summary["report"]["overall"]["sample_size"] == 1
     assert summary["report"]["historical_backtest_included"] is False
+
+
+def test_shadow_snapshots_and_metrics_stay_separate(tmp_path):
+    reports = tmp_path / "reports"
+    now = datetime(2026, 9, 23, 10, tzinfo=timezone.utc)
+    repository = FixtureRepository(fixtures=[future_fixture()])
+    summary = snapshot_predictions(
+        repository,
+        {
+            "v2": FixedPredictor(),
+            "v3": FixedPredictor("3.0", "V3 Ensemble"),
+        },
+        reports,
+        now=now,
+    )
+    assert summary["created_by_model"] == {"2.0": 1, "3.0": 1}
+    completed = Match(
+        played_on=date(2026, 9, 24),
+        season="2627",
+        home_team="Arsenal",
+        away_team="Chelsea",
+        home_goals=2,
+        away_goals=1,
+    )
+    scored = score_predictions(
+        FixtureRepository(matches=[completed]),
+        reports,
+        now=datetime(2026, 9, 25, 10, tzinfo=timezone.utc),
+    )["report"]
+    assert scored["models"]["2.0"]["settled_predictions"] == 1
+    assert scored["models"]["3.0"]["settled_predictions"] == 1
+    assert scored["models"]["2.0"]["overall"]["sample_size"] == 1
+    assert scored["models"]["3.0"]["overall"]["sample_size"] == 1

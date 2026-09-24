@@ -218,7 +218,7 @@ class MatchRepository:
         staged: list[tuple[Path, bytes]] = []
 
         headers = {
-            "User-Agent": "EPL-Predictor/2.0 (+https://github.com/nelson10tech/epl-predictor)"
+            "User-Agent": "EPL-Predictor/3.0 (+https://github.com/nelson10tech/epl-predictor)"
         }
         seasons = season_codes(self.history_seasons)
         with requests.Session() as session:

@@ -1,0 +1,761 @@
+date,home_team,away_team,home_xg,away_xg,source
+2021-08-13,Brentford,Arsenal,1.41,1.21,FiveThirtyEight Soccer SPI
+2021-08-14,Manchester United,Leeds United,1.42,0.66,FiveThirtyEight Soccer SPI
+2021-08-14,Burnley,Brighton and Hove Albion,1.95,1.77,FiveThirtyEight Soccer SPI
+2021-08-14,Leicester City,Wolverhampton,0.65,1.31,FiveThirtyEight Soccer SPI
+2021-08-14,Everton,Southampton,2.38,0.62,FiveThirtyEight Soccer SPI
+2021-08-14,Chelsea,Crystal Palace,1.08,0.36,FiveThirtyEight Soccer SPI
+2021-08-14,Watford,Aston Villa,1.17,1.21,FiveThirtyEight Soccer SPI
+2021-08-14,Norwich City,Liverpool,1.15,2.06,FiveThirtyEight Soccer SPI
+2021-08-15,Newcastle,West Ham United,1.71,3.53,FiveThirtyEight Soccer SPI
+2021-08-15,Tottenham Hotspur,Manchester City,1.22,2.16,FiveThirtyEight Soccer SPI
+2021-08-21,Liverpool,Burnley,3.1,0.79,FiveThirtyEight Soccer SPI
+2021-08-21,Aston Villa,Newcastle,1.31,0.77,FiveThirtyEight Soccer SPI
+2021-08-21,Leeds United,Everton,1.15,1.94,FiveThirtyEight Soccer SPI
+2021-08-21,Crystal Palace,Brentford,0.6,0.85,FiveThirtyEight Soccer SPI
+2021-08-21,Manchester City,Norwich City,2.37,0.03,FiveThirtyEight Soccer SPI
+2021-08-21,Brighton and Hove Albion,Watford,1.68,0.48,FiveThirtyEight Soccer SPI
+2021-08-22,Southampton,Manchester United,0.69,2.21,FiveThirtyEight Soccer SPI
+2021-08-22,Wolverhampton,Tottenham Hotspur,1.68,1.78,FiveThirtyEight Soccer SPI
+2021-08-22,Arsenal,Chelsea,0.63,3.3,FiveThirtyEight Soccer SPI
+2021-08-23,West Ham United,Leicester City,2.48,0.83,FiveThirtyEight Soccer SPI
+2021-08-28,Manchester City,Arsenal,4.02,0.17,FiveThirtyEight Soccer SPI
+2021-08-28,Brighton and Hove Albion,Everton,0.79,1.41,FiveThirtyEight Soccer SPI
+2021-08-28,Norwich City,Leicester City,1.61,1.39,FiveThirtyEight Soccer SPI
+2021-08-28,Aston Villa,Brentford,0.47,1.01,FiveThirtyEight Soccer SPI
+2021-08-28,West Ham United,Crystal Palace,1.39,1.79,FiveThirtyEight Soccer SPI
+2021-08-28,Newcastle,Southampton,1.21,3.62,FiveThirtyEight Soccer SPI
+2021-08-28,Liverpool,Chelsea,2.75,0.65,FiveThirtyEight Soccer SPI
+2021-08-29,Tottenham Hotspur,Watford,1.1,0.66,FiveThirtyEight Soccer SPI
+2021-08-29,Burnley,Leeds United,1.7,1.34,FiveThirtyEight Soccer SPI
+2021-08-29,Wolverhampton,Manchester United,1.89,0.84,FiveThirtyEight Soccer SPI
+2021-09-11,Crystal Palace,Tottenham Hotspur,3.3,0.08,FiveThirtyEight Soccer SPI
+2021-09-11,Manchester United,Newcastle,2.73,0.56,FiveThirtyEight Soccer SPI
+2021-09-11,Leicester City,Manchester City,0.84,3.14,FiveThirtyEight Soccer SPI
+2021-09-11,Watford,Wolverhampton,0.29,2.73,FiveThirtyEight Soccer SPI
+2021-09-11,Brentford,Brighton and Hove Albion,0.77,0.21,FiveThirtyEight Soccer SPI
+2021-09-11,Arsenal,Norwich City,2.66,0.61,FiveThirtyEight Soccer SPI
+2021-09-11,Southampton,West Ham United,0.7,0.83,FiveThirtyEight Soccer SPI
+2021-09-11,Chelsea,Aston Villa,1.25,1.25,FiveThirtyEight Soccer SPI
+2021-09-12,Leeds United,Liverpool,0.76,4.81,FiveThirtyEight Soccer SPI
+2021-09-13,Everton,Burnley,1.66,1.92,FiveThirtyEight Soccer SPI
+2021-09-17,Newcastle,Leeds United,1.38,1.6,FiveThirtyEight Soccer SPI
+2021-09-18,Wolverhampton,Brentford,1.21,2.04,FiveThirtyEight Soccer SPI
+2021-09-18,Norwich City,Watford,0.82,2.69,FiveThirtyEight Soccer SPI
+2021-09-18,Liverpool,Crystal Palace,3.34,0.66,FiveThirtyEight Soccer SPI
+2021-09-18,Manchester City,Southampton,1.32,0.44,FiveThirtyEight Soccer SPI
+2021-09-18,Burnley,Arsenal,1.05,0.96,FiveThirtyEight Soccer SPI
+2021-09-18,Aston Villa,Everton,0.85,0.98,FiveThirtyEight Soccer SPI
+2021-09-19,Brighton and Hove Albion,Leicester City,1.47,1.47,FiveThirtyEight Soccer SPI
+2021-09-19,West Ham United,Manchester United,1.76,2.47,FiveThirtyEight Soccer SPI
+2021-09-19,Tottenham Hotspur,Chelsea,0.96,2.51,FiveThirtyEight Soccer SPI
+2021-09-25,Chelsea,Manchester City,0.21,1.95,FiveThirtyEight Soccer SPI
+2021-09-25,Manchester United,Aston Villa,1.98,1.57,FiveThirtyEight Soccer SPI
+2021-09-25,Watford,Newcastle,1.06,2.16,FiveThirtyEight Soccer SPI
+2021-09-25,Leeds United,West Ham United,1.26,2.05,FiveThirtyEight Soccer SPI
+2021-09-25,Everton,Norwich City,2.02,0.81,FiveThirtyEight Soccer SPI
+2021-09-25,Leicester City,Burnley,2.09,0.47,FiveThirtyEight Soccer SPI
+2021-09-25,Brentford,Liverpool,3.08,2.83,FiveThirtyEight Soccer SPI
+2021-09-26,Southampton,Wolverhampton,0.94,1.01,FiveThirtyEight Soccer SPI
+2021-09-26,Arsenal,Tottenham Hotspur,1.48,1.52,FiveThirtyEight Soccer SPI
+2021-09-27,Crystal Palace,Brighton and Hove Albion,1.42,0.99,FiveThirtyEight Soccer SPI
+2021-10-02,Manchester United,Everton,0.98,1.27,FiveThirtyEight Soccer SPI
+2021-10-02,Burnley,Norwich City,0.85,0.56,FiveThirtyEight Soccer SPI
+2021-10-02,Wolverhampton,Newcastle,1.01,0.98,FiveThirtyEight Soccer SPI
+2021-10-02,Leeds United,Watford,1.37,0.24,FiveThirtyEight Soccer SPI
+2021-10-02,Chelsea,Southampton,4.0,1.59,FiveThirtyEight Soccer SPI
+2021-10-02,Brighton and Hove Albion,Arsenal,1.24,0.4,FiveThirtyEight Soccer SPI
+2021-10-03,West Ham United,Brentford,1.67,1.18,FiveThirtyEight Soccer SPI
+2021-10-03,Tottenham Hotspur,Aston Villa,1.84,1.11,FiveThirtyEight Soccer SPI
+2021-10-03,Crystal Palace,Leicester City,1.25,1.03,FiveThirtyEight Soccer SPI
+2021-10-03,Liverpool,Manchester City,1.24,1.13,FiveThirtyEight Soccer SPI
+2021-10-16,Watford,Liverpool,0.28,3.61,FiveThirtyEight Soccer SPI
+2021-10-16,Southampton,Leeds United,1.88,0.37,FiveThirtyEight Soccer SPI
+2021-10-16,Aston Villa,Wolverhampton,1.19,1.64,FiveThirtyEight Soccer SPI
+2021-10-16,Leicester City,Manchester United,2.81,1.3,FiveThirtyEight Soccer SPI
+2021-10-16,Manchester City,Burnley,2.39,1.13,FiveThirtyEight Soccer SPI
+2021-10-16,Norwich City,Brighton and Hove Albion,1.12,1.22,FiveThirtyEight Soccer SPI
+2021-10-16,Brentford,Chelsea,1.98,0.3,FiveThirtyEight Soccer SPI
+2021-10-17,Everton,West Ham United,0.92,1.81,FiveThirtyEight Soccer SPI
+2021-10-17,Newcastle,Tottenham Hotspur,0.61,1.94,FiveThirtyEight Soccer SPI
+2021-10-18,Arsenal,Crystal Palace,1.52,0.56,FiveThirtyEight Soccer SPI
+2021-10-22,Arsenal,Aston Villa,3.91,1.48,FiveThirtyEight Soccer SPI
+2021-10-23,Chelsea,Norwich City,2.84,0.19,FiveThirtyEight Soccer SPI
+2021-10-23,Everton,Watford,1.75,3.63,FiveThirtyEight Soccer SPI
+2021-10-23,Leeds United,Wolverhampton,1.77,0.88,FiveThirtyEight Soccer SPI
+2021-10-23,Crystal Palace,Newcastle,1.97,0.82,FiveThirtyEight Soccer SPI
+2021-10-23,Southampton,Burnley,1.55,0.73,FiveThirtyEight Soccer SPI
+2021-10-23,Brighton and Hove Albion,Manchester City,1.27,3.31,FiveThirtyEight Soccer SPI
+2021-10-24,West Ham United,Tottenham Hotspur,1.73,0.78,FiveThirtyEight Soccer SPI
+2021-10-24,Brentford,Leicester City,1.28,1.08,FiveThirtyEight Soccer SPI
+2021-10-24,Manchester United,Liverpool,1.47,3.84,FiveThirtyEight Soccer SPI
+2021-10-30,Leicester City,Arsenal,2.03,0.98,FiveThirtyEight Soccer SPI
+2021-10-30,Newcastle,Chelsea,0.24,2.59,FiveThirtyEight Soccer SPI
+2021-10-30,Burnley,Brentford,2.83,1.08,FiveThirtyEight Soccer SPI
+2021-10-30,Watford,Southampton,0.99,1.72,FiveThirtyEight Soccer SPI
+2021-10-30,Manchester City,Crystal Palace,0.74,1.07,FiveThirtyEight Soccer SPI
+2021-10-30,Liverpool,Brighton and Hove Albion,1.66,1.41,FiveThirtyEight Soccer SPI
+2021-10-30,Tottenham Hotspur,Manchester United,1.52,1.3,FiveThirtyEight Soccer SPI
+2021-10-31,Norwich City,Leeds United,0.76,0.8,FiveThirtyEight Soccer SPI
+2021-10-31,Aston Villa,West Ham United,0.72,2.72,FiveThirtyEight Soccer SPI
+2021-11-01,Wolverhampton,Everton,1.53,1.86,FiveThirtyEight Soccer SPI
+2021-11-05,Southampton,Aston Villa,0.89,0.69,FiveThirtyEight Soccer SPI
+2021-11-06,Manchester United,Manchester City,0.79,2.67,FiveThirtyEight Soccer SPI
+2021-11-06,Chelsea,Burnley,2.73,0.71,FiveThirtyEight Soccer SPI
+2021-11-06,Crystal Palace,Wolverhampton,2.16,0.29,FiveThirtyEight Soccer SPI
+2021-11-06,Brentford,Norwich City,3.02,1.17,FiveThirtyEight Soccer SPI
+2021-11-06,Brighton and Hove Albion,Newcastle,1.43,0.34,FiveThirtyEight Soccer SPI
+2021-11-07,Arsenal,Watford,1.55,0.52,FiveThirtyEight Soccer SPI
+2021-11-07,Everton,Tottenham Hotspur,0.65,0.91,FiveThirtyEight Soccer SPI
+2021-11-07,Leeds United,Leicester City,1.72,0.74,FiveThirtyEight Soccer SPI
+2021-11-07,West Ham United,Liverpool,1.11,2.03,FiveThirtyEight Soccer SPI
+2021-11-20,Leicester City,Chelsea,0.53,2.57,FiveThirtyEight Soccer SPI
+2021-11-20,Norwich City,Southampton,0.53,1.09,FiveThirtyEight Soccer SPI
+2021-11-20,Aston Villa,Brighton and Hove Albion,1.05,0.35,FiveThirtyEight Soccer SPI
+2021-11-20,Wolverhampton,West Ham United,1.44,0.42,FiveThirtyEight Soccer SPI
+2021-11-20,Newcastle,Brentford,2.51,1.11,FiveThirtyEight Soccer SPI
+2021-11-20,Burnley,Crystal Palace,1.37,1.87,FiveThirtyEight Soccer SPI
+2021-11-20,Watford,Manchester United,2.99,1.72,FiveThirtyEight Soccer SPI
+2021-11-20,Liverpool,Arsenal,3.7,0.26,FiveThirtyEight Soccer SPI
+2021-11-21,Manchester City,Everton,2.86,0.25,FiveThirtyEight Soccer SPI
+2021-11-21,Tottenham Hotspur,Leeds United,2.39,1.31,FiveThirtyEight Soccer SPI
+2021-11-27,Arsenal,Newcastle,3.24,0.24,FiveThirtyEight Soccer SPI
+2021-11-27,Norwich City,Wolverhampton,1.52,0.35,FiveThirtyEight Soccer SPI
+2021-11-27,Crystal Palace,Aston Villa,0.98,0.48,FiveThirtyEight Soccer SPI
+2021-11-27,Liverpool,Southampton,2.68,1.45,FiveThirtyEight Soccer SPI
+2021-11-27,Brighton and Hove Albion,Leeds United,2.13,0.92,FiveThirtyEight Soccer SPI
+2021-11-28,Brentford,Everton,1.19,1.13,FiveThirtyEight Soccer SPI
+2021-11-28,Manchester City,West Ham United,2.62,0.19,FiveThirtyEight Soccer SPI
+2021-11-28,Leicester City,Watford,2.25,2.93,FiveThirtyEight Soccer SPI
+2021-11-28,Chelsea,Manchester United,2.54,0.65,FiveThirtyEight Soccer SPI
+2021-11-30,Newcastle,Norwich City,1.13,1.52,FiveThirtyEight Soccer SPI
+2021-11-30,Leeds United,Crystal Palace,1.99,0.78,FiveThirtyEight Soccer SPI
+2021-12-01,Southampton,Leicester City,1.91,1.57,FiveThirtyEight Soccer SPI
+2021-12-01,West Ham United,Brighton and Hove Albion,1.13,1.43,FiveThirtyEight Soccer SPI
+2021-12-01,Wolverhampton,Burnley,0.75,0.25,FiveThirtyEight Soccer SPI
+2021-12-01,Watford,Chelsea,0.98,0.91,FiveThirtyEight Soccer SPI
+2021-12-01,Everton,Liverpool,0.55,3.03,FiveThirtyEight Soccer SPI
+2021-12-01,Aston Villa,Manchester City,0.82,1.36,FiveThirtyEight Soccer SPI
+2021-12-02,Tottenham Hotspur,Brentford,2.54,0.32,FiveThirtyEight Soccer SPI
+2021-12-02,Manchester United,Arsenal,2.17,1.37,FiveThirtyEight Soccer SPI
+2021-12-04,West Ham United,Chelsea,2.01,1.37,FiveThirtyEight Soccer SPI
+2021-12-04,Wolverhampton,Liverpool,0.12,2.66,FiveThirtyEight Soccer SPI
+2021-12-04,Southampton,Brighton and Hove Albion,1.23,1.57,FiveThirtyEight Soccer SPI
+2021-12-04,Newcastle,Burnley,1.55,0.63,FiveThirtyEight Soccer SPI
+2021-12-04,Watford,Manchester City,0.88,3.68,FiveThirtyEight Soccer SPI
+2021-12-05,Tottenham Hotspur,Norwich City,2.12,1.23,FiveThirtyEight Soccer SPI
+2021-12-05,Manchester United,Crystal Palace,0.98,0.57,FiveThirtyEight Soccer SPI
+2021-12-05,Leeds United,Brentford,1.49,1.24,FiveThirtyEight Soccer SPI
+2021-12-05,Aston Villa,Leicester City,2.01,1.03,FiveThirtyEight Soccer SPI
+2021-12-06,Everton,Arsenal,1.12,1.01,FiveThirtyEight Soccer SPI
+2021-12-10,Brentford,Watford,1.96,0.73,FiveThirtyEight Soccer SPI
+2021-12-11,Manchester City,Wolverhampton,3.23,0.24,FiveThirtyEight Soccer SPI
+2021-12-11,Arsenal,Southampton,2.02,0.5,FiveThirtyEight Soccer SPI
+2021-12-11,Chelsea,Leeds United,2.88,1.83,FiveThirtyEight Soccer SPI
+2021-12-11,Liverpool,Aston Villa,2.84,0.18,FiveThirtyEight Soccer SPI
+2021-12-11,Norwich City,Manchester United,1.12,2.15,FiveThirtyEight Soccer SPI
+2021-12-12,Leicester City,Newcastle,2.1,0.67,FiveThirtyEight Soccer SPI
+2021-12-12,Burnley,West Ham United,0.76,1.0,FiveThirtyEight Soccer SPI
+2021-12-12,Crystal Palace,Everton,2.1,1.15,FiveThirtyEight Soccer SPI
+2021-12-14,Norwich City,Aston Villa,0.64,1.64,FiveThirtyEight Soccer SPI
+2021-12-14,Manchester City,Leeds United,3.81,0.26,FiveThirtyEight Soccer SPI
+2021-12-15,Brighton and Hove Albion,Wolverhampton,1.37,1.18,FiveThirtyEight Soccer SPI
+2021-12-15,Crystal Palace,Southampton,1.77,0.67,FiveThirtyEight Soccer SPI
+2021-12-15,Arsenal,West Ham United,2.83,0.41,FiveThirtyEight Soccer SPI
+2021-12-16,Chelsea,Everton,3.48,0.66,FiveThirtyEight Soccer SPI
+2021-12-16,Liverpool,Newcastle,3.68,0.21,FiveThirtyEight Soccer SPI
+2021-12-18,Leeds United,Arsenal,1.57,3.75,FiveThirtyEight Soccer SPI
+2021-12-19,Wolverhampton,Chelsea,0.36,0.87,FiveThirtyEight Soccer SPI
+2021-12-19,Newcastle,Manchester City,0.28,3.24,FiveThirtyEight Soccer SPI
+2021-12-19,Tottenham Hotspur,Liverpool,3.39,1.47,FiveThirtyEight Soccer SPI
+2021-12-26,Manchester City,Leicester City,3.8,2.52,FiveThirtyEight Soccer SPI
+2021-12-26,Tottenham Hotspur,Crystal Palace,3.1,0.26,FiveThirtyEight Soccer SPI
+2021-12-26,West Ham United,Southampton,1.57,1.19,FiveThirtyEight Soccer SPI
+2021-12-26,Norwich City,Arsenal,0.17,2.62,FiveThirtyEight Soccer SPI
+2021-12-26,Aston Villa,Chelsea,0.44,2.68,FiveThirtyEight Soccer SPI
+2021-12-26,Brighton and Hove Albion,Brentford,0.79,0.83,FiveThirtyEight Soccer SPI
+2021-12-27,Newcastle,Manchester United,1.11,1.97,FiveThirtyEight Soccer SPI
+2021-12-28,Southampton,Tottenham Hotspur,0.37,3.18,FiveThirtyEight Soccer SPI
+2021-12-28,Crystal Palace,Norwich City,2.32,0.79,FiveThirtyEight Soccer SPI
+2021-12-28,Watford,West Ham United,1.25,2.75,FiveThirtyEight Soccer SPI
+2021-12-28,Leicester City,Liverpool,0.68,3.59,FiveThirtyEight Soccer SPI
+2021-12-29,Chelsea,Brighton and Hove Albion,0.71,0.99,FiveThirtyEight Soccer SPI
+2021-12-29,Brentford,Manchester City,0.26,1.0,FiveThirtyEight Soccer SPI
+2021-12-30,Manchester United,Burnley,1.94,1.1,FiveThirtyEight Soccer SPI
+2022-01-01,Arsenal,Manchester City,0.78,2.17,FiveThirtyEight Soccer SPI
+2022-01-01,Watford,Tottenham Hotspur,0.35,2.67,FiveThirtyEight Soccer SPI
+2022-01-01,Crystal Palace,West Ham United,3.07,2.15,FiveThirtyEight Soccer SPI
+2022-01-02,Leeds United,Burnley,1.94,1.11,FiveThirtyEight Soccer SPI
+2022-01-02,Everton,Brighton and Hove Albion,1.85,1.5,FiveThirtyEight Soccer SPI
+2022-01-02,Brentford,Aston Villa,0.59,1.22,FiveThirtyEight Soccer SPI
+2022-01-02,Chelsea,Liverpool,1.63,1.71,FiveThirtyEight Soccer SPI
+2022-01-03,Manchester United,Wolverhampton,0.88,0.87,FiveThirtyEight Soccer SPI
+2022-01-11,Southampton,Brentford,1.78,0.73,FiveThirtyEight Soccer SPI
+2022-01-12,West Ham United,Norwich City,2.28,0.25,FiveThirtyEight Soccer SPI
+2022-01-14,Brighton and Hove Albion,Crystal Palace,2.21,0.52,FiveThirtyEight Soccer SPI
+2022-01-15,Manchester City,Chelsea,0.92,0.55,FiveThirtyEight Soccer SPI
+2022-01-15,Newcastle,Watford,1.34,1.6,FiveThirtyEight Soccer SPI
+2022-01-15,Norwich City,Everton,1.07,0.74,FiveThirtyEight Soccer SPI
+2022-01-15,Wolverhampton,Southampton,2.27,0.97,FiveThirtyEight Soccer SPI
+2022-01-15,Aston Villa,Manchester United,2.02,1.24,FiveThirtyEight Soccer SPI
+2022-01-16,Liverpool,Brentford,3.36,0.41,FiveThirtyEight Soccer SPI
+2022-01-16,West Ham United,Leeds United,2.33,2.0,FiveThirtyEight Soccer SPI
+2022-01-18,Brighton and Hove Albion,Chelsea,0.71,0.59,FiveThirtyEight Soccer SPI
+2022-01-19,Leicester City,Tottenham Hotspur,2.0,4.45,FiveThirtyEight Soccer SPI
+2022-01-19,Brentford,Manchester United,2.29,1.82,FiveThirtyEight Soccer SPI
+2022-01-21,Watford,Norwich City,1.55,0.92,FiveThirtyEight Soccer SPI
+2022-01-22,Everton,Aston Villa,1.54,0.92,FiveThirtyEight Soccer SPI
+2022-01-22,Manchester United,West Ham United,1.55,0.32,FiveThirtyEight Soccer SPI
+2022-01-22,Leeds United,Newcastle,1.22,1.19,FiveThirtyEight Soccer SPI
+2022-01-22,Brentford,Wolverhampton,0.94,0.24,FiveThirtyEight Soccer SPI
+2022-01-22,Southampton,Manchester City,1.16,1.94,FiveThirtyEight Soccer SPI
+2022-01-23,Arsenal,Burnley,1.57,0.43,FiveThirtyEight Soccer SPI
+2022-01-23,Crystal Palace,Liverpool,1.7,1.49,FiveThirtyEight Soccer SPI
+2022-01-23,Leicester City,Brighton and Hove Albion,2.05,1.33,FiveThirtyEight Soccer SPI
+2022-01-23,Chelsea,Tottenham Hotspur,1.21,0.39,FiveThirtyEight Soccer SPI
+2022-02-05,Burnley,Watford,0.67,0.98,FiveThirtyEight Soccer SPI
+2022-02-08,West Ham United,Watford,1.02,0.37,FiveThirtyEight Soccer SPI
+2022-02-08,Newcastle,Everton,2.7,0.84,FiveThirtyEight Soccer SPI
+2022-02-08,Burnley,Manchester United,0.82,1.79,FiveThirtyEight Soccer SPI
+2022-02-09,Tottenham Hotspur,Southampton,2.15,2.0,FiveThirtyEight Soccer SPI
+2022-02-09,Manchester City,Brentford,1.99,0.55,FiveThirtyEight Soccer SPI
+2022-02-09,Norwich City,Crystal Palace,0.48,1.21,FiveThirtyEight Soccer SPI
+2022-02-09,Aston Villa,Leeds United,1.8,2.18,FiveThirtyEight Soccer SPI
+2022-02-10,Liverpool,Leicester City,2.8,0.43,FiveThirtyEight Soccer SPI
+2022-02-10,Wolverhampton,Arsenal,0.78,1.45,FiveThirtyEight Soccer SPI
+2022-02-12,Manchester United,Southampton,2.46,0.69,FiveThirtyEight Soccer SPI
+2022-02-12,Watford,Brighton and Hove Albion,0.58,1.99,FiveThirtyEight Soccer SPI
+2022-02-12,Everton,Leeds United,2.25,0.29,FiveThirtyEight Soccer SPI
+2022-02-12,Brentford,Crystal Palace,1.8,0.57,FiveThirtyEight Soccer SPI
+2022-02-12,Norwich City,Manchester City,0.4,4.76,FiveThirtyEight Soccer SPI
+2022-02-13,Burnley,Liverpool,1.21,2.51,FiveThirtyEight Soccer SPI
+2022-02-13,Newcastle,Aston Villa,0.45,0.56,FiveThirtyEight Soccer SPI
+2022-02-13,Tottenham Hotspur,Wolverhampton,1.16,1.66,FiveThirtyEight Soccer SPI
+2022-02-13,Leicester City,West Ham United,1.36,0.96,FiveThirtyEight Soccer SPI
+2022-02-15,Manchester United,Brighton and Hove Albion,2.83,1.12,FiveThirtyEight Soccer SPI
+2022-02-19,West Ham United,Newcastle,0.89,1.19,FiveThirtyEight Soccer SPI
+2022-02-19,Liverpool,Norwich City,3.67,0.54,FiveThirtyEight Soccer SPI
+2022-02-19,Brighton and Hove Albion,Burnley,0.6,0.74,FiveThirtyEight Soccer SPI
+2022-02-19,Aston Villa,Watford,1.15,1.81,FiveThirtyEight Soccer SPI
+2022-02-19,Arsenal,Brentford,1.67,0.65,FiveThirtyEight Soccer SPI
+2022-02-19,Crystal Palace,Chelsea,0.63,1.19,FiveThirtyEight Soccer SPI
+2022-02-19,Southampton,Everton,2.44,0.27,FiveThirtyEight Soccer SPI
+2022-02-19,Manchester City,Tottenham Hotspur,2.54,2.23,FiveThirtyEight Soccer SPI
+2022-02-20,Leeds United,Manchester United,1.53,2.42,FiveThirtyEight Soccer SPI
+2022-02-20,Wolverhampton,Leicester City,0.58,1.3,FiveThirtyEight Soccer SPI
+2022-02-23,Watford,Crystal Palace,1.75,0.86,FiveThirtyEight Soccer SPI
+2022-02-23,Burnley,Tottenham Hotspur,1.57,0.8,FiveThirtyEight Soccer SPI
+2022-02-23,Liverpool,Leeds United,5.21,0.14,FiveThirtyEight Soccer SPI
+2022-02-24,Arsenal,Wolverhampton,2.82,0.99,FiveThirtyEight Soccer SPI
+2022-02-25,Southampton,Norwich City,2.97,0.44,FiveThirtyEight Soccer SPI
+2022-02-26,Leeds United,Tottenham Hotspur,1.8,2.79,FiveThirtyEight Soccer SPI
+2022-02-26,Manchester United,Watford,2.53,0.53,FiveThirtyEight Soccer SPI
+2022-02-26,Crystal Palace,Burnley,0.99,0.22,FiveThirtyEight Soccer SPI
+2022-02-26,Brentford,Newcastle,0.57,2.33,FiveThirtyEight Soccer SPI
+2022-02-26,Brighton and Hove Albion,Aston Villa,0.8,1.37,FiveThirtyEight Soccer SPI
+2022-02-26,Everton,Manchester City,0.67,1.96,FiveThirtyEight Soccer SPI
+2022-02-27,West Ham United,Wolverhampton,1.53,1.06,FiveThirtyEight Soccer SPI
+2022-03-01,Burnley,Leicester City,1.31,1.68,FiveThirtyEight Soccer SPI
+2022-03-05,Leicester City,Leeds United,0.32,1.91,FiveThirtyEight Soccer SPI
+2022-03-05,Norwich City,Brentford,0.93,2.24,FiveThirtyEight Soccer SPI
+2022-03-05,Burnley,Chelsea,0.83,1.92,FiveThirtyEight Soccer SPI
+2022-03-05,Aston Villa,Southampton,2.59,1.39,FiveThirtyEight Soccer SPI
+2022-03-05,Wolverhampton,Crystal Palace,0.82,2.37,FiveThirtyEight Soccer SPI
+2022-03-05,Newcastle,Brighton and Hove Albion,1.91,1.74,FiveThirtyEight Soccer SPI
+2022-03-05,Liverpool,West Ham United,2.43,1.54,FiveThirtyEight Soccer SPI
+2022-03-06,Watford,Arsenal,1.45,0.93,FiveThirtyEight Soccer SPI
+2022-03-06,Manchester City,Manchester United,3.42,0.48,FiveThirtyEight Soccer SPI
+2022-03-07,Tottenham Hotspur,Everton,3.11,0.27,FiveThirtyEight Soccer SPI
+2022-03-10,Wolverhampton,Watford,1.37,0.56,FiveThirtyEight Soccer SPI
+2022-03-10,Southampton,Newcastle,1.9,0.91,FiveThirtyEight Soccer SPI
+2022-03-10,Norwich City,Chelsea,1.0,2.03,FiveThirtyEight Soccer SPI
+2022-03-10,Leeds United,Aston Villa,0.21,1.28,FiveThirtyEight Soccer SPI
+2022-03-12,Brighton and Hove Albion,Liverpool,0.69,2.5,FiveThirtyEight Soccer SPI
+2022-03-12,Brentford,Burnley,1.83,0.77,FiveThirtyEight Soccer SPI
+2022-03-12,Manchester United,Tottenham Hotspur,1.18,1.85,FiveThirtyEight Soccer SPI
+2022-03-13,Leeds United,Norwich City,2.91,1.51,FiveThirtyEight Soccer SPI
+2022-03-13,Everton,Wolverhampton,0.47,0.75,FiveThirtyEight Soccer SPI
+2022-03-13,Southampton,Watford,1.41,1.34,FiveThirtyEight Soccer SPI
+2022-03-13,Chelsea,Newcastle,1.15,0.27,FiveThirtyEight Soccer SPI
+2022-03-13,West Ham United,Aston Villa,1.51,1.33,FiveThirtyEight Soccer SPI
+2022-03-13,Arsenal,Leicester City,3.13,0.52,FiveThirtyEight Soccer SPI
+2022-03-14,Crystal Palace,Manchester City,0.45,2.33,FiveThirtyEight Soccer SPI
+2022-03-16,Brighton and Hove Albion,Tottenham Hotspur,1.24,1.92,FiveThirtyEight Soccer SPI
+2022-03-16,Arsenal,Liverpool,0.57,1.24,FiveThirtyEight Soccer SPI
+2022-03-17,Everton,Newcastle,0.82,0.84,FiveThirtyEight Soccer SPI
+2022-03-18,Wolverhampton,Leeds United,1.2,2.98,FiveThirtyEight Soccer SPI
+2022-03-19,Aston Villa,Arsenal,0.35,1.14,FiveThirtyEight Soccer SPI
+2022-03-20,Leicester City,Brentford,1.23,1.74,FiveThirtyEight Soccer SPI
+2022-03-20,Tottenham Hotspur,West Ham United,3.11,0.62,FiveThirtyEight Soccer SPI
+2022-04-02,Liverpool,Watford,2.19,0.71,FiveThirtyEight Soccer SPI
+2022-04-02,Chelsea,Brentford,1.57,2.43,FiveThirtyEight Soccer SPI
+2022-04-02,Burnley,Manchester City,0.1,1.67,FiveThirtyEight Soccer SPI
+2022-04-02,Wolverhampton,Aston Villa,1.75,1.89,FiveThirtyEight Soccer SPI
+2022-04-02,Brighton and Hove Albion,Norwich City,2.52,0.63,FiveThirtyEight Soccer SPI
+2022-04-02,Leeds United,Southampton,1.51,1.75,FiveThirtyEight Soccer SPI
+2022-04-02,Manchester United,Leicester City,1.07,1.18,FiveThirtyEight Soccer SPI
+2022-04-03,West Ham United,Everton,1.61,0.78,FiveThirtyEight Soccer SPI
+2022-04-03,Tottenham Hotspur,Newcastle,3.79,0.61,FiveThirtyEight Soccer SPI
+2022-04-04,Crystal Palace,Arsenal,1.57,1.26,FiveThirtyEight Soccer SPI
+2022-04-06,Burnley,Everton,2.12,2.35,FiveThirtyEight Soccer SPI
+2022-04-08,Newcastle,Wolverhampton,1.52,0.27,FiveThirtyEight Soccer SPI
+2022-04-09,Everton,Manchester United,0.38,0.82,FiveThirtyEight Soccer SPI
+2022-04-09,Southampton,Chelsea,0.6,4.25,FiveThirtyEight Soccer SPI
+2022-04-09,Watford,Leeds United,1.07,0.86,FiveThirtyEight Soccer SPI
+2022-04-09,Arsenal,Brighton and Hove Albion,2.65,0.68,FiveThirtyEight Soccer SPI
+2022-04-09,Aston Villa,Tottenham Hotspur,1.67,1.17,FiveThirtyEight Soccer SPI
+2022-04-10,Leicester City,Crystal Palace,0.66,1.71,FiveThirtyEight Soccer SPI
+2022-04-10,Brentford,West Ham United,1.82,0.27,FiveThirtyEight Soccer SPI
+2022-04-10,Norwich City,Burnley,1.65,1.5,FiveThirtyEight Soccer SPI
+2022-04-10,Manchester City,Liverpool,1.43,1.39,FiveThirtyEight Soccer SPI
+2022-04-16,Tottenham Hotspur,Brighton and Hove Albion,0.79,0.8,FiveThirtyEight Soccer SPI
+2022-04-16,Watford,Brentford,1.93,2.15,FiveThirtyEight Soccer SPI
+2022-04-16,Southampton,Arsenal,0.96,1.73,FiveThirtyEight Soccer SPI
+2022-04-16,Manchester United,Norwich City,1.81,1.63,FiveThirtyEight Soccer SPI
+2022-04-17,West Ham United,Burnley,2.77,1.89,FiveThirtyEight Soccer SPI
+2022-04-17,Newcastle,Leicester City,2.84,0.58,FiveThirtyEight Soccer SPI
+2022-04-19,Liverpool,Manchester United,2.28,0.12,FiveThirtyEight Soccer SPI
+2022-04-20,Everton,Leicester City,1.87,0.81,FiveThirtyEight Soccer SPI
+2022-04-20,Newcastle,Crystal Palace,0.79,0.56,FiveThirtyEight Soccer SPI
+2022-04-20,Chelsea,Arsenal,0.67,1.82,FiveThirtyEight Soccer SPI
+2022-04-20,Manchester City,Brighton and Hove Albion,1.66,0.14,FiveThirtyEight Soccer SPI
+2022-04-21,Burnley,Southampton,2.24,1.45,FiveThirtyEight Soccer SPI
+2022-04-23,Arsenal,Manchester United,2.35,2.38,FiveThirtyEight Soccer SPI
+2022-04-23,Norwich City,Newcastle,0.58,1.62,FiveThirtyEight Soccer SPI
+2022-04-23,Leicester City,Aston Villa,0.28,0.6,FiveThirtyEight Soccer SPI
+2022-04-23,Manchester City,Watford,3.25,0.41,FiveThirtyEight Soccer SPI
+2022-04-23,Brentford,Tottenham Hotspur,1.37,0.67,FiveThirtyEight Soccer SPI
+2022-04-24,Burnley,Wolverhampton,1.28,0.58,FiveThirtyEight Soccer SPI
+2022-04-24,Chelsea,West Ham United,2.6,0.39,FiveThirtyEight Soccer SPI
+2022-04-24,Brighton and Hove Albion,Southampton,1.48,0.85,FiveThirtyEight Soccer SPI
+2022-04-24,Liverpool,Everton,1.81,0.43,FiveThirtyEight Soccer SPI
+2022-04-25,Crystal Palace,Leeds United,1.6,0.49,FiveThirtyEight Soccer SPI
+2022-04-28,Manchester United,Chelsea,0.57,2.11,FiveThirtyEight Soccer SPI
+2022-04-30,Newcastle,Liverpool,0.14,1.99,FiveThirtyEight Soccer SPI
+2022-04-30,Southampton,Crystal Palace,0.63,1.0,FiveThirtyEight Soccer SPI
+2022-04-30,Watford,Burnley,0.8,1.65,FiveThirtyEight Soccer SPI
+2022-04-30,Aston Villa,Norwich City,2.36,0.51,FiveThirtyEight Soccer SPI
+2022-04-30,Wolverhampton,Brighton and Hove Albion,0.57,2.82,FiveThirtyEight Soccer SPI
+2022-04-30,Leeds United,Manchester City,1.15,2.74,FiveThirtyEight Soccer SPI
+2022-05-01,Everton,Chelsea,1.0,1.28,FiveThirtyEight Soccer SPI
+2022-05-01,Tottenham Hotspur,Leicester City,1.96,0.32,FiveThirtyEight Soccer SPI
+2022-05-01,West Ham United,Arsenal,0.46,0.89,FiveThirtyEight Soccer SPI
+2022-05-02,Manchester United,Brentford,1.71,0.77,FiveThirtyEight Soccer SPI
+2022-05-07,Crystal Palace,Watford,2.33,0.42,FiveThirtyEight Soccer SPI
+2022-05-07,Burnley,Aston Villa,1.29,1.54,FiveThirtyEight Soccer SPI
+2022-05-07,Brentford,Southampton,3.05,1.01,FiveThirtyEight Soccer SPI
+2022-05-07,Chelsea,Wolverhampton,1.75,1.76,FiveThirtyEight Soccer SPI
+2022-05-07,Brighton and Hove Albion,Manchester United,2.69,0.8,FiveThirtyEight Soccer SPI
+2022-05-07,Liverpool,Tottenham Hotspur,1.26,1.24,FiveThirtyEight Soccer SPI
+2022-05-08,Leicester City,Everton,1.68,1.74,FiveThirtyEight Soccer SPI
+2022-05-08,Arsenal,Leeds United,2.56,0.64,FiveThirtyEight Soccer SPI
+2022-05-08,Norwich City,West Ham United,0.78,3.02,FiveThirtyEight Soccer SPI
+2022-05-08,Manchester City,Newcastle,4.13,1.21,FiveThirtyEight Soccer SPI
+2022-05-10,Aston Villa,Liverpool,1.29,1.92,FiveThirtyEight Soccer SPI
+2022-05-11,Leeds United,Chelsea,0.5,1.38,FiveThirtyEight Soccer SPI
+2022-05-11,Watford,Everton,0.35,0.88,FiveThirtyEight Soccer SPI
+2022-05-11,Leicester City,Norwich City,2.81,1.35,FiveThirtyEight Soccer SPI
+2022-05-11,Wolverhampton,Manchester City,0.47,3.36,FiveThirtyEight Soccer SPI
+2022-05-12,Tottenham Hotspur,Arsenal,3.64,0.37,FiveThirtyEight Soccer SPI
+2022-05-15,Tottenham Hotspur,Burnley,2.8,0.73,FiveThirtyEight Soccer SPI
+2022-05-15,Aston Villa,Crystal Palace,0.91,1.39,FiveThirtyEight Soccer SPI
+2022-05-15,Watford,Leicester City,2.63,2.24,FiveThirtyEight Soccer SPI
+2022-05-15,Wolverhampton,Norwich City,1.13,1.47,FiveThirtyEight Soccer SPI
+2022-05-15,Leeds United,Brighton and Hove Albion,2.25,2.02,FiveThirtyEight Soccer SPI
+2022-05-15,West Ham United,Manchester City,0.58,2.57,FiveThirtyEight Soccer SPI
+2022-05-15,Everton,Brentford,2.53,1.99,FiveThirtyEight Soccer SPI
+2022-05-16,Newcastle,Arsenal,1.64,0.54,FiveThirtyEight Soccer SPI
+2022-05-17,Southampton,Liverpool,0.13,1.28,FiveThirtyEight Soccer SPI
+2022-05-19,Everton,Crystal Palace,0.93,1.38,FiveThirtyEight Soccer SPI
+2022-05-19,Aston Villa,Burnley,1.14,1.79,FiveThirtyEight Soccer SPI
+2022-05-19,Chelsea,Leicester City,1.62,0.05,FiveThirtyEight Soccer SPI
+2022-05-22,Arsenal,Everton,3.64,1.0,FiveThirtyEight Soccer SPI
+2022-05-22,Burnley,Newcastle,1.75,1.73,FiveThirtyEight Soccer SPI
+2022-05-22,Liverpool,Wolverhampton,3.6,1.13,FiveThirtyEight Soccer SPI
+2022-05-22,Crystal Palace,Manchester United,0.39,0.86,FiveThirtyEight Soccer SPI
+2022-05-22,Manchester City,Aston Villa,3.57,0.26,FiveThirtyEight Soccer SPI
+2022-05-22,Brentford,Leeds United,0.89,1.45,FiveThirtyEight Soccer SPI
+2022-05-22,Chelsea,Watford,2.33,0.88,FiveThirtyEight Soccer SPI
+2022-05-22,Norwich City,Tottenham Hotspur,0.44,4.81,FiveThirtyEight Soccer SPI
+2022-05-22,Brighton and Hove Albion,West Ham United,1.38,0.33,FiveThirtyEight Soccer SPI
+2022-05-22,Leicester City,Southampton,3.76,1.11,FiveThirtyEight Soccer SPI
+2022-08-05,Crystal Palace,Arsenal,1.3,1.36,FiveThirtyEight Soccer SPI
+2022-08-06,Fulham,Liverpool,1.25,2.57,FiveThirtyEight Soccer SPI
+2022-08-06,Newcastle,Nottingham Forest,1.82,0.26,FiveThirtyEight Soccer SPI
+2022-08-06,AFC Bournemouth,Aston Villa,0.49,0.68,FiveThirtyEight Soccer SPI
+2022-08-06,Leeds United,Wolverhampton,0.84,1.11,FiveThirtyEight Soccer SPI
+2022-08-06,Tottenham Hotspur,Southampton,1.91,0.54,FiveThirtyEight Soccer SPI
+2022-08-06,Everton,Chelsea,0.5,2.12,FiveThirtyEight Soccer SPI
+2022-08-07,Manchester United,Brighton and Hove Albion,1.7,1.68,FiveThirtyEight Soccer SPI
+2022-08-07,Leicester City,Brentford,0.6,1.05,FiveThirtyEight Soccer SPI
+2022-08-07,West Ham United,Manchester City,0.34,2.39,FiveThirtyEight Soccer SPI
+2022-08-13,Aston Villa,Everton,2.38,1.54,FiveThirtyEight Soccer SPI
+2022-08-13,Manchester City,AFC Bournemouth,1.76,0.18,FiveThirtyEight Soccer SPI
+2022-08-13,Wolverhampton,Fulham,1.13,1.22,FiveThirtyEight Soccer SPI
+2022-08-13,Brighton and Hove Albion,Newcastle,1.6,0.16,FiveThirtyEight Soccer SPI
+2022-08-13,Southampton,Leeds United,1.37,1.98,FiveThirtyEight Soccer SPI
+2022-08-13,Arsenal,Leicester City,2.89,0.76,FiveThirtyEight Soccer SPI
+2022-08-13,Brentford,Manchester United,1.52,1.28,FiveThirtyEight Soccer SPI
+2022-08-14,Nottingham Forest,West Ham United,2.1,2.26,FiveThirtyEight Soccer SPI
+2022-08-14,Chelsea,Tottenham Hotspur,1.85,1.8,FiveThirtyEight Soccer SPI
+2022-08-15,Liverpool,Crystal Palace,2.58,1.48,FiveThirtyEight Soccer SPI
+2022-08-20,Tottenham Hotspur,Wolverhampton,1.91,0.8,FiveThirtyEight Soccer SPI
+2022-08-20,Crystal Palace,Aston Villa,3.31,0.96,FiveThirtyEight Soccer SPI
+2022-08-20,Fulham,Brentford,2.61,1.59,FiveThirtyEight Soccer SPI
+2022-08-20,Leicester City,Southampton,0.25,1.53,FiveThirtyEight Soccer SPI
+2022-08-20,Everton,Nottingham Forest,1.51,1.02,FiveThirtyEight Soccer SPI
+2022-08-20,AFC Bournemouth,Arsenal,0.22,1.76,FiveThirtyEight Soccer SPI
+2022-08-21,West Ham United,Brighton and Hove Albion,0.79,1.69,FiveThirtyEight Soccer SPI
+2022-08-21,Leeds United,Chelsea,2.09,0.73,FiveThirtyEight Soccer SPI
+2022-08-21,Newcastle,Manchester City,2.13,4.12,FiveThirtyEight Soccer SPI
+2022-08-22,Manchester United,Liverpool,1.59,1.66,FiveThirtyEight Soccer SPI
+2022-08-27,Southampton,Manchester United,1.59,2.33,FiveThirtyEight Soccer SPI
+2022-08-27,Brentford,Everton,2.37,1.68,FiveThirtyEight Soccer SPI
+2022-08-27,Manchester City,Crystal Palace,2.29,0.08,FiveThirtyEight Soccer SPI
+2022-08-27,Liverpool,AFC Bournemouth,4.47,0.25,FiveThirtyEight Soccer SPI
+2022-08-27,Chelsea,Leicester City,1.68,2.22,FiveThirtyEight Soccer SPI
+2022-08-27,Brighton and Hove Albion,Leeds United,1.71,1.2,FiveThirtyEight Soccer SPI
+2022-08-27,Arsenal,Fulham,2.32,0.84,FiveThirtyEight Soccer SPI
+2022-08-28,Wolverhampton,Newcastle,1.11,2.08,FiveThirtyEight Soccer SPI
+2022-08-28,Aston Villa,West Ham United,0.37,0.38,FiveThirtyEight Soccer SPI
+2022-08-28,Nottingham Forest,Tottenham Hotspur,0.88,2.52,FiveThirtyEight Soccer SPI
+2022-08-30,Crystal Palace,Brentford,0.67,1.74,FiveThirtyEight Soccer SPI
+2022-08-30,Fulham,Brighton and Hove Albion,0.87,1.74,FiveThirtyEight Soccer SPI
+2022-08-30,Southampton,Chelsea,1.44,1.46,FiveThirtyEight Soccer SPI
+2022-08-30,Leeds United,Everton,1.23,0.82,FiveThirtyEight Soccer SPI
+2022-08-31,Arsenal,Aston Villa,2.93,0.27,FiveThirtyEight Soccer SPI
+2022-08-31,AFC Bournemouth,Wolverhampton,0.37,1.63,FiveThirtyEight Soccer SPI
+2022-08-31,Manchester City,Nottingham Forest,3.59,0.85,FiveThirtyEight Soccer SPI
+2022-08-31,West Ham United,Tottenham Hotspur,1.3,0.72,FiveThirtyEight Soccer SPI
+2022-08-31,Liverpool,Newcastle,1.58,0.62,FiveThirtyEight Soccer SPI
+2022-09-01,Leicester City,Manchester United,0.67,0.98,FiveThirtyEight Soccer SPI
+2022-09-03,Everton,Liverpool,1.38,1.58,FiveThirtyEight Soccer SPI
+2022-09-03,Wolverhampton,Southampton,1.03,1.27,FiveThirtyEight Soccer SPI
+2022-09-03,Brentford,Leeds United,2.68,1.66,FiveThirtyEight Soccer SPI
+2022-09-03,Tottenham Hotspur,Fulham,3.55,0.41,FiveThirtyEight Soccer SPI
+2022-09-03,Newcastle,Crystal Palace,3.09,0.97,FiveThirtyEight Soccer SPI
+2022-09-03,Nottingham Forest,AFC Bournemouth,1.43,0.91,FiveThirtyEight Soccer SPI
+2022-09-03,Chelsea,West Ham United,1.0,1.09,FiveThirtyEight Soccer SPI
+2022-09-03,Aston Villa,Manchester City,0.24,2.17,FiveThirtyEight Soccer SPI
+2022-09-04,Brighton and Hove Albion,Leicester City,2.75,1.16,FiveThirtyEight Soccer SPI
+2022-09-04,Manchester United,Arsenal,2.06,1.59,FiveThirtyEight Soccer SPI
+2022-09-16,Aston Villa,Southampton,1.18,0.34,FiveThirtyEight Soccer SPI
+2022-09-16,Nottingham Forest,Fulham,1.68,1.49,FiveThirtyEight Soccer SPI
+2022-09-17,Wolverhampton,Manchester City,0.34,1.49,FiveThirtyEight Soccer SPI
+2022-09-17,Newcastle,AFC Bournemouth,1.54,0.98,FiveThirtyEight Soccer SPI
+2022-09-17,Tottenham Hotspur,Leicester City,2.45,1.78,FiveThirtyEight Soccer SPI
+2022-09-18,Brentford,Arsenal,0.56,1.26,FiveThirtyEight Soccer SPI
+2022-09-18,Everton,West Ham United,0.37,0.8,FiveThirtyEight Soccer SPI
+2022-10-01,Arsenal,Tottenham Hotspur,2.27,1.57,FiveThirtyEight Soccer SPI
+2022-10-01,Fulham,Newcastle,0.68,4.1,FiveThirtyEight Soccer SPI
+2022-10-01,AFC Bournemouth,Brentford,0.76,1.03,FiveThirtyEight Soccer SPI
+2022-10-01,Liverpool,Brighton and Hove Albion,2.95,2.15,FiveThirtyEight Soccer SPI
+2022-10-01,Southampton,Everton,2.24,2.01,FiveThirtyEight Soccer SPI
+2022-10-01,Crystal Palace,Chelsea,0.77,1.4,FiveThirtyEight Soccer SPI
+2022-10-01,West Ham United,Wolverhampton,0.93,0.65,FiveThirtyEight Soccer SPI
+2022-10-02,Manchester City,Manchester United,3.2,1.71,FiveThirtyEight Soccer SPI
+2022-10-02,Leeds United,Aston Villa,0.3,2.18,FiveThirtyEight Soccer SPI
+2022-10-03,Leicester City,Nottingham Forest,1.25,1.47,FiveThirtyEight Soccer SPI
+2022-10-08,Manchester City,Southampton,2.54,0.13,FiveThirtyEight Soccer SPI
+2022-10-08,Chelsea,Wolverhampton,2.31,0.81,FiveThirtyEight Soccer SPI
+2022-10-08,Newcastle,Brentford,2.0,1.12,FiveThirtyEight Soccer SPI
+2022-10-08,AFC Bournemouth,Leicester City,1.34,1.16,FiveThirtyEight Soccer SPI
+2022-10-08,Brighton and Hove Albion,Tottenham Hotspur,0.95,0.99,FiveThirtyEight Soccer SPI
+2022-10-09,West Ham United,Fulham,3.36,0.57,FiveThirtyEight Soccer SPI
+2022-10-09,Crystal Palace,Leeds United,1.67,1.08,FiveThirtyEight Soccer SPI
+2022-10-09,Arsenal,Liverpool,2.67,0.76,FiveThirtyEight Soccer SPI
+2022-10-09,Everton,Manchester United,0.59,1.59,FiveThirtyEight Soccer SPI
+2022-10-10,Nottingham Forest,Aston Villa,0.26,0.85,FiveThirtyEight Soccer SPI
+2022-10-14,Brentford,Brighton and Hove Albion,1.87,2.14,FiveThirtyEight Soccer SPI
+2022-10-15,Leicester City,Crystal Palace,1.0,0.35,FiveThirtyEight Soccer SPI
+2022-10-15,Fulham,AFC Bournemouth,1.89,1.56,FiveThirtyEight Soccer SPI
+2022-10-15,Wolverhampton,Nottingham Forest,1.21,1.32,FiveThirtyEight Soccer SPI
+2022-10-15,Tottenham Hotspur,Everton,3.16,0.49,FiveThirtyEight Soccer SPI
+2022-10-16,Manchester United,Newcastle,1.41,0.85,FiveThirtyEight Soccer SPI
+2022-10-16,Southampton,West Ham United,0.51,1.82,FiveThirtyEight Soccer SPI
+2022-10-16,Leeds United,Arsenal,2.14,0.79,FiveThirtyEight Soccer SPI
+2022-10-16,Aston Villa,Chelsea,2.31,1.16,FiveThirtyEight Soccer SPI
+2022-10-16,Liverpool,Manchester City,2.22,1.11,FiveThirtyEight Soccer SPI
+2022-10-18,Brighton and Hove Albion,Nottingham Forest,2.1,0.15,FiveThirtyEight Soccer SPI
+2022-10-18,Crystal Palace,Wolverhampton,1.44,0.9,FiveThirtyEight Soccer SPI
+2022-10-19,Brentford,Chelsea,1.27,0.56,FiveThirtyEight Soccer SPI
+2022-10-19,AFC Bournemouth,Southampton,1.0,1.08,FiveThirtyEight Soccer SPI
+2022-10-19,Newcastle,Everton,1.15,0.1,FiveThirtyEight Soccer SPI
+2022-10-19,Liverpool,West Ham United,2.35,2.54,FiveThirtyEight Soccer SPI
+2022-10-19,Manchester United,Tottenham Hotspur,1.72,0.9,FiveThirtyEight Soccer SPI
+2022-10-20,Fulham,Aston Villa,2.95,0.79,FiveThirtyEight Soccer SPI
+2022-10-20,Leicester City,Leeds United,0.62,1.09,FiveThirtyEight Soccer SPI
+2022-10-22,Nottingham Forest,Liverpool,2.72,2.56,FiveThirtyEight Soccer SPI
+2022-10-22,Manchester City,Brighton and Hove Albion,1.98,0.54,FiveThirtyEight Soccer SPI
+2022-10-22,Everton,Crystal Palace,1.66,0.72,FiveThirtyEight Soccer SPI
+2022-10-22,Chelsea,Manchester United,1.37,0.78,FiveThirtyEight Soccer SPI
+2022-10-23,Southampton,Arsenal,0.58,1.7,FiveThirtyEight Soccer SPI
+2022-10-23,Leeds United,Fulham,2.01,2.65,FiveThirtyEight Soccer SPI
+2022-10-23,Wolverhampton,Leicester City,1.92,1.0,FiveThirtyEight Soccer SPI
+2022-10-23,Aston Villa,Brentford,3.75,1.19,FiveThirtyEight Soccer SPI
+2022-10-23,Tottenham Hotspur,Newcastle,2.2,1.03,FiveThirtyEight Soccer SPI
+2022-10-24,West Ham United,AFC Bournemouth,2.0,0.49,FiveThirtyEight Soccer SPI
+2022-10-29,Leicester City,Manchester City,0.78,0.83,FiveThirtyEight Soccer SPI
+2022-10-29,Newcastle,Aston Villa,4.08,0.31,FiveThirtyEight Soccer SPI
+2022-10-29,Brighton and Hove Albion,Chelsea,2.32,1.16,FiveThirtyEight Soccer SPI
+2022-10-29,Crystal Palace,Southampton,1.05,1.34,FiveThirtyEight Soccer SPI
+2022-10-29,Brentford,Wolverhampton,1.36,0.65,FiveThirtyEight Soccer SPI
+2022-10-29,AFC Bournemouth,Tottenham Hotspur,0.9,2.59,FiveThirtyEight Soccer SPI
+2022-10-29,Fulham,Everton,2.17,1.15,FiveThirtyEight Soccer SPI
+2022-10-29,Liverpool,Leeds United,2.34,1.63,FiveThirtyEight Soccer SPI
+2022-10-30,Arsenal,Nottingham Forest,3.0,0.26,FiveThirtyEight Soccer SPI
+2022-10-30,Manchester United,West Ham United,1.7,1.12,FiveThirtyEight Soccer SPI
+2022-11-05,Wolverhampton,Brighton and Hove Albion,1.32,2.05,FiveThirtyEight Soccer SPI
+2022-11-05,Leeds United,AFC Bournemouth,2.25,1.68,FiveThirtyEight Soccer SPI
+2022-11-05,Nottingham Forest,Brentford,1.42,1.22,FiveThirtyEight Soccer SPI
+2022-11-05,Manchester City,Fulham,2.4,0.86,FiveThirtyEight Soccer SPI
+2022-11-05,Everton,Leicester City,1.47,2.19,FiveThirtyEight Soccer SPI
+2022-11-06,Chelsea,Arsenal,0.25,2.01,FiveThirtyEight Soccer SPI
+2022-11-06,West Ham United,Crystal Palace,0.28,1.02,FiveThirtyEight Soccer SPI
+2022-11-06,Aston Villa,Manchester United,0.49,0.44,FiveThirtyEight Soccer SPI
+2022-11-06,Southampton,Newcastle,1.75,1.46,FiveThirtyEight Soccer SPI
+2022-11-06,Tottenham Hotspur,Liverpool,2.14,1.54,FiveThirtyEight Soccer SPI
+2022-11-12,Manchester City,Brentford,1.82,3.07,FiveThirtyEight Soccer SPI
+2022-11-12,AFC Bournemouth,Everton,2.44,0.98,FiveThirtyEight Soccer SPI
+2022-11-12,West Ham United,Leicester City,1.05,1.43,FiveThirtyEight Soccer SPI
+2022-11-12,Nottingham Forest,Crystal Palace,1.16,1.15,FiveThirtyEight Soccer SPI
+2022-11-12,Liverpool,Southampton,3.33,1.44,FiveThirtyEight Soccer SPI
+2022-11-12,Tottenham Hotspur,Leeds United,2.6,1.64,FiveThirtyEight Soccer SPI
+2022-11-12,Newcastle,Chelsea,1.52,0.35,FiveThirtyEight Soccer SPI
+2022-11-12,Wolverhampton,Arsenal,0.43,1.94,FiveThirtyEight Soccer SPI
+2022-11-13,Brighton and Hove Albion,Aston Villa,0.96,1.14,FiveThirtyEight Soccer SPI
+2022-11-13,Fulham,Manchester United,1.75,3.5,FiveThirtyEight Soccer SPI
+2022-12-26,Brentford,Tottenham Hotspur,2.23,1.19,FiveThirtyEight Soccer SPI
+2022-12-26,Crystal Palace,Fulham,0.42,2.61,FiveThirtyEight Soccer SPI
+2022-12-26,Southampton,Brighton and Hove Albion,1.97,0.73,FiveThirtyEight Soccer SPI
+2022-12-26,Leicester City,Newcastle,0.52,2.01,FiveThirtyEight Soccer SPI
+2022-12-26,Everton,Wolverhampton,1.34,1.2,FiveThirtyEight Soccer SPI
+2022-12-26,Aston Villa,Liverpool,1.94,3.34,FiveThirtyEight Soccer SPI
+2022-12-26,Arsenal,West Ham United,1.91,1.0,FiveThirtyEight Soccer SPI
+2022-12-27,Chelsea,AFC Bournemouth,1.65,0.52,FiveThirtyEight Soccer SPI
+2022-12-27,Manchester United,Nottingham Forest,2.04,0.64,FiveThirtyEight Soccer SPI
+2022-12-28,Leeds United,Manchester City,0.6,4.04,FiveThirtyEight Soccer SPI
+2022-12-30,West Ham United,Brentford,1.13,1.45,FiveThirtyEight Soccer SPI
+2022-12-30,Liverpool,Leicester City,2.32,1.03,FiveThirtyEight Soccer SPI
+2022-12-31,Wolverhampton,Manchester United,0.63,2.27,FiveThirtyEight Soccer SPI
+2022-12-31,Fulham,Southampton,1.69,0.6,FiveThirtyEight Soccer SPI
+2022-12-31,Newcastle,Leeds United,2.77,0.45,FiveThirtyEight Soccer SPI
+2022-12-31,AFC Bournemouth,Crystal Palace,0.68,1.82,FiveThirtyEight Soccer SPI
+2022-12-31,Manchester City,Everton,2.45,0.08,FiveThirtyEight Soccer SPI
+2022-12-31,Brighton and Hove Albion,Arsenal,1.39,3.13,FiveThirtyEight Soccer SPI
+2023-01-01,Tottenham Hotspur,Aston Villa,0.67,1.19,FiveThirtyEight Soccer SPI
+2023-01-01,Nottingham Forest,Chelsea,0.93,1.38,FiveThirtyEight Soccer SPI
+2023-01-02,Brentford,Liverpool,2.15,1.83,FiveThirtyEight Soccer SPI
+2023-01-03,Arsenal,Newcastle,0.95,1.08,FiveThirtyEight Soccer SPI
+2023-01-03,Everton,Brighton and Hove Albion,1.2,2.27,FiveThirtyEight Soccer SPI
+2023-01-03,Leicester City,Fulham,1.75,1.35,FiveThirtyEight Soccer SPI
+2023-01-03,Manchester United,AFC Bournemouth,2.69,0.65,FiveThirtyEight Soccer SPI
+2023-01-04,Southampton,Nottingham Forest,0.83,1.28,FiveThirtyEight Soccer SPI
+2023-01-04,Leeds United,West Ham United,1.43,1.35,FiveThirtyEight Soccer SPI
+2023-01-04,Crystal Palace,Tottenham Hotspur,0.89,1.78,FiveThirtyEight Soccer SPI
+2023-01-04,Aston Villa,Wolverhampton,1.08,0.68,FiveThirtyEight Soccer SPI
+2023-01-05,Chelsea,Manchester City,0.53,1.82,FiveThirtyEight Soccer SPI
+2023-01-12,Fulham,Chelsea,0.78,2.65,FiveThirtyEight Soccer SPI
+2023-01-13,Aston Villa,Leeds United,1.25,2.82,FiveThirtyEight Soccer SPI
+2023-01-14,Manchester United,Manchester City,1.58,0.68,FiveThirtyEight Soccer SPI
+2023-01-14,Brighton and Hove Albion,Liverpool,1.93,1.18,FiveThirtyEight Soccer SPI
+2023-01-14,Nottingham Forest,Leicester City,1.7,1.0,FiveThirtyEight Soccer SPI
+2023-01-14,Wolverhampton,West Ham United,0.83,0.9,FiveThirtyEight Soccer SPI
+2023-01-14,Everton,Southampton,1.3,1.19,FiveThirtyEight Soccer SPI
+2023-01-14,Brentford,AFC Bournemouth,1.26,0.38,FiveThirtyEight Soccer SPI
+2023-01-15,Chelsea,Crystal Palace,2.08,0.99,FiveThirtyEight Soccer SPI
+2023-01-15,Newcastle,Fulham,2.08,1.03,FiveThirtyEight Soccer SPI
+2023-01-15,Tottenham Hotspur,Arsenal,2.15,2.13,FiveThirtyEight Soccer SPI
+2023-01-18,Crystal Palace,Manchester United,0.49,1.55,FiveThirtyEight Soccer SPI
+2023-01-19,Manchester City,Tottenham Hotspur,2.45,1.24,FiveThirtyEight Soccer SPI
+2023-01-21,Liverpool,Chelsea,1.38,1.82,FiveThirtyEight Soccer SPI
+2023-01-21,Leicester City,Brighton and Hove Albion,1.33,1.83,FiveThirtyEight Soccer SPI
+2023-01-21,West Ham United,Everton,2.08,0.45,FiveThirtyEight Soccer SPI
+2023-01-21,Southampton,Aston Villa,0.78,1.34,FiveThirtyEight Soccer SPI
+2023-01-21,AFC Bournemouth,Nottingham Forest,1.61,1.71,FiveThirtyEight Soccer SPI
+2023-01-21,Crystal Palace,Newcastle,0.35,1.59,FiveThirtyEight Soccer SPI
+2023-01-22,Manchester City,Wolverhampton,3.16,0.59,FiveThirtyEight Soccer SPI
+2023-01-22,Leeds United,Brentford,0.44,0.19,FiveThirtyEight Soccer SPI
+2023-01-22,Arsenal,Manchester United,2.73,0.29,FiveThirtyEight Soccer SPI
+2023-01-23,Fulham,Tottenham Hotspur,1.18,1.16,FiveThirtyEight Soccer SPI
+2023-02-03,Chelsea,Fulham,1.29,0.52,FiveThirtyEight Soccer SPI
+2023-02-04,Everton,Arsenal,1.82,0.77,FiveThirtyEight Soccer SPI
+2023-02-04,Brighton and Hove Albion,AFC Bournemouth,2.98,0.97,FiveThirtyEight Soccer SPI
+2023-02-04,Aston Villa,Leicester City,1.68,2.07,FiveThirtyEight Soccer SPI
+2023-02-04,Brentford,Southampton,2.36,0.7,FiveThirtyEight Soccer SPI
+2023-02-04,Wolverhampton,Liverpool,2.34,1.76,FiveThirtyEight Soccer SPI
+2023-02-04,Manchester United,Crystal Palace,1.99,1.48,FiveThirtyEight Soccer SPI
+2023-02-04,Newcastle,West Ham United,1.25,1.36,FiveThirtyEight Soccer SPI
+2023-02-05,Nottingham Forest,Leeds United,0.29,1.1,FiveThirtyEight Soccer SPI
+2023-02-05,Tottenham Hotspur,Manchester City,1.7,1.07,FiveThirtyEight Soccer SPI
+2023-02-08,Manchester United,Leeds United,2.01,0.66,FiveThirtyEight Soccer SPI
+2023-02-11,West Ham United,Chelsea,1.34,1.12,FiveThirtyEight Soccer SPI
+2023-02-11,Crystal Palace,Brighton and Hove Albion,0.91,2.96,FiveThirtyEight Soccer SPI
+2023-02-11,Leicester City,Tottenham Hotspur,1.38,1.23,FiveThirtyEight Soccer SPI
+2023-02-11,Southampton,Wolverhampton,1.3,0.77,FiveThirtyEight Soccer SPI
+2023-02-11,Arsenal,Brentford,1.42,2.15,FiveThirtyEight Soccer SPI
+2023-02-11,Fulham,Nottingham Forest,1.61,0.79,FiveThirtyEight Soccer SPI
+2023-02-11,AFC Bournemouth,Newcastle,1.52,1.93,FiveThirtyEight Soccer SPI
+2023-02-12,Leeds United,Manchester United,2.34,1.24,FiveThirtyEight Soccer SPI
+2023-02-12,Manchester City,Aston Villa,3.51,0.27,FiveThirtyEight Soccer SPI
+2023-02-13,Liverpool,Everton,2.2,0.44,FiveThirtyEight Soccer SPI
+2023-02-15,Arsenal,Manchester City,1.72,2.06,FiveThirtyEight Soccer SPI
+2023-02-18,Aston Villa,Arsenal,0.33,3.05,FiveThirtyEight Soccer SPI
+2023-02-18,Brighton and Hove Albion,Fulham,2.75,0.3,FiveThirtyEight Soccer SPI
+2023-02-18,Wolverhampton,AFC Bournemouth,1.01,0.9,FiveThirtyEight Soccer SPI
+2023-02-18,Chelsea,Southampton,1.72,0.64,FiveThirtyEight Soccer SPI
+2023-02-18,Nottingham Forest,Manchester City,0.86,3.25,FiveThirtyEight Soccer SPI
+2023-02-18,Brentford,Crystal Palace,0.67,1.04,FiveThirtyEight Soccer SPI
+2023-02-18,Everton,Leeds United,1.76,0.79,FiveThirtyEight Soccer SPI
+2023-02-18,Newcastle,Liverpool,1.98,2.07,FiveThirtyEight Soccer SPI
+2023-02-19,Manchester United,Leicester City,3.89,1.56,FiveThirtyEight Soccer SPI
+2023-02-19,Tottenham Hotspur,West Ham United,1.58,0.43,FiveThirtyEight Soccer SPI
+2023-02-24,Fulham,Wolverhampton,0.82,1.03,FiveThirtyEight Soccer SPI
+2023-02-25,Leeds United,Southampton,0.78,0.36,FiveThirtyEight Soccer SPI
+2023-02-25,Everton,Aston Villa,1.81,2.0,FiveThirtyEight Soccer SPI
+2023-02-25,West Ham United,Nottingham Forest,2.64,0.42,FiveThirtyEight Soccer SPI
+2023-02-25,Leicester City,Arsenal,0.03,0.65,FiveThirtyEight Soccer SPI
+2023-02-25,AFC Bournemouth,Manchester City,1.27,2.73,FiveThirtyEight Soccer SPI
+2023-02-25,Crystal Palace,Liverpool,1.0,1.32,FiveThirtyEight Soccer SPI
+2023-02-26,Tottenham Hotspur,Chelsea,0.99,0.36,FiveThirtyEight Soccer SPI
+2023-03-01,Arsenal,Everton,2.81,1.22,FiveThirtyEight Soccer SPI
+2023-03-01,Liverpool,Wolverhampton,2.75,0.72,FiveThirtyEight Soccer SPI
+2023-03-04,Manchester City,Newcastle,1.55,0.45,FiveThirtyEight Soccer SPI
+2023-03-04,Arsenal,AFC Bournemouth,2.53,1.59,FiveThirtyEight Soccer SPI
+2023-03-04,Brighton and Hove Albion,West Ham United,3.02,0.36,FiveThirtyEight Soccer SPI
+2023-03-04,Aston Villa,Crystal Palace,0.86,0.21,FiveThirtyEight Soccer SPI
+2023-03-04,Chelsea,Leeds United,1.77,0.87,FiveThirtyEight Soccer SPI
+2023-03-04,Wolverhampton,Tottenham Hotspur,0.58,1.48,FiveThirtyEight Soccer SPI
+2023-03-04,Southampton,Leicester City,1.22,1.6,FiveThirtyEight Soccer SPI
+2023-03-05,Nottingham Forest,Everton,0.85,1.75,FiveThirtyEight Soccer SPI
+2023-03-05,Liverpool,Manchester United,3.66,0.83,FiveThirtyEight Soccer SPI
+2023-03-06,Brentford,Fulham,2.51,1.8,FiveThirtyEight Soccer SPI
+2023-03-11,AFC Bournemouth,Liverpool,0.95,2.22,FiveThirtyEight Soccer SPI
+2023-03-11,Tottenham Hotspur,Nottingham Forest,2.02,1.64,FiveThirtyEight Soccer SPI
+2023-03-11,Leicester City,Chelsea,2.29,1.41,FiveThirtyEight Soccer SPI
+2023-03-11,Everton,Brentford,1.75,1.98,FiveThirtyEight Soccer SPI
+2023-03-11,Leeds United,Brighton and Hove Albion,0.7,1.49,FiveThirtyEight Soccer SPI
+2023-03-11,Crystal Palace,Manchester City,0.17,2.02,FiveThirtyEight Soccer SPI
+2023-03-12,Manchester United,Southampton,1.03,1.26,FiveThirtyEight Soccer SPI
+2023-03-12,Fulham,Arsenal,0.58,2.24,FiveThirtyEight Soccer SPI
+2023-03-12,West Ham United,Aston Villa,2.35,2.0,FiveThirtyEight Soccer SPI
+2023-03-12,Newcastle,Wolverhampton,2.39,0.75,FiveThirtyEight Soccer SPI
+2023-03-15,Southampton,Brentford,0.42,1.47,FiveThirtyEight Soccer SPI
+2023-03-15,Brighton and Hove Albion,Crystal Palace,0.47,1.26,FiveThirtyEight Soccer SPI
+2023-03-17,Nottingham Forest,Newcastle,0.39,2.84,FiveThirtyEight Soccer SPI
+2023-03-18,Brentford,Leicester City,0.53,1.44,FiveThirtyEight Soccer SPI
+2023-03-18,Wolverhampton,Leeds United,3.1,1.7,FiveThirtyEight Soccer SPI
+2023-03-18,Aston Villa,AFC Bournemouth,2.85,0.5,FiveThirtyEight Soccer SPI
+2023-03-18,Southampton,Tottenham Hotspur,2.63,2.18,FiveThirtyEight Soccer SPI
+2023-03-18,Chelsea,Everton,2.17,1.53,FiveThirtyEight Soccer SPI
+2023-03-19,Arsenal,Crystal Palace,1.53,1.06,FiveThirtyEight Soccer SPI
+2023-04-01,Manchester City,Liverpool,3.04,0.3,FiveThirtyEight Soccer SPI
+2023-04-01,Brighton and Hove Albion,Brentford,3.85,1.31,FiveThirtyEight Soccer SPI
+2023-04-01,AFC Bournemouth,Fulham,2.95,0.7,FiveThirtyEight Soccer SPI
+2023-04-01,Arsenal,Leeds United,3.16,0.52,FiveThirtyEight Soccer SPI
+2023-04-01,Crystal Palace,Leicester City,2.1,0.2,FiveThirtyEight Soccer SPI
+2023-04-01,Nottingham Forest,Wolverhampton,1.11,0.49,FiveThirtyEight Soccer SPI
+2023-04-01,Chelsea,Aston Villa,2.37,0.59,FiveThirtyEight Soccer SPI
+2023-04-02,West Ham United,Southampton,1.15,0.38,FiveThirtyEight Soccer SPI
+2023-04-02,Newcastle,Manchester United,3.35,0.41,FiveThirtyEight Soccer SPI
+2023-04-03,Everton,Tottenham Hotspur,0.99,1.49,FiveThirtyEight Soccer SPI
+2023-04-04,AFC Bournemouth,Brighton and Hove Albion,1.36,2.3,FiveThirtyEight Soccer SPI
+2023-04-04,Leeds United,Nottingham Forest,2.36,0.72,FiveThirtyEight Soccer SPI
+2023-04-04,Leicester City,Aston Villa,0.73,0.98,FiveThirtyEight Soccer SPI
+2023-04-04,Chelsea,Liverpool,2.04,0.21,FiveThirtyEight Soccer SPI
+2023-04-05,West Ham United,Newcastle,0.93,2.31,FiveThirtyEight Soccer SPI
+2023-04-05,Manchester United,Brentford,1.2,0.51,FiveThirtyEight Soccer SPI
+2023-04-08,Manchester United,Everton,4.1,1.05,FiveThirtyEight Soccer SPI
+2023-04-08,Brentford,Newcastle,2.37,1.09,FiveThirtyEight Soccer SPI
+2023-04-08,Tottenham Hotspur,Brighton and Hove Albion,0.59,1.62,FiveThirtyEight Soccer SPI
+2023-04-08,Wolverhampton,Chelsea,0.55,1.16,FiveThirtyEight Soccer SPI
+2023-04-08,Leicester City,AFC Bournemouth,0.96,1.96,FiveThirtyEight Soccer SPI
+2023-04-08,Aston Villa,Nottingham Forest,1.44,0.27,FiveThirtyEight Soccer SPI
+2023-04-08,Fulham,West Ham United,0.65,1.24,FiveThirtyEight Soccer SPI
+2023-04-08,Southampton,Manchester City,0.52,3.16,FiveThirtyEight Soccer SPI
+2023-04-09,Leeds United,Crystal Palace,0.96,3.08,FiveThirtyEight Soccer SPI
+2023-04-09,Liverpool,Arsenal,5.1,1.61,FiveThirtyEight Soccer SPI
+2023-04-15,Aston Villa,Newcastle,2.0,0.57,FiveThirtyEight Soccer SPI
+2023-04-15,Southampton,Crystal Palace,0.79,0.9,FiveThirtyEight Soccer SPI
+2023-04-15,Wolverhampton,Brentford,1.01,1.29,FiveThirtyEight Soccer SPI
+2023-04-15,Everton,Fulham,2.34,2.18,FiveThirtyEight Soccer SPI
+2023-04-15,Chelsea,Brighton and Hove Albion,0.46,2.42,FiveThirtyEight Soccer SPI
+2023-04-15,Tottenham Hotspur,AFC Bournemouth,2.86,1.34,FiveThirtyEight Soccer SPI
+2023-04-15,Manchester City,Leicester City,1.87,1.72,FiveThirtyEight Soccer SPI
+2023-04-16,West Ham United,Arsenal,1.96,2.55,FiveThirtyEight Soccer SPI
+2023-04-16,Nottingham Forest,Manchester United,1.26,3.73,FiveThirtyEight Soccer SPI
+2023-04-17,Leeds United,Liverpool,1.32,2.63,FiveThirtyEight Soccer SPI
+2023-04-21,Arsenal,Southampton,2.77,1.44,FiveThirtyEight Soccer SPI
+2023-04-22,Fulham,Leeds United,1.34,1.21,FiveThirtyEight Soccer SPI
+2023-04-22,Leicester City,Wolverhampton,2.79,0.7,FiveThirtyEight Soccer SPI
+2023-04-22,Liverpool,Nottingham Forest,3.35,1.02,FiveThirtyEight Soccer SPI
+2023-04-22,Crystal Palace,Everton,0.47,0.49,FiveThirtyEight Soccer SPI
+2023-04-22,Brentford,Aston Villa,2.45,1.94,FiveThirtyEight Soccer SPI
+2023-04-23,Newcastle,Tottenham Hotspur,3.75,1.12,FiveThirtyEight Soccer SPI
+2023-04-23,AFC Bournemouth,West Ham United,1.3,2.45,FiveThirtyEight Soccer SPI
+2023-04-25,Wolverhampton,Crystal Palace,1.32,0.67,FiveThirtyEight Soccer SPI
+2023-04-25,Aston Villa,Fulham,0.88,0.11,FiveThirtyEight Soccer SPI
+2023-04-25,Leeds United,Leicester City,1.98,2.36,FiveThirtyEight Soccer SPI
+2023-04-26,Nottingham Forest,Brighton and Hove Albion,2.63,2.49,FiveThirtyEight Soccer SPI
+2023-04-26,West Ham United,Liverpool,0.85,1.8,FiveThirtyEight Soccer SPI
+2023-04-26,Chelsea,Brentford,1.3,0.58,FiveThirtyEight Soccer SPI
+2023-04-26,Manchester City,Arsenal,2.01,0.53,FiveThirtyEight Soccer SPI
+2023-04-27,Southampton,AFC Bournemouth,0.5,0.94,FiveThirtyEight Soccer SPI
+2023-04-27,Everton,Newcastle,0.65,2.25,FiveThirtyEight Soccer SPI
+2023-04-27,Tottenham Hotspur,Manchester United,2.91,2.16,FiveThirtyEight Soccer SPI
+2023-04-29,Crystal Palace,West Ham United,2.33,1.75,FiveThirtyEight Soccer SPI
+2023-04-29,Brighton and Hove Albion,Wolverhampton,3.28,0.53,FiveThirtyEight Soccer SPI
+2023-04-29,Brentford,Nottingham Forest,1.35,0.97,FiveThirtyEight Soccer SPI
+2023-04-30,Fulham,Manchester City,0.49,2.24,FiveThirtyEight Soccer SPI
+2023-04-30,AFC Bournemouth,Leeds United,2.31,1.46,FiveThirtyEight Soccer SPI
+2023-04-30,Manchester United,Aston Villa,1.19,0.47,FiveThirtyEight Soccer SPI
+2023-04-30,Newcastle,Southampton,3.77,0.82,FiveThirtyEight Soccer SPI
+2023-04-30,Liverpool,Tottenham Hotspur,2.5,2.38,FiveThirtyEight Soccer SPI
+2023-05-01,Leicester City,Everton,3.2,3.24,FiveThirtyEight Soccer SPI
+2023-05-02,Arsenal,Chelsea,2.71,0.84,FiveThirtyEight Soccer SPI
+2023-05-03,Liverpool,Fulham,1.64,0.82,FiveThirtyEight Soccer SPI
+2023-05-03,Manchester City,West Ham United,2.92,0.63,FiveThirtyEight Soccer SPI
+2023-05-04,Brighton and Hove Albion,Manchester United,2.04,1.16,FiveThirtyEight Soccer SPI
+2023-05-06,Manchester City,Leeds United,2.64,0.23,FiveThirtyEight Soccer SPI
+2023-05-06,Wolverhampton,Aston Villa,0.67,1.67,FiveThirtyEight Soccer SPI
+2023-05-06,AFC Bournemouth,Chelsea,1.19,1.64,FiveThirtyEight Soccer SPI
+2023-05-06,Tottenham Hotspur,Crystal Palace,1.58,0.35,FiveThirtyEight Soccer SPI
+2023-05-06,Liverpool,Brentford,1.72,0.19,FiveThirtyEight Soccer SPI
+2023-05-07,Newcastle,Arsenal,1.44,1.14,FiveThirtyEight Soccer SPI
+2023-05-07,West Ham United,Manchester United,1.8,1.27,FiveThirtyEight Soccer SPI
+2023-05-08,Fulham,Leicester City,1.68,3.34,FiveThirtyEight Soccer SPI
+2023-05-08,Brighton and Hove Albion,Everton,3.19,2.6,FiveThirtyEight Soccer SPI
+2023-05-08,Nottingham Forest,Southampton,1.93,3.46,FiveThirtyEight Soccer SPI
+2023-05-13,Leeds United,Newcastle,1.89,2.35,FiveThirtyEight Soccer SPI
+2023-05-13,Manchester United,Wolverhampton,3.0,0.3,FiveThirtyEight Soccer SPI
+2023-05-13,Chelsea,Nottingham Forest,1.01,1.95,FiveThirtyEight Soccer SPI
+2023-05-13,Southampton,Fulham,0.22,1.22,FiveThirtyEight Soccer SPI
+2023-05-13,Crystal Palace,AFC Bournemouth,1.42,0.32,FiveThirtyEight Soccer SPI
+2023-05-13,Aston Villa,Tottenham Hotspur,1.67,1.29,FiveThirtyEight Soccer SPI
+2023-05-14,Brentford,West Ham United,4.1,0.24,FiveThirtyEight Soccer SPI
+2023-05-14,Everton,Manchester City,1.26,1.01,FiveThirtyEight Soccer SPI
+2023-05-14,Arsenal,Brighton and Hove Albion,0.75,1.95,FiveThirtyEight Soccer SPI
+2023-05-15,Leicester City,Liverpool,0.66,1.73,FiveThirtyEight Soccer SPI
+2023-05-18,Newcastle,Brighton and Hove Albion,4.05,0.72,FiveThirtyEight Soccer SPI
+2023-05-20,Tottenham Hotspur,Brentford,2.18,1.19,FiveThirtyEight Soccer SPI
+2023-05-20,Liverpool,Aston Villa,0.99,1.46,FiveThirtyEight Soccer SPI
+2023-05-20,Wolverhampton,Everton,1.3,2.59,FiveThirtyEight Soccer SPI
+2023-05-20,Fulham,Crystal Palace,1.91,1.79,FiveThirtyEight Soccer SPI
+2023-05-20,AFC Bournemouth,Manchester United,0.82,1.6,FiveThirtyEight Soccer SPI
+2023-05-20,Nottingham Forest,Arsenal,1.05,0.59,FiveThirtyEight Soccer SPI
+2023-05-21,West Ham United,Leeds United,2.75,0.8,FiveThirtyEight Soccer SPI
+2023-05-21,Brighton and Hove Albion,Southampton,2.26,0.86,FiveThirtyEight Soccer SPI
+2023-05-21,Manchester City,Chelsea,1.1,1.34,FiveThirtyEight Soccer SPI
+2023-05-22,Newcastle,Leicester City,2.4,0.12,FiveThirtyEight Soccer SPI
+2023-05-24,Brighton and Hove Albion,Manchester City,2.18,1.99,FiveThirtyEight Soccer SPI
+2023-05-25,Manchester United,Chelsea,4.84,1.67,FiveThirtyEight Soccer SPI
+2023-05-28,Leicester City,West Ham United,1.81,1.18,FiveThirtyEight Soccer SPI
+2023-05-28,Chelsea,Newcastle,2.11,1.61,FiveThirtyEight Soccer SPI
+2023-05-28,Manchester United,Fulham,3.05,1.99,FiveThirtyEight Soccer SPI
+2023-05-28,Crystal Palace,Nottingham Forest,1.15,0.43,FiveThirtyEight Soccer SPI
+2023-05-28,Arsenal,Wolverhampton,2.65,0.42,FiveThirtyEight Soccer SPI
+2023-05-28,Southampton,Liverpool,1.41,4.06,FiveThirtyEight Soccer SPI
+2023-05-28,Leeds United,Tottenham Hotspur,1.49,2.07,FiveThirtyEight Soccer SPI
+2023-05-28,Everton,AFC Bournemouth,1.05,0.5,FiveThirtyEight Soccer SPI
+2023-05-28,Aston Villa,Brighton and Hove Albion,2.35,1.34,FiveThirtyEight Soccer SPI
+2023-05-28,Brentford,Manchester City,1.63,1.3,FiveThirtyEight Soccer SPI

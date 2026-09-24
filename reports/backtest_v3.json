@@ -1,0 +1,735 @@
+{
+  "app_version": "3.0",
+  "model_version": "3.0",
+  "generated_from_data_through": "2026-09-20",
+  "training_seasons": [
+    "2122",
+    "2223"
+  ],
+  "validation_season": "2324",
+  "evaluation_seasons": [
+    "2425",
+    "2526",
+    "2627"
+  ],
+  "sample_size": 810,
+  "chronological_walk_forward": true,
+  "same_day_results_withheld_until_day_complete": true,
+  "leakage_check_passed": true,
+  "models": {
+    "v1": {
+      "name": "Elo + Poisson V1",
+      "sample_size": 810,
+      "accuracy": 0.5024691358024691,
+      "log_loss": 1.02316551679427,
+      "brier_score": 0.20435151469852678,
+      "ranked_probability_score": 0.20883928234277496,
+      "calibration_error": 0.05706395458731931
+    },
+    "v2": {
+      "name": "Enhanced Dixon-Coles V2",
+      "sample_size": 810,
+      "accuracy": 0.49753086419753084,
+      "log_loss": 1.0081629701820434,
+      "brier_score": 0.20135686174835676,
+      "ranked_probability_score": 0.20557157829069472,
+      "calibration_error": 0.02995880443050769
+    },
+    "ml": {
+      "name": "V3 HistGradientBoosting ML",
+      "sample_size": 810,
+      "accuracy": 0.48148148148148145,
+      "log_loss": 1.039587161469566,
+      "brier_score": 0.20797997045247124,
+      "ranked_probability_score": 0.21232634743274445,
+      "calibration_error": 0.03313085852507926
+    },
+    "v3_ensemble": {
+      "name": "V3 Ensemble",
+      "sample_size": 810,
+      "accuracy": 0.5037037037037037,
+      "log_loss": 1.0085662890092257,
+      "brier_score": 0.20139777249754132,
+      "ranked_probability_score": 0.20553721899951183,
+      "calibration_error": 0.025958344897328785
+    },
+    "bookmaker": {
+      "name": "Normalized bookmaker implied probabilities (benchmark only)",
+      "sample_size": 810,
+      "accuracy": 0.5098765432098765,
+      "log_loss": 0.998212846019192,
+      "brier_score": 0.199169228808194,
+      "ranked_probability_score": 0.2017927954203901,
+      "calibration_error": 0.0332802436848318
+    }
+  },
+  "by_season": [
+    {
+      "season": "2425",
+      "sample_size": 380,
+      "v1": {
+        "name": "Elo + Poisson V1",
+        "sample_size": 380,
+        "accuracy": 0.5078947368421053,
+        "log_loss": 1.004443253312417,
+        "brier_score": 0.19974959364675596,
+        "ranked_probability_score": 0.20665023564720514,
+        "calibration_error": 0.07004403872517037
+      },
+      "v2": {
+        "name": "Enhanced Dixon-Coles V2",
+        "sample_size": 380,
+        "accuracy": 0.5157894736842106,
+        "log_loss": 0.9886928558720792,
+        "brier_score": 0.19673124209142404,
+        "ranked_probability_score": 0.20312507801039212,
+        "calibration_error": 0.046340319183377
+      },
+      "ml": {
+        "name": "V3 HistGradientBoosting ML",
+        "sample_size": 380,
+        "accuracy": 0.4921052631578947,
+        "log_loss": 1.0228533435001166,
+        "brier_score": 0.203987088138729,
+        "ranked_probability_score": 0.21039206219592912,
+        "calibration_error": 0.03528741684082687
+      },
+      "v3_ensemble": {
+        "name": "V3 Ensemble",
+        "sample_size": 380,
+        "accuracy": 0.5184210526315789,
+        "log_loss": 0.9886866583631198,
+        "brier_score": 0.19668895295845065,
+        "ranked_probability_score": 0.20299118994669524,
+        "calibration_error": 0.044923138745974305
+      },
+      "bookmaker": {
+        "name": "Bookmaker benchmark",
+        "sample_size": 380,
+        "accuracy": 0.5394736842105263,
+        "log_loss": 0.9707576734366724,
+        "brier_score": 0.19288793421961034,
+        "ranked_probability_score": 0.19723507363339546,
+        "calibration_error": 0.04040828444055509
+      }
+    },
+    {
+      "season": "2526",
+      "sample_size": 380,
+      "v1": {
+        "name": "Elo + Poisson V1",
+        "sample_size": 380,
+        "accuracy": 0.5,
+        "log_loss": 1.0407208709808038,
+        "brier_score": 0.20852866651247978,
+        "ranked_probability_score": 0.21208411310842884,
+        "calibration_error": 0.065698989613803
+      },
+      "v2": {
+        "name": "Enhanced Dixon-Coles V2",
+        "sample_size": 380,
+        "accuracy": 0.4842105263157895,
+        "log_loss": 1.0263896510293953,
+        "brier_score": 0.2057021621174431,
+        "ranked_probability_score": 0.20917502334895588,
+        "calibration_error": 0.033439513349349435
+      },
+      "ml": {
+        "name": "V3 HistGradientBoosting ML",
+        "sample_size": 380,
+        "accuracy": 0.4868421052631579,
+        "log_loss": 1.0470990609120008,
+        "brier_score": 0.209913566425455,
+        "ranked_probability_score": 0.21394234098130913,
+        "calibration_error": 0.05001248797427716
+      },
+      "v3_ensemble": {
+        "name": "V3 Ensemble",
+        "sample_size": 380,
+        "accuracy": 0.49473684210526314,
+        "log_loss": 1.0263036200562219,
+        "brier_score": 0.20563245632778784,
+        "ranked_probability_score": 0.20906857378541,
+        "calibration_error": 0.02956298641832865
+      },
+      "bookmaker": {
+        "name": "Bookmaker benchmark",
+        "sample_size": 380,
+        "accuracy": 0.48947368421052634,
+        "log_loss": 1.018547433594443,
+        "brier_score": 0.20383740257377933,
+        "ranked_probability_score": 0.20574653794193817,
+        "calibration_error": 0.04221355725386246
+      }
+    },
+    {
+      "season": "2627",
+      "sample_size": 50,
+      "v1": {
+        "name": "Elo + Poisson V1",
+        "sample_size": 50,
+        "accuracy": 0.48,
+        "log_loss": 1.0320340274386717,
+        "brier_score": 0.20757976090594327,
+        "ranked_probability_score": 0.20081532341013852,
+        "calibration_error": 0.11464977975172656
+      },
+      "v2": {
+        "name": "Enhanced Dixon-Coles V2",
+        "sample_size": 50,
+        "accuracy": 0.46,
+        "log_loss": 1.0176130644978953,
+        "brier_score": 0.20348728833599034,
+        "ranked_probability_score": 0.19677879797821057,
+        "calibration_error": 0.11192180934376235
+      },
+      "ml": {
+        "name": "V3 HistGradientBoosting ML",
+        "sample_size": 50,
+        "accuracy": 0.36,
+        "log_loss": 1.1096737422748695,
+        "brier_score": 0.2236305466422313,
+        "ranked_probability_score": 0.21474536426345023,
+        "calibration_error": 0.13870034747956275
+      },
+      "v3_ensemble": {
+        "name": "V3 Ensemble",
+        "sample_size": 50,
+        "accuracy": 0.46,
+        "log_loss": 1.0248477659624395,
+        "brier_score": 0.20500120388475637,
+        "ranked_probability_score": 0.1980487434280879,
+        "calibration_error": 0.1234851951856335
+      },
+      "bookmaker": {
+        "name": "Bookmaker benchmark",
+        "sample_size": 50,
+        "accuracy": 0.44,
+        "log_loss": 1.0523292920743959,
+        "brier_score": 0.21142894706298068,
+        "ranked_probability_score": 0.20638303783778167,
+        "calibration_error": 0.13185414053711497
+      }
+    }
+  ],
+  "calibration": {
+    "selected": "temperature",
+    "ml_temperature": 1.36,
+    "candidates": {
+      "none": {
+        "temperature": 1.0,
+        "sample_size": 380,
+        "accuracy": 0.5473684210526316,
+        "log_loss": 0.9972299037507709,
+        "brier_score": 0.19546400827989208,
+        "ranked_probability_score": 0.2054939217336691
+      },
+      "temperature": {
+        "temperature": 1.36,
+        "sample_size": 380,
+        "accuracy": 0.5473684210526316,
+        "log_loss": 0.9841183279326476,
+        "brier_score": 0.19416253377677167,
+        "ranked_probability_score": 0.2048045508484926
+      }
+    },
+    "isotonic": {
+      "selected": false,
+      "reason": "Validation has fewer than 1,000 matches; isotonic was skipped to limit overfitting."
+    },
+    "evaluation_bins": {
+      "home_win": [
+        {
+          "range": "0.0-0.1",
+          "predicted_probability": 0.07213025879988136,
+          "actual_frequency": 0.0,
+          "sample_count": 14
+        },
+        {
+          "range": "0.1-0.2",
+          "predicted_probability": 0.162982966398063,
+          "actual_frequency": 0.1509433962264151,
+          "sample_count": 53
+        },
+        {
+          "range": "0.2-0.3",
+          "predicted_probability": 0.2544444582309966,
+          "actual_frequency": 0.224,
+          "sample_count": 125
+        },
+        {
+          "range": "0.3-0.4",
+          "predicted_probability": 0.35311022257398794,
+          "actual_frequency": 0.3841059602649007,
+          "sample_count": 151
+        },
+        {
+          "range": "0.4-0.5",
+          "predicted_probability": 0.4451124405486391,
+          "actual_frequency": 0.3888888888888889,
+          "sample_count": 180
+        },
+        {
+          "range": "0.5-0.6",
+          "predicted_probability": 0.5423389559318789,
+          "actual_frequency": 0.546875,
+          "sample_count": 128
+        },
+        {
+          "range": "0.6-0.7",
+          "predicted_probability": 0.6475398897574438,
+          "actual_frequency": 0.59,
+          "sample_count": 100
+        },
+        {
+          "range": "0.7-0.8",
+          "predicted_probability": 0.7470381927395732,
+          "actual_frequency": 0.6511627906976745,
+          "sample_count": 43
+        },
+        {
+          "range": "0.8-0.9",
+          "predicted_probability": 0.8440869165821098,
+          "actual_frequency": 0.875,
+          "sample_count": 16
+        }
+      ],
+      "draw": [
+        {
+          "range": "0.0-0.1",
+          "predicted_probability": 0.0832331404568222,
+          "actual_frequency": 0.14285714285714285,
+          "sample_count": 7
+        },
+        {
+          "range": "0.1-0.2",
+          "predicted_probability": 0.1665673966440719,
+          "actual_frequency": 0.17592592592592593,
+          "sample_count": 108
+        },
+        {
+          "range": "0.2-0.3",
+          "predicted_probability": 0.257333301780952,
+          "actual_frequency": 0.27611940298507465,
+          "sample_count": 670
+        },
+        {
+          "range": "0.3-0.4",
+          "predicted_probability": 0.30615997506563963,
+          "actual_frequency": 0.32,
+          "sample_count": 25
+        }
+      ],
+      "away_win": [
+        {
+          "range": "0.0-0.1",
+          "predicted_probability": 0.07148240175683486,
+          "actual_frequency": 0.06521739130434782,
+          "sample_count": 46
+        },
+        {
+          "range": "0.1-0.2",
+          "predicted_probability": 0.15240328259539573,
+          "actual_frequency": 0.17791411042944785,
+          "sample_count": 163
+        },
+        {
+          "range": "0.2-0.3",
+          "predicted_probability": 0.25256113654189916,
+          "actual_frequency": 0.26666666666666666,
+          "sample_count": 210
+        },
+        {
+          "range": "0.3-0.4",
+          "predicted_probability": 0.3457658522242239,
+          "actual_frequency": 0.3373493975903614,
+          "sample_count": 166
+        },
+        {
+          "range": "0.4-0.5",
+          "predicted_probability": 0.4447863134003412,
+          "actual_frequency": 0.42342342342342343,
+          "sample_count": 111
+        },
+        {
+          "range": "0.5-0.6",
+          "predicted_probability": 0.5432198236495911,
+          "actual_frequency": 0.5774647887323944,
+          "sample_count": 71
+        },
+        {
+          "range": "0.6-0.7",
+          "predicted_probability": 0.6473950917799419,
+          "actual_frequency": 0.6,
+          "sample_count": 25
+        },
+        {
+          "range": "0.7-0.8",
+          "predicted_probability": 0.7389806099884925,
+          "actual_frequency": 0.9090909090909091,
+          "sample_count": 11
+        },
+        {
+          "range": "0.8-0.9",
+          "predicted_probability": 0.8353657621158727,
+          "actual_frequency": 0.7142857142857143,
+          "sample_count": 7
+        }
+      ]
+    }
+  },
+  "ensemble": {
+    "v2_weight": 0.9,
+    "ml_weight": 0.09999999999999998,
+    "selection_season": "2324",
+    "selection_metric": "log_loss",
+    "candidate_weights": [
+      {
+        "v2_weight": 0.0,
+        "sample_size": 380,
+        "accuracy": 0.5473684210526316,
+        "log_loss": 0.9841183279326476,
+        "brier_score": 0.19416253377677167,
+        "ranked_probability_score": 0.2048045508484926
+      },
+      {
+        "v2_weight": 0.1,
+        "sample_size": 380,
+        "accuracy": 0.5473684210526316,
+        "log_loss": 0.9760356064069088,
+        "brier_score": 0.19239650794849905,
+        "ranked_probability_score": 0.20271984453939237
+      },
+      {
+        "v2_weight": 0.2,
+        "sample_size": 380,
+        "accuracy": 0.5578947368421052,
+        "log_loss": 0.9690572825569027,
+        "brier_score": 0.190847226149923,
+        "ranked_probability_score": 0.20087969145021556
+      },
+      {
+        "v2_weight": 0.3,
+        "sample_size": 380,
+        "accuracy": 0.5657894736842105,
+        "log_loss": 0.9630884789474825,
+        "brier_score": 0.18951468838104354,
+        "ranked_probability_score": 0.19928409158096153
+      },
+      {
+        "v2_weight": 0.4,
+        "sample_size": 380,
+        "accuracy": 0.5605263157894737,
+        "log_loss": 0.9580613583225369,
+        "brier_score": 0.18839889464186058,
+        "ranked_probability_score": 0.19793304493163028
+      },
+      {
+        "v2_weight": 0.5,
+        "sample_size": 380,
+        "accuracy": 0.5684210526315789,
+        "log_loss": 0.953928247813064,
+        "brier_score": 0.18749984493237437,
+        "ranked_probability_score": 0.19682655150222234
+      },
+      {
+        "v2_weight": 0.6,
+        "sample_size": 380,
+        "accuracy": 0.5763157894736842,
+        "log_loss": 0.9506576484649298,
+        "brier_score": 0.18681753925258457,
+        "ranked_probability_score": 0.19596461129273735
+      },
+      {
+        "v2_weight": 0.7,
+        "sample_size": 380,
+        "accuracy": 0.5789473684210527,
+        "log_loss": 0.9482320193111995,
+        "brier_score": 0.18635197760249153,
+        "ranked_probability_score": 0.19534722430317503
+      },
+      {
+        "v2_weight": 0.8,
+        "sample_size": 380,
+        "accuracy": 0.5763157894736842,
+        "log_loss": 0.9466468367890587,
+        "brier_score": 0.18610315998209492,
+        "ranked_probability_score": 0.19497439053353613
+      },
+      {
+        "v2_weight": 0.9,
+        "sample_size": 380,
+        "accuracy": 0.5710526315789474,
+        "log_loss": 0.9459107756558536,
+        "brier_score": 0.18607108639139452,
+        "ranked_probability_score": 0.19484610998381996
+      },
+      {
+        "v2_weight": 1.0,
+        "sample_size": 380,
+        "accuracy": 0.5631578947368421,
+        "log_loss": 0.9460471464778986,
+        "brier_score": 0.18625575683039122,
+        "ranked_probability_score": 0.19496238265402677
+      }
+    ],
+    "final_test_used_for_selection": false
+  },
+  "v3_vs_v2": {
+    "log_loss_difference": 0.000403318827182364,
+    "brier_difference": 4.091074918455284e-05,
+    "rps_difference": -3.4359291182894935e-05
+  },
+  "promotion": {
+    "eligible": false,
+    "live_model": "v2",
+    "recommended_model": "v2",
+    "serious_calibration_regression": false,
+    "evaluation_seasons_improved_on_both_primary_metrics": 2,
+    "rule": "V3 must beat V2 on aggregate Log Loss and Brier without an obvious calibration regression. Initial deployment remains shadow-only."
+  },
+  "robustness": {
+    "strong_favourites": {
+      "small_sample": false,
+      "v2": {
+        "sample_size": 208,
+        "accuracy": 0.6442307692307693,
+        "log_loss": 0.8721196072841623,
+        "brier_score": 0.1701411962812667,
+        "ranked_probability_score": 0.16968852503974585
+      },
+      "v3_ensemble": {
+        "sample_size": 208,
+        "accuracy": 0.6442307692307693,
+        "log_loss": 0.8715358642316151,
+        "brier_score": 0.1699352351395261,
+        "ranked_probability_score": 0.1695636457245499
+      }
+    },
+    "balanced_matches": {
+      "small_sample": false,
+      "v2": {
+        "sample_size": 278,
+        "accuracy": 0.381294964028777,
+        "log_loss": 1.087887257167257,
+        "brier_score": 0.2199723756916499,
+        "ranked_probability_score": 0.23373233437588056
+      },
+      "v3_ensemble": {
+        "sample_size": 278,
+        "accuracy": 0.39928057553956836,
+        "log_loss": 1.0895840512810513,
+        "brier_score": 0.22028786835497197,
+        "ranked_probability_score": 0.23376312683537365
+      }
+    },
+    "home_favourites": {
+      "small_sample": false,
+      "v2": {
+        "sample_size": 536,
+        "accuracy": 0.5018656716417911,
+        "log_loss": 1.0123939758130205,
+        "brier_score": 0.2024996855884058,
+        "ranked_probability_score": 0.20799478050183687
+      },
+      "v3_ensemble": {
+        "sample_size": 536,
+        "accuracy": 0.5,
+        "log_loss": 1.0124581163361261,
+        "brier_score": 0.20246367772397925,
+        "ranked_probability_score": 0.20791899478490988
+      }
+    },
+    "away_favourites": {
+      "small_sample": false,
+      "v2": {
+        "sample_size": 274,
+        "accuracy": 0.48905109489051096,
+        "log_loss": 0.9998862584367744,
+        "brier_score": 0.19912126474738537,
+        "ranked_probability_score": 0.20083129951269357
+      },
+      "v3_ensemble": {
+        "sample_size": 274,
+        "accuracy": 0.5109489051094891,
+        "log_loss": 1.0009530793478396,
+        "brier_score": 0.19931264402538537,
+        "ranked_probability_score": 0.20087797877698066
+      }
+    },
+    "promoted_team_proxy": {
+      "small_sample": false,
+      "v2": {
+        "sample_size": 85,
+        "accuracy": 0.4588235294117647,
+        "log_loss": 1.0260573985156138,
+        "brier_score": 0.20549394826937017,
+        "ranked_probability_score": 0.20936812194838827
+      },
+      "v3_ensemble": {
+        "sample_size": 85,
+        "accuracy": 0.4588235294117647,
+        "log_loss": 1.0264856082092777,
+        "brier_score": 0.20557938260393618,
+        "ranked_probability_score": 0.20887924654049336
+      }
+    },
+    "early_season": {
+      "small_sample": false,
+      "v2": {
+        "sample_size": 170,
+        "accuracy": 0.48823529411764705,
+        "log_loss": 0.9899091186752121,
+        "brier_score": 0.19619859255244346,
+        "ranked_probability_score": 0.19137025895258186
+      },
+      "v3_ensemble": {
+        "sample_size": 170,
+        "accuracy": 0.49411764705882355,
+        "log_loss": 0.9932523069616801,
+        "brier_score": 0.1968803788768057,
+        "ranked_probability_score": 0.1919308143769784
+      }
+    }
+  },
+  "feature_importance": [
+    {
+      "feature": "elo_difference",
+      "importance": 0.08413485434562129,
+      "method": "permutation_log_loss"
+    },
+    {
+      "feature": "away_recent5_gf",
+      "importance": 0.008708650386010763,
+      "method": "permutation_log_loss"
+    },
+    {
+      "feature": "home_recent5_gf",
+      "importance": 0.007276012473331539,
+      "method": "permutation_log_loss"
+    },
+    {
+      "feature": "away_defence_strength",
+      "importance": 0.006395263720341715,
+      "method": "permutation_log_loss"
+    },
+    {
+      "feature": "home_recent5_shots",
+      "importance": 0.00457223455011313,
+      "method": "permutation_log_loss"
+    },
+    {
+      "feature": "away_recent5_ga",
+      "importance": 0.00414087495048121,
+      "method": "permutation_log_loss"
+    },
+    {
+      "feature": "away_recent10_ga",
+      "importance": 0.0037945376997112756,
+      "method": "permutation_log_loss"
+    },
+    {
+      "feature": "away_xg_against_10",
+      "importance": 0.0035179835109842017,
+      "method": "permutation_log_loss"
+    },
+    {
+      "feature": "away_xg_for_10",
+      "importance": 0.0033917911103347187,
+      "method": "permutation_log_loss"
+    },
+    {
+      "feature": "home_season_matches",
+      "importance": 0.0030266735168495984,
+      "method": "permutation_log_loss"
+    }
+  ],
+  "data_provenance": {
+    "rows": 1950,
+    "features": [
+      "home_elo",
+      "away_elo",
+      "elo_difference",
+      "league_home_goals",
+      "league_away_goals",
+      "home_attack_strength",
+      "home_defence_strength",
+      "away_attack_strength",
+      "away_defence_strength",
+      "home_recent5_gf",
+      "home_recent5_ga",
+      "away_recent5_gf",
+      "away_recent5_ga",
+      "home_recent10_gf",
+      "home_recent10_ga",
+      "away_recent10_gf",
+      "away_recent10_ga",
+      "home_recent5_shots",
+      "away_recent5_shots",
+      "home_recent5_sot",
+      "away_recent5_sot",
+      "home_xg_for_5",
+      "home_xg_against_5",
+      "away_xg_for_5",
+      "away_xg_against_5",
+      "home_xg_for_10",
+      "home_xg_against_10",
+      "away_xg_for_10",
+      "away_xg_against_10",
+      "home_xg_difference",
+      "away_xg_difference",
+      "home_xg_trend",
+      "away_xg_trend",
+      "home_finishing_difference",
+      "away_finishing_difference",
+      "home_rest_days",
+      "away_rest_days",
+      "home_matches_7d",
+      "away_matches_7d",
+      "home_matches_14d",
+      "away_matches_14d",
+      "home_sample_count",
+      "away_sample_count",
+      "home_season_matches",
+      "away_season_matches",
+      "early_season"
+    ],
+    "chronological": true,
+    "same_day_results_withheld": true,
+    "xg": {
+      "enabled": true,
+      "provider": "Composite genuine-xG provider",
+      "matches_with_xg": 810,
+      "sources": [
+        {
+          "enabled": true,
+          "provider": "Football-Data.co.uk HxG/AxG",
+          "matches_with_xg": 50,
+          "limitation": "Real xG is used only for rows where Football-Data.co.uk exposes HxG/AxG; shots and shots on target remain the fallback indicators."
+        },
+        {
+          "enabled": true,
+          "provider": "FiveThirtyEight Soccer SPI archive",
+          "source": "FiveThirtyEight Soccer SPI, archived 2023-06-14 via the Internet Archive",
+          "license": "CC BY 4.0",
+          "matches_with_xg": 760,
+          "coverage": "EPL 2021/22 and 2022/23",
+          "cache": "fivethirtyeight_epl_xg_2021_2023.csv",
+          "limitation": "The FiveThirtyEight feed ended in 2023. Later seasons use only genuine Football-Data HxG/AxG rows when present; no xG is fabricated."
+        }
+      ],
+      "limitation": "Coverage is source-dependent and may be sparse after 2022/23; missing values stay missing and are never replaced by model estimates."
+    },
+    "all_competition_schedule": {
+      "available": false,
+      "congestion_scope": "EPL only",
+      "provider": null,
+      "limitation": "No sufficiently complete, stable, public all-competition schedule source is enabled; cup and European matches are not invented."
+    },
+    "player_availability": {
+      "available": false,
+      "provider": null,
+      "limitation": "No reliable free structured injuries, suspensions and confirmed-lineup source is enabled; rumours and subjective player scores are excluded."
+    }
+  }
+}

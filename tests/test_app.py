@@ -13,7 +13,7 @@ def test_v2_prediction_endpoint_returns_normalized_1x2(client):
     assert len(payload["top_scorelines"]) == 5
     assert payload["model"] == "Enhanced Dixon-Coles V2"
     assert payload["version"] == "2.0"
-    assert payload["app_version"] == "2.1"
+    assert payload["app_version"] == "3.0"
     assert payload["model_version"] == "2.0"
     assert payload["data_through"]
     assert "freshness" in payload["metadata"]
@@ -37,18 +37,35 @@ def test_v1_baseline_remains_available(client):
     assert sum(payload["probabilities"].values()) == pytest.approx(1.0, abs=1e-9)
 
 
+def test_v3_challenger_is_available_without_replacing_v2(client):
+    ml = client.get("/api/predict?home=Arsenal&away=Chelsea&model=ml")
+    assert ml.status_code == 200
+    assert ml.get_json()["version"] == "3.0-ml"
+    assert sum(ml.get_json()["probabilities"].values()) == pytest.approx(1.0, abs=1e-9)
+
+    response = client.get("/api/predict?home=Arsenal&away=Chelsea&model=v3")
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["version"] == "3.0"
+    assert payload["model"] == "V3 Ensemble"
+    assert sum(payload["probabilities"].values()) == pytest.approx(1.0, abs=1e-9)
+    assert payload["metadata"]["shadow_model"] is True
+    default = client.get("/api/predict?home=Arsenal&away=Chelsea").get_json()
+    assert default["version"] == "2.0"
+
+
 def test_health_and_mobile_pages_load(client):
     assert client.get("/").status_code == 200
     model_page = client.get("/model")
     assert model_page.status_code == 200
     assert "HISTORICAL BACKTEST" in model_page.get_data(as_text=True)
     assert "LIVE PERFORMANCE" in model_page.get_data(as_text=True)
-    assert "Small sample — live performance is not yet statistically reliable." in model_page.get_data(as_text=True)
+    assert "Small sample — no reliable live conclusion yet." in model_page.get_data(as_text=True)
     health = client.get("/health")
     assert health.status_code == 200
     payload = health.get_json()
     assert payload["status"] == "ok"
-    assert payload["app_version"] == "2.1"
+    assert payload["app_version"] == "3.0"
     assert payload["model_version"] == "2.0"
     assert payload["matches"] > 0
     assert "data_stale" in payload
@@ -56,10 +73,17 @@ def test_health_and_mobile_pages_load(client):
     assert "last_refresh_error" in payload
 
     model_api = client.get("/api/model").get_json()
-    assert model_api["app_version"] == "2.1"
+    assert model_api["app_version"] == "3.0"
     assert model_api["model_version"] == "2.0"
     assert model_api["live_performance"]["historical_backtest_included"] is False
     assert "last_refresh_success" in model_api
+    assert model_api["historical_backtest_v3"]["promotion"]["live_model"] == "v2"
+
+    data_api = client.get("/api/data").get_json()
+    assert data_api["historical_results_source"] == "Football-Data.co.uk EPL CSV"
+    assert data_api["fixture_source"]["provider"] == "openfootball/football.json"
+    assert data_api["xg_matches_available"] >= 760
+    assert data_api["congestion_scope"] == "EPL only"
 
 
 def test_fixtures_and_results_are_labelled_correctly(client):
@@ -68,7 +92,8 @@ def test_fixtures_and_results_are_labelled_correctly(client):
     assert response.status_code == 200
     assert "即將舉行" in body
     assert "最近完成" in body
-    assert "未能取得即將舉行的賽程" in body
+    assert "openfootball/football.json" in body
+    assert "TBC" not in body
 
 
 def test_no_public_refresh_endpoint_remains(client):

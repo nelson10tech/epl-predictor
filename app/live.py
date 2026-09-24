@@ -2,9 +2,10 @@ from __future__ import annotations
 
 import hashlib
 import json
+from collections import defaultdict
 from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
-from typing import Optional
+from typing import Mapping, Optional
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from .backtest import calculate_metrics
@@ -12,8 +13,8 @@ from .data import Fixture, Match, MatchRepository
 from .model import DixonColesPredictor
 
 
-PREDICTION_SCHEMA_VERSION = 1
-APP_VERSION = "2.1"
+PREDICTION_SCHEMA_VERSION = 2
+APP_VERSION = "3.0"
 MODEL_VERSION = "2.0"
 
 
@@ -85,10 +86,11 @@ def load_prediction_records(reports_dir: Path) -> list[dict]:
 
 def snapshot_predictions(
     repository: MatchRepository,
-    predictor: DixonColesPredictor,
+    predictor: DixonColesPredictor | Mapping[str, object],
     reports_dir: Path,
     now: Optional[datetime] = None,
-    dedupe_window_hours: float = 6.0,
+    dedupe_window_hours: float = 24.0,
+    horizon_days: int = 14,
 ) -> dict:
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None:
@@ -100,7 +102,13 @@ def snapshot_predictions(
     created: list[dict] = []
     skipped_duplicate = 0
     skipped_not_pre_match = 0
+    skipped_outside_horizon = 0
     errors: list[str] = []
+    predictors = (
+        list(predictor.items())
+        if isinstance(predictor, Mapping)
+        else [("v2", predictor)]
+    )
 
     for fixture in sorted(
         repository.fixtures,
@@ -114,58 +122,64 @@ def snapshot_predictions(
             if kickoff_utc is None or kickoff_utc <= now:
                 skipped_not_pre_match += 1
                 continue
+        if fixture.played_on > london_today + timedelta(days=horizon_days):
+            skipped_outside_horizon += 1
+            continue
 
-        key = _fixture_key(fixture)
-        duplicate = False
-        for record in existing + created:
-            if record.get("fixture_key") != key:
+        for predictor_key, current_predictor in predictors:
+            try:
+                prediction = current_predictor.predict(
+                    fixture.home_team,
+                    fixture.away_team,
+                    as_of=fixture.played_on,
+                )
+            except ValueError as exc:
+                errors.append(
+                    f"{predictor_key}: {fixture.home_team} vs {fixture.away_team}: {exc}"
+                )
                 continue
-            recorded_at = _parse_datetime(record.get("prediction_created_at"))
-            if recorded_at and timedelta(0) <= now - recorded_at < dedupe_window:
-                duplicate = True
-                break
-        if duplicate:
-            skipped_duplicate += 1
-            continue
 
-        try:
-            prediction = predictor.predict(
-                fixture.home_team,
-                fixture.away_team,
-                as_of=fixture.played_on,
-            )
-        except ValueError as exc:
-            errors.append(f"{fixture.home_team} vs {fixture.away_team}: {exc}")
-            continue
+            key = _fixture_key(fixture, prediction["version"])
+            duplicate = False
+            for record in existing + created:
+                if record.get("fixture_key") != key:
+                    continue
+                recorded_at = _parse_datetime(record.get("prediction_created_at"))
+                if recorded_at and timedelta(0) <= now - recorded_at < dedupe_window:
+                    duplicate = True
+                    break
+            if duplicate:
+                skipped_duplicate += 1
+                continue
 
-        created_at = now.isoformat()
-        prediction_id = hashlib.sha256(
-            f"{key}|{created_at}".encode("utf-8")
-        ).hexdigest()[:24]
-        probabilities = prediction["probabilities"]
-        expected = prediction["expected_goals"]
-        score = prediction["most_likely_score"]
-        created.append({
-            "prediction_id": prediction_id,
-            "fixture_key": key,
-            "prediction_created_at": created_at,
-            "fixture_date": fixture.played_on.isoformat(),
-            "kickoff": fixture.kickoff,
-            "kickoff_utc": kickoff_utc.isoformat() if kickoff_utc else None,
-            "home_team": fixture.home_team,
-            "away_team": fixture.away_team,
-            "home_win_probability": probabilities["home_win"],
-            "draw_probability": probabilities["draw"],
-            "away_win_probability": probabilities["away_win"],
-            "expected_home_goals": expected["home"],
-            "expected_away_goals": expected["away"],
-            "most_likely_score": f"{score['home']}-{score['away']}",
-            "model": prediction["model"],
-            "app_version": APP_VERSION,
-            "model_version": prediction["version"],
-            "data_through": prediction["data_through"],
-            "xg_enabled": prediction["xg_enabled"],
-        })
+            created_at = now.isoformat()
+            prediction_id = hashlib.sha256(
+                f"{key}|{created_at}".encode("utf-8")
+            ).hexdigest()[:24]
+            probabilities = prediction["probabilities"]
+            expected = prediction["expected_goals"]
+            score = prediction["most_likely_score"]
+            created.append({
+                "prediction_id": prediction_id,
+                "fixture_key": key,
+                "prediction_created_at": created_at,
+                "fixture_date": fixture.played_on.isoformat(),
+                "kickoff": fixture.kickoff,
+                "kickoff_utc": kickoff_utc.isoformat() if kickoff_utc else None,
+                "home_team": fixture.home_team,
+                "away_team": fixture.away_team,
+                "home_win_probability": probabilities["home_win"],
+                "draw_probability": probabilities["draw"],
+                "away_win_probability": probabilities["away_win"],
+                "expected_home_goals": expected["home"],
+                "expected_away_goals": expected["away"],
+                "most_likely_score": f"{score['home']}-{score['away']}",
+                "model": prediction["model"],
+                "app_version": APP_VERSION,
+                "model_version": prediction["version"],
+                "data_through": prediction["data_through"],
+                "xg_enabled": prediction["xg_enabled"],
+            })
 
     output_path = reports_dir / "live_predictions" / f"{now.date().isoformat()}.json"
     if created:
@@ -182,8 +196,13 @@ def snapshot_predictions(
 
     return {
         "created": len(created),
+        "created_by_model": {
+            version: sum(item["model_version"] == version for item in created)
+            for version in sorted({item["model_version"] for item in created})
+        },
         "skipped_duplicate": skipped_duplicate,
         "skipped_not_pre_match": skipped_not_pre_match,
+        "skipped_outside_horizon": skipped_outside_horizon,
         "errors": errors,
         "output": str(output_path) if created else None,
     }
@@ -204,6 +223,8 @@ def _metric_records(predictions: list[dict], results: dict[str, dict]) -> list[d
             "fixture_date": prediction["fixture_date"],
             "prediction_created_at": prediction["prediction_created_at"],
             "result": result["actual_result"],
+            "model_version": prediction.get("model_version", MODEL_VERSION),
+            "model": prediction.get("model"),
             "probabilities": {
                 "home_win": prediction["home_win_probability"],
                 "draw": prediction["draw_probability"],
@@ -244,13 +265,19 @@ def _metrics(records: list[dict]) -> dict:
     return calculate_metrics(records, "probabilities") if records else _empty_metrics()
 
 
-def _performance_status(sample_size: int, log_loss, historical_report: dict) -> dict:
+def _performance_status(
+    sample_size: int,
+    log_loss,
+    historical_report: dict,
+    model_version: str = MODEL_VERSION,
+) -> dict:
     if sample_size < 50:
         return {
             "level": "insufficient",
-            "message": "Small sample — live performance is not yet statistically reliable.",
+            "message": "Small sample — no reliable live conclusion yet.",
         }
-    baseline = historical_report.get("models", {}).get("v2", {}).get("log_loss")
+    model_key = "v3_ensemble" if model_version.startswith("3") else "v2"
+    baseline = historical_report.get("models", {}).get(model_key, {}).get("log_loss")
     if baseline is not None and log_loss is not None and log_loss > baseline + 0.05:
         return {
             "level": "watch",
@@ -324,13 +351,62 @@ def score_predictions(
         })
 
     metric_records = _metric_records(predictions, results_by_id)
-    overall = _metrics(metric_records)
+    by_model: defaultdict[str, list[dict]] = defaultdict(list)
+    for record in metric_records:
+        by_model[record["model_version"]].append(record)
+    recorded_by_model: defaultdict[str, int] = defaultdict(int)
+    model_names = {}
+    for prediction in predictions:
+        version = prediction.get("model_version", MODEL_VERSION)
+        recorded_by_model[version] += 1
+        model_names[version] = prediction.get("model")
+
+    model_reports = {}
+    for version in sorted(set(recorded_by_model) | set(by_model) | {"2.0", "3.0"}):
+        rows = by_model.get(version, [])
+        overall_metrics = _metrics(rows)
+        latest_model_season = max(
+            (_season_code(date.fromisoformat(item["fixture_date"])) for item in rows),
+            default=None,
+        )
+        model_season_rows = [
+            item for item in rows
+            if latest_model_season
+            and _season_code(date.fromisoformat(item["fixture_date"])) == latest_model_season
+        ]
+        model_reports[version] = {
+            "model": model_names.get(version) or (
+                "Enhanced Dixon-Coles V2" if version == "2.0" else "V3 Ensemble"
+            ),
+            "predictions_recorded": recorded_by_model.get(version, 0),
+            "settled_predictions": len(rows),
+            "overall": overall_metrics,
+            "rolling": {
+                "last_20": _metrics(rows[-20:]),
+                "last_50": _metrics(rows[-50:]),
+            },
+            "season_to_date": {
+                "season": latest_model_season,
+                **_metrics(model_season_rows),
+            },
+            "status": _performance_status(
+                overall_metrics["sample_size"],
+                overall_metrics["log_loss"],
+                historical_report,
+                version,
+            ),
+        }
+
+    default_records = by_model.get(MODEL_VERSION, [])
+    if not default_records and len(by_model) == 1:
+        default_records = next(iter(by_model.values()))
+    overall = _metrics(default_records)
     latest_season = max(
-        (_season_code(date.fromisoformat(item["fixture_date"])) for item in metric_records),
+        (_season_code(date.fromisoformat(item["fixture_date"])) for item in default_records),
         default=None,
     )
     season_records = [
-        item for item in metric_records
+        item for item in default_records
         if latest_season and _season_code(date.fromisoformat(item["fixture_date"])) == latest_season
     ]
     report = {
@@ -338,17 +414,19 @@ def score_predictions(
         "historical_backtest_included": False,
         "predictions_recorded": len(predictions),
         "settled_predictions": len(metric_records),
+        "models": model_reports,
+        "default_live_model_version": MODEL_VERSION,
         "overall": overall,
         "rolling": {
-            "last_20": _metrics(metric_records[-20:]),
-            "last_50": _metrics(metric_records[-50:]),
+            "last_20": _metrics(default_records[-20:]),
+            "last_50": _metrics(default_records[-50:]),
         },
         "season_to_date": {
             "season": latest_season,
             **_metrics(season_records),
         },
         "status": _performance_status(
-            overall["sample_size"], overall["log_loss"], historical_report
+            overall["sample_size"], overall["log_loss"], historical_report, MODEL_VERSION
         ),
     }
     report_path = reports_dir / "live_performance.json"
@@ -385,6 +463,6 @@ def load_live_performance(reports_dir: Path) -> dict:
         "season_to_date": {"season": None, **empty},
         "status": {
             "level": "insufficient",
-            "message": "Small sample — live performance is not yet statistically reliable.",
+            "message": "Small sample — no reliable live conclusion yet.",
         },
     }

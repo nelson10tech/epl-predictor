@@ -8,5 +8,7 @@ venv/
 data/raw/*.tmp
 data/raw/.refresh_status.json
 data/raw/.refresh_status.json.tmp
+data/cache/*.tmp
+data/advanced/*.tmp
 reports/*.tmp
 reports/live_predictions/*.tmp
