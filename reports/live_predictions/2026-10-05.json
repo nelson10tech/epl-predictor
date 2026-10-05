@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "predictions": [
+    {
+      "prediction_id": "3fecfbfc0dcf6cb1197470d9",
+      "fixture_key": "2026-10-19|20:00|Tottenham|Coventry|2.0",
+      "prediction_created_at": "2026-10-05T05:37:08.810814+00:00",
+      "fixture_date": "2026-10-19",
+      "kickoff": "20:00",
+      "kickoff_utc": "2026-10-19T19:00:00+00:00",
+      "home_team": "Tottenham",
+      "away_team": "Coventry",
+      "home_win_probability": 0.3659958458619142,
+      "draw_probability": 0.2975528394639292,
+      "away_win_probability": 0.33645131467415657,
+      "expected_home_goals": 1.2852541135944093,
+      "expected_away_goals": 1.2101971815821568,
+      "most_likely_score": "1-1",
+      "model": "Enhanced Dixon-Coles V2",
+      "app_version": "3.0",
+      "model_version": "2.0",
+      "data_through": "2026-09-20",
+      "xg_enabled": true
+    },
+    {
+      "prediction_id": "b74a0f6caa8a375afac02c8c",
+      "fixture_key": "2026-10-19|20:00|Tottenham|Coventry|3.0",
+      "prediction_created_at": "2026-10-05T05:37:08.810814+00:00",
+      "fixture_date": "2026-10-19",
+      "kickoff": "20:00",
+      "kickoff_utc": "2026-10-19T19:00:00+00:00",
+      "home_team": "Tottenham",
+      "away_team": "Coventry",
+      "home_win_probability": 0.3598526221178131,
+      "draw_probability": 0.2897505435500439,
+      "away_win_probability": 0.3503968343321431,
+      "expected_home_goals": 1.2852541135944093,
+      "expected_away_goals": 1.2101971815821568,
+      "most_likely_score": "1-1",
+      "model": "V3 Ensemble",
+      "app_version": "3.0",
+      "model_version": "3.0",
+      "data_through": "2026-09-20",
+      "xg_enabled": true
+    }
+  ]
+}
