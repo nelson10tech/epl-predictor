@@ -1,12 +1,12 @@
 {
   "performance_type": "live_prospective",
   "historical_backtest_included": false,
-  "predictions_recorded": 298,
+  "predictions_recorded": 300,
   "settled_predictions": 0,
   "models": {
     "2.0": {
       "model": "Enhanced Dixon-Coles V2",
-      "predictions_recorded": 149,
+      "predictions_recorded": 150,
       "settled_predictions": 0,
       "overall": {
         "sample_size": 0,
@@ -46,7 +46,7 @@
     },
     "3.0": {
       "model": "V3 Ensemble",
-      "predictions_recorded": 149,
+      "predictions_recorded": 150,
       "settled_predictions": 0,
       "overall": {
         "sample_size": 0,
@@ -121,5 +121,5 @@
     "level": "insufficient",
     "message": "Small sample \u2014 no reliable live conclusion yet."
   },
-  "updated_at": "2026-10-07T23:04:21.763647+00:00"
+  "updated_at": "2026-10-08T13:27:00.034034+00:00"
 }
