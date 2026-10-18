@@ -2,43 +2,8 @@
   "source": "openfootball/football.json",
   "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
   "license": "Public Domain",
-  "fetched_at": "2026-10-17T20:35:14.721990+00:00",
+  "fetched_at": "2026-10-18T04:30:16.985651+00:00",
   "fixtures": [
-    {
-      "date": "2026-10-17",
-      "season": "2627",
-      "kickoff": "12:30",
-      "home_team": "Everton",
-      "away_team": "Chelsea"
-    },
-    {
-      "date": "2026-10-17",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Brentford",
-      "away_team": "Liverpool"
-    },
-    {
-      "date": "2026-10-17",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Fulham",
-      "away_team": "Hull"
-    },
-    {
-      "date": "2026-10-17",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Man City",
-      "away_team": "Ipswich"
-    },
-    {
-      "date": "2026-10-17",
-      "season": "2627",
-      "kickoff": "17:30",
-      "home_team": "Newcastle",
-      "away_team": "Aston Villa"
-    },
     {
       "date": "2026-10-18",
       "season": "2627",
