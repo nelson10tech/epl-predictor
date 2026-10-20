@@ -2,42 +2,42 @@
   "performance_type": "live_prospective",
   "historical_backtest_included": false,
   "predictions_recorded": 750,
-  "settled_predictions": 260,
+  "settled_predictions": 504,
   "models": {
     "2.0": {
       "model": "Enhanced Dixon-Coles V2",
       "predictions_recorded": 375,
-      "settled_predictions": 130,
+      "settled_predictions": 252,
       "overall": {
-        "sample_size": 130,
-        "accuracy": 0.4,
-        "log_loss": 1.0517429097028126,
-        "brier_score": 0.21231708536314553,
-        "ranked_probability_score": 0.21562286827927776
+        "sample_size": 252,
+        "accuracy": 0.49603174603174605,
+        "log_loss": 0.9824321517074334,
+        "brier_score": 0.1957291229917203,
+        "ranked_probability_score": 0.21320707512364678
       },
       "rolling": {
         "last_20": {
           "sample_size": 20,
-          "accuracy": 0.15,
-          "log_loss": 1.167890920752698,
-          "brier_score": 0.23968196722708499,
-          "ranked_probability_score": 0.3010451050973696
+          "accuracy": 0.9,
+          "log_loss": 0.9313144779359634,
+          "brier_score": 0.18282730410436715,
+          "ranked_probability_score": 0.21110558857529513
         },
         "last_50": {
           "sample_size": 50,
-          "accuracy": 0.26,
-          "log_loss": 1.1299058180722172,
-          "brier_score": 0.23087807965789456,
-          "ranked_probability_score": 0.26106280940439225
+          "accuracy": 0.82,
+          "log_loss": 0.8679938285450778,
+          "brier_score": 0.16706958038305633,
+          "ranked_probability_score": 0.17241015554199848
         }
       },
       "season_to_date": {
         "season": "2627",
-        "sample_size": 130,
-        "accuracy": 0.4,
-        "log_loss": 1.0517429097028126,
-        "brier_score": 0.21231708536314553,
-        "ranked_probability_score": 0.21562286827927776
+        "sample_size": 252,
+        "accuracy": 0.49603174603174605,
+        "log_loss": 0.9824321517074334,
+        "brier_score": 0.1957291229917203,
+        "ranked_probability_score": 0.21320707512364678
       },
       "status": {
         "level": "normal",
@@ -47,37 +47,37 @@
     "3.0": {
       "model": "V3 Ensemble",
       "predictions_recorded": 375,
-      "settled_predictions": 130,
+      "settled_predictions": 252,
       "overall": {
-        "sample_size": 130,
-        "accuracy": 0.4,
-        "log_loss": 1.047728257298231,
-        "brier_score": 0.21128535263858722,
-        "ranked_probability_score": 0.21456017964080648
+        "sample_size": 252,
+        "accuracy": 0.49603174603174605,
+        "log_loss": 0.9799489917210346,
+        "brier_score": 0.19507398447946334,
+        "ranked_probability_score": 0.2128361356291682
       },
       "rolling": {
         "last_20": {
           "sample_size": 20,
-          "accuracy": 0.15,
-          "log_loss": 1.1399179939736812,
-          "brier_score": 0.23341132742811538,
-          "ranked_probability_score": 0.29221248466684013
+          "accuracy": 0.9,
+          "log_loss": 0.9329557354802922,
+          "brier_score": 0.1833235320585872,
+          "ranked_probability_score": 0.21390142510295415
         },
         "last_50": {
           "sample_size": 50,
-          "accuracy": 0.26,
-          "log_loss": 1.1204773887289285,
-          "brier_score": 0.22849534664289006,
-          "ranked_probability_score": 0.2576099356917742
+          "accuracy": 0.82,
+          "log_loss": 0.8662423109715097,
+          "brier_score": 0.1666950553037949,
+          "ranked_probability_score": 0.173231371031232
         }
       },
       "season_to_date": {
         "season": "2627",
-        "sample_size": 130,
-        "accuracy": 0.4,
-        "log_loss": 1.047728257298231,
-        "brier_score": 0.21128535263858722,
-        "ranked_probability_score": 0.21456017964080648
+        "sample_size": 252,
+        "accuracy": 0.49603174603174605,
+        "log_loss": 0.9799489917210346,
+        "brier_score": 0.19507398447946334,
+        "ranked_probability_score": 0.2128361356291682
       },
       "status": {
         "level": "normal",
@@ -87,39 +87,39 @@
   },
   "default_live_model_version": "2.0",
   "overall": {
-    "sample_size": 130,
-    "accuracy": 0.4,
-    "log_loss": 1.0517429097028126,
-    "brier_score": 0.21231708536314553,
-    "ranked_probability_score": 0.21562286827927776
+    "sample_size": 252,
+    "accuracy": 0.49603174603174605,
+    "log_loss": 0.9824321517074334,
+    "brier_score": 0.1957291229917203,
+    "ranked_probability_score": 0.21320707512364678
   },
   "rolling": {
     "last_20": {
       "sample_size": 20,
-      "accuracy": 0.15,
-      "log_loss": 1.167890920752698,
-      "brier_score": 0.23968196722708499,
-      "ranked_probability_score": 0.3010451050973696
+      "accuracy": 0.9,
+      "log_loss": 0.9313144779359634,
+      "brier_score": 0.18282730410436715,
+      "ranked_probability_score": 0.21110558857529513
     },
     "last_50": {
       "sample_size": 50,
-      "accuracy": 0.26,
-      "log_loss": 1.1299058180722172,
-      "brier_score": 0.23087807965789456,
-      "ranked_probability_score": 0.26106280940439225
+      "accuracy": 0.82,
+      "log_loss": 0.8679938285450778,
+      "brier_score": 0.16706958038305633,
+      "ranked_probability_score": 0.17241015554199848
     }
   },
   "season_to_date": {
     "season": "2627",
-    "sample_size": 130,
-    "accuracy": 0.4,
-    "log_loss": 1.0517429097028126,
-    "brier_score": 0.21231708536314553,
-    "ranked_probability_score": 0.21562286827927776
+    "sample_size": 252,
+    "accuracy": 0.49603174603174605,
+    "log_loss": 0.9824321517074334,
+    "brier_score": 0.1957291229917203,
+    "ranked_probability_score": 0.21320707512364678
   },
   "status": {
     "level": "normal",
     "message": "No material live deterioration is visible at the current sample size."
   },
-  "updated_at": "2026-10-20T04:48:13.668560+00:00"
+  "updated_at": "2026-10-20T11:33:50.695144+00:00"
 }
