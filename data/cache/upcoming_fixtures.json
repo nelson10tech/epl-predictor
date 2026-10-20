@@ -2,15 +2,8 @@
   "source": "openfootball/football.json",
   "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
   "license": "Public Domain",
-  "fetched_at": "2026-10-19T22:20:58.693946+00:00",
+  "fetched_at": "2026-10-20T04:48:11.281317+00:00",
   "fixtures": [
-    {
-      "date": "2026-10-19",
-      "season": "2627",
-      "kickoff": "20:00",
-      "home_team": "Tottenham",
-      "away_team": "Coventry"
-    },
     {
       "date": "2026-10-23",
       "season": "2627",
