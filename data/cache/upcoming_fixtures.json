@@ -2,36 +2,8 @@
   "source": "openfootball/football.json",
   "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
   "license": "Public Domain",
-  "fetched_at": "2026-10-24T20:47:17.642014+00:00",
+  "fetched_at": "2026-10-25T04:38:53.172837+00:00",
   "fixtures": [
-    {
-      "date": "2026-10-24",
-      "season": "2627",
-      "kickoff": "12:30",
-      "home_team": "Aston Villa",
-      "away_team": "Man City"
-    },
-    {
-      "date": "2026-10-24",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Arsenal",
-      "away_team": "Everton"
-    },
-    {
-      "date": "2026-10-24",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Coventry",
-      "away_team": "Fulham"
-    },
-    {
-      "date": "2026-10-24",
-      "season": "2627",
-      "kickoff": "17:30",
-      "home_team": "Chelsea",
-      "away_team": "Tottenham"
-    },
     {
       "date": "2026-10-25",
       "season": "2627",
