@@ -1,43 +1,43 @@
 {
   "performance_type": "live_prospective",
   "historical_backtest_included": false,
-  "predictions_recorded": 1010,
-  "settled_predictions": 504,
+  "predictions_recorded": 1030,
+  "settled_predictions": 756,
   "models": {
     "2.0": {
       "model": "Enhanced Dixon-Coles V2",
-      "predictions_recorded": 505,
-      "settled_predictions": 252,
+      "predictions_recorded": 515,
+      "settled_predictions": 378,
       "overall": {
-        "sample_size": 252,
-        "accuracy": 0.49603174603174605,
-        "log_loss": 0.9824321517074334,
-        "brier_score": 0.1957291229917203,
-        "ranked_probability_score": 0.21320707512364678
+        "sample_size": 378,
+        "accuracy": 0.41534391534391535,
+        "log_loss": 1.0360622075718873,
+        "brier_score": 0.2080980684853677,
+        "ranked_probability_score": 0.22372911102369397
       },
       "rolling": {
         "last_20": {
           "sample_size": 20,
-          "accuracy": 0.9,
-          "log_loss": 0.9313144779359634,
-          "brier_score": 0.18282730410436715,
-          "ranked_probability_score": 0.21110558857529513
+          "accuracy": 0.2,
+          "log_loss": 1.132504638975346,
+          "brier_score": 0.23069987326379948,
+          "ranked_probability_score": 0.224669768369285
         },
         "last_50": {
           "sample_size": 50,
-          "accuracy": 0.82,
-          "log_loss": 0.8679938285450778,
-          "brier_score": 0.16706958038305633,
-          "ranked_probability_score": 0.17241015554199848
+          "accuracy": 0.22,
+          "log_loss": 1.1426116534005621,
+          "brier_score": 0.23312148710234037,
+          "ranked_probability_score": 0.22855492380929734
         }
       },
       "season_to_date": {
         "season": "2627",
-        "sample_size": 252,
-        "accuracy": 0.49603174603174605,
-        "log_loss": 0.9824321517074334,
-        "brier_score": 0.1957291229917203,
-        "ranked_probability_score": 0.21320707512364678
+        "sample_size": 378,
+        "accuracy": 0.41534391534391535,
+        "log_loss": 1.0360622075718873,
+        "brier_score": 0.2080980684853677,
+        "ranked_probability_score": 0.22372911102369397
       },
       "status": {
         "level": "normal",
@@ -46,38 +46,38 @@
     },
     "3.0": {
       "model": "V3 Ensemble",
-      "predictions_recorded": 505,
-      "settled_predictions": 252,
+      "predictions_recorded": 515,
+      "settled_predictions": 378,
       "overall": {
-        "sample_size": 252,
-        "accuracy": 0.49603174603174605,
-        "log_loss": 0.9799489917210346,
-        "brier_score": 0.19507398447946334,
-        "ranked_probability_score": 0.2128361356291682
+        "sample_size": 378,
+        "accuracy": 0.42328042328042326,
+        "log_loss": 1.0372235969029997,
+        "brier_score": 0.208171859032977,
+        "ranked_probability_score": 0.22378554708568063
       },
       "rolling": {
         "last_20": {
           "sample_size": 20,
-          "accuracy": 0.9,
-          "log_loss": 0.9329557354802922,
-          "brier_score": 0.1833235320585872,
-          "ranked_probability_score": 0.21390142510295415
+          "accuracy": 0.2,
+          "log_loss": 1.146000265495634,
+          "brier_score": 0.2335293854579074,
+          "ranked_probability_score": 0.2264376594151271
         },
         "last_50": {
           "sample_size": 50,
-          "accuracy": 0.82,
-          "log_loss": 0.8662423109715097,
-          "brier_score": 0.1666950553037949,
-          "ranked_probability_score": 0.173231371031232
+          "accuracy": 0.22,
+          "log_loss": 1.1580559995588227,
+          "brier_score": 0.23624285168888481,
+          "ranked_probability_score": 0.23086984376864042
         }
       },
       "season_to_date": {
         "season": "2627",
-        "sample_size": 252,
-        "accuracy": 0.49603174603174605,
-        "log_loss": 0.9799489917210346,
-        "brier_score": 0.19507398447946334,
-        "ranked_probability_score": 0.2128361356291682
+        "sample_size": 378,
+        "accuracy": 0.42328042328042326,
+        "log_loss": 1.0372235969029997,
+        "brier_score": 0.208171859032977,
+        "ranked_probability_score": 0.22378554708568063
       },
       "status": {
         "level": "normal",
@@ -87,39 +87,39 @@
   },
   "default_live_model_version": "2.0",
   "overall": {
-    "sample_size": 252,
-    "accuracy": 0.49603174603174605,
-    "log_loss": 0.9824321517074334,
-    "brier_score": 0.1957291229917203,
-    "ranked_probability_score": 0.21320707512364678
+    "sample_size": 378,
+    "accuracy": 0.41534391534391535,
+    "log_loss": 1.0360622075718873,
+    "brier_score": 0.2080980684853677,
+    "ranked_probability_score": 0.22372911102369397
   },
   "rolling": {
     "last_20": {
       "sample_size": 20,
-      "accuracy": 0.9,
-      "log_loss": 0.9313144779359634,
-      "brier_score": 0.18282730410436715,
-      "ranked_probability_score": 0.21110558857529513
+      "accuracy": 0.2,
+      "log_loss": 1.132504638975346,
+      "brier_score": 0.23069987326379948,
+      "ranked_probability_score": 0.224669768369285
     },
     "last_50": {
       "sample_size": 50,
-      "accuracy": 0.82,
-      "log_loss": 0.8679938285450778,
-      "brier_score": 0.16706958038305633,
-      "ranked_probability_score": 0.17241015554199848
+      "accuracy": 0.22,
+      "log_loss": 1.1426116534005621,
+      "brier_score": 0.23312148710234037,
+      "ranked_probability_score": 0.22855492380929734
     }
   },
   "season_to_date": {
     "season": "2627",
-    "sample_size": 252,
-    "accuracy": 0.49603174603174605,
-    "log_loss": 0.9824321517074334,
-    "brier_score": 0.1957291229917203,
-    "ranked_probability_score": 0.21320707512364678
+    "sample_size": 378,
+    "accuracy": 0.41534391534391535,
+    "log_loss": 1.0360622075718873,
+    "brier_score": 0.2080980684853677,
+    "ranked_probability_score": 0.22372911102369397
   },
   "status": {
     "level": "normal",
     "message": "No material live deterioration is visible at the current sample size."
   },
-  "updated_at": "2026-10-26T22:39:03.496915+00:00"
+  "updated_at": "2026-10-27T05:01:37.950675+00:00"
 }

@@ -3528,6 +3528,1770 @@
       "actual_result": "H",
       "actual_home_goals": 3,
       "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "ead27f11296c1fa34d28b810",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "c42524ab996d936a6a37453a",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "cc133cf4694c1b298a205011",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "ed59a25f057a885fd8aabd08",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "f6131967239e9801cbbc9912",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "72c9b41649d6e117e1625cb1",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "947ea4a6fe87dea57407d170",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "734e39696cbb87f0d1ad74d9",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "b2faceb25aadacc9fde31a41",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "900f98aa566350bbdfd31557",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "457f0f45305fa4b8d036f11a",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "c865831a783ff1c72bf16b20",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "26545938bda31d0954310903",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "6bd0d2295bc55722970a050d",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "bece70faabcb14fd14f30f62",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "e08482e455f2255f416fe9f6",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "7d24e6f3d7f29f246936dfc8",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "341ae4e076a28335050322cb",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "fa127e6a31411e8ba32a93ee",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "5a371c21e2ada5903f441ffc",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "362188e5a1336cb3837f4f55",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "c172e2ac9c7be87f2da43504",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "b0b1d6104f9952313715b431",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "9b8dee738c4af2d58a7cfdcb",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "ba4fb7d5e9b1a7cc00b1f923",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "e8c5afcf49a5ef2768503eae",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "1da3882717f9df13cedcf76c",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "fa6b2781ce84adde2403d3d0",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "38b25ec17294bc7559ed5666",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "875c70eb053a2afb4ee5bf4b",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "acb3f34f93571661065ad7e1",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "438b79c794548195fcedabd0",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "f576ad7a07772f3514e10f75",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "5ef6b14595b13b5e72460f22",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "cbb467fb75d36818efb5ab9d",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "e282626ff2fb3855489ae673",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "3b1805e53e5467ca8215d12d",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "2563e707135cede465c73146",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "a0acb6127457fb1f14ce4d1c",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "5813e66841d15b66f84e6b58",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "e549b831ffda5f82b8fd8bbe",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "31a0a7e73e6e52b9f0ffedb9",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "bfabb5bf12013a65e8dc79da",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "80428c5a8e17365e05df27e3",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "47574915e61b0944e086b7f7",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "e80b1ef9ca491bf22b3e9712",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "bb284132c8d78a7dc79e1aad",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "e98760e25415d35d196e464e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "ad6e63de280e7cbbe2fdd80e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "7abf54d107d3479257bdbc33",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "90be5b31206029c256a70fa6",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "1ceb1a21aedbd4c475234412",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "f81869a024d6660c518b8083",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "c3e030e6d5e0557e86fd4608",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "33d5b3a66a9cb3ecc03d85c9",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "d16fea64a36d7bc15284b7d6",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "c3c5eba27d704bb78591a8d9",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "fcdab7e16d4091973311c7bf",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "1b3c92a90c8d3c6e3c58a90b",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "0e118e278102a0c8ed613966",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "cc100a08f6b39cd50672ac1e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "c2f903c415175b1375620418",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "e433701e6828b6c7e65355d8",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "b32a7c66732f340b7f7d233b",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "10f9149599c28681ad0a6156",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "2e9c55b908192db8f8206e14",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "76994cad23b375cb7ac27744",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "3924120a76296fca4ddef381",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "dfebe573061650b40fe6449b",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "cdc0ce617f80050f87a311d7",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "f140bb5febc31b99900b9c2c",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "c60c23341230537b0a914f47",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "35f66a10376bbcd21957cee1",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "efe2780c588a47239c6124d9",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "22f4d6092dbfac4407be6c73",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "fa20b2549d906e14b268b85d",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "ce0f8587f79f778a992f6b58",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "a3352e6d4b9d64726eaddfdf",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "f920b8cf6975d66d42ee3369",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "7d2659f58bcbd6f5cb7081e1",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "516bd4b79c76f5d9d0eb211d",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "da913a37efb9f76200c1a4ad",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "6551e9dc38bbda06b2ddc259",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "bc6d813380d658a319876f9c",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "3583695a0f29cb3360bb7e3a",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "50e7d2530fea034ee03bfc2a",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "8f9e6af00fd8d0047c35cbaa",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "2d8e7a1bc91c7c3b499c43fa",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "5eb1e315eebc1d2617f369c3",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "e5d9fb3f8b3b4586c84ab0b5",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "71400c2fdf03a9b18f5ab9ee",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "21fde831324b6351181584a3",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "d71809c895fdb10e9b7487c6",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "694f9b9fa22fa5674cfea078",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "26985be2574930d445c9d6f1",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "b83f56492029d8ddacf553d5",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "db8aaeaab1dd48f767648de6",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "68a2bea05882e8148ef53a78",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "ae1185f25ce17837ba878489",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "55c78419a2c98316187c060a",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "11e8e2bb67bfa75642d994c6",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "88ab732a24abd90ac5831da1",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "eff2f2756ef1af36c86c5dd2",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "a7d6a14d4ee0904fe42bcebc",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "9ec2eb00cfaf502cc1f09746",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "31460db4727b34d5e9c64479",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "47d03d72f3b1a6116b92a8ee",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "47babccd6e2e3c76dec60af3",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "629259a7bd66e4cbbbed0bf2",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "a184d0534a64505447f3fd92",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "c4aab23f7b89c07be4e9a094",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "5b7589119415aebf213d2120",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "ccdd00b46d2fa061fd1f6e33",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "00eb14efabbcbcf0773ec59d",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "cc9d2e13e7596b031941e238",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "86a964c09ba4afcecc43c07f",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "3fd75722aa99c98e67fd704c",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "1a6d4cee0b4ab4cc002626ff",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "e61360780e290acf8a391d6e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "f84c54e95307c4a747fee7ec",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "ba198b31594db4f0ecff8d5e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "6374ed3ed4a0042ebd41eb22",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "83dc43df581435c0367ad320",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "bf5eb528838abb5b80ee885b",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "dafda185e7011f6027b25646",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "ec919262a7d58ec82b99aa11",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "dd9961b18a37e83aafb29636",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "35b9552e253a5e757edbc9dc",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "46c47ddf181ff52849bcb4e7",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "8fbfb647444e561470c4a983",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "54b089bf61cbb2aa3bde02d5",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "efb958cd0adc89dc0bf6b52e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "e8e127ef6b7983383c852a31",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "387050d5a27d7937637fcd8e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "2c7dd0a22d54be4d97e81f81",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "3258e66f023431a6549223e1",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "df85a6e6767c9d726bf42a95",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "54ba80bf719ba775eff6fe59",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "2f0b135724f744c20442b005",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "de3e533b618beec22b753bf2",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "57525e23bfccd534cdb093a8",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "5c633cc36b0b1241447de986",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "0cebde87bf40d61bda9894f4",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "21681d3739e60215dafc769a",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "ac8e0ecf7de57dc911a3589c",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "190ee146194833a594647c8e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "11f41b808fa44fa2681e5cc2",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "1c8197a132d922a0066e1b26",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "d3ae50dce5c7fbe41f0ce3dd",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "d605c9575b2201ba374761e5",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "4af7bed3e84ba3a85f57ed11",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "94b95b5736f724a31315172b",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "9b2cd1ab820fe25d891c629e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "bc48e8de560a6b951489d063",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "023481d6c9652c784f4b3dc8",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "540fcd084c49eae55085f587",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "98a7ab68cee37acd1660ad0a",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "7fbc3e1b4377b40b526b4380",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "08e03ea2f9f78cc1ea0af767",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "33aaa96c79d077afd6f5e4fd",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "a67ee9d7787e042fb990e9b1",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "ab6a558f71835f0471258bb0",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "c092adfeefb13b9ba84a2635",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "ab7024522bc0aea5fd2e67d7",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "fa8b6ca2378be2ed9631e7c1",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "7fd955ebcf26c3c9866a457a",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "8d1236c7a9e99dbc68d441a1",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "30132ae6497fe95bd52626d4",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "d889cf2373f18ccb191a0240",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "a75f7804b46ddd84bdf8f7e1",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "6c1da6742fcd0f22c9caac8e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "34be2ff5d336bef6a6d32d6d",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "e482a24acdc5292b5532501a",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "d8ef027617d1413d5be4d820",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "12c87003f061e11f0fb5895b",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "29158e9df1d57ca471675740",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "719c8f71f016100a989de2be",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "ee1c3d74ce77f2f456bfbd6b",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "7fdcb0a21c35548c9cd1fbb4",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "705ad1049bfe7c7c66454d83",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "88f3d647e39056d989292f79",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "faff6683c3a8dfe3d9aee061",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "98e4ee133b7d57907849332a",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "66e7950b08c6910c4d32c373",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "2432e203678db5247d10b704",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "88dc557760b7bfc554517a10",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "d0b4f502eaab2da6e3f694d8",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "4ac5cb25eb3b8164649c9080",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "9b3bc5f7bee7fe38c34a279c",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "38a6c8d828d9711bd21d5d79",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "6c554ab5a4e79b1e2c8fc662",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "e41353b587cfa3017498dcab",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "2c0e8f9f2da02a6ecd06b093",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "6029bc1d3d793d42e1b13547",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "0d0dcea0a3e28f27f4f82b90",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "df3e7ae3ab8ccfd2406a82cb",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "3e9abc8a25cff55691c66f97",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "9cec9c64114ac3c238799810",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "80936205fbfd31f781945c0f",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "19fbc1748a8b637fb785bf4f",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "bf6b263382dda3aa2327766a",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "dae20eadbdd2ef999183bc0f",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "74c037a057d3ace96dbc11f9",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "b8ed58b8f313a9c6bcd04112",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "476b743750190945938867d3",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "71f2dd2258830ba59c46db4d",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "bb324221e4a25422d28f867c",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "da01a202a04d9e303d3111fc",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "03b530e1cbf8b4ae88bd67d4",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "add4065f25e8f7b4c53cc9ec",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "d9c6e9162dd3804532186815",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "96807c1c072774b6d27f4dd0",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "b206f0dd4c59b347f10b73e0",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "e9c6bfaebccf601b21e4abcf",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "9c4ee2ecc5838f4ec04505fb",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "7a3c525f4e1cfb0f6958518f",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "ea667ae81a52286684f381c4",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "1bc8c466640a8fe354604cd8",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "724720d57756377337c0edf6",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "415090cb7dde41b34ecad1d8",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "bad3bec0ec5a03b98ff57989",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "cff438538090e59a963a7291",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "75b07c4774946240915839c7",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "763fc00d3e5d836fb3325ab4",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "9e79899e6e35ec88bd8ee93c",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "2dfd554082cc4179918d6caf",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "33db92837fc4382749d927c1",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "e4d5111a23776dfc6800b77c",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "40b99a62cff7a1a08e94c3d2",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "2b0a73a04b008b1ca08d939e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "4e38edf98fb05c84f962247e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "117af468a01c2ee1a34f9a1a",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "5f8fac0b076d763fe2f86c6d",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "ab4ad5551ab579a59e64fec8",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "5fe4c34986e71a9bc28b6426",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "73484294b983c1a38c94a512",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "e63b0193154700b515757c9f",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "88de56cefa1e97b62d0b5056",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "e2e1959787b5c2ab8129877a",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "5e039dbf112bb5cf8f7f47c1",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "d2d3091dfdab23befe22a8da",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "702efae60f5ab95f80903e5d",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "8484da515390f89a8c3b9d2c",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "a274c79a102f5d4e9eb0a19e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 2
+    },
+    {
+      "prediction_id": "da4b44b31e158db5d1de9e7b",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "f5e0ed29d88b4397f5d7608c",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 1,
+      "actual_away_goals": 1
+    },
+    {
+      "prediction_id": "ffb25b67c5c6ff9025b4a2de",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "9eecf7f089b25c9c42b3a25e",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "H",
+      "actual_home_goals": 2,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "ae5d5f9fac984b46e038922b",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "2d801452a564a83edb37ba20",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "A",
+      "actual_home_goals": 0,
+      "actual_away_goals": 3
+    },
+    {
+      "prediction_id": "cc27655fbf3c693ec4667e7b",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
+    },
+    {
+      "prediction_id": "0302759e61620b77f9ae8c6c",
+      "settled_at": "2026-10-27T05:01:37.950675+00:00",
+      "actual_result": "D",
+      "actual_home_goals": 0,
+      "actual_away_goals": 0
     }
   ]
 }
