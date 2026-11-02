@@ -2,15 +2,8 @@
   "source": "openfootball/football.json",
   "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
   "license": "Public Domain",
-  "fetched_at": "2026-11-01T21:59:53.861537+00:00",
+  "fetched_at": "2026-11-02T05:58:55.696474+00:00",
   "fixtures": [
-    {
-      "date": "2026-11-01",
-      "season": "2627",
-      "kickoff": "16:30",
-      "home_team": "Liverpool",
-      "away_team": "Arsenal"
-    },
     {
       "date": "2026-11-02",
       "season": "2627",
