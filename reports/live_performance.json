@@ -2,42 +2,42 @@
   "performance_type": "live_prospective",
   "historical_backtest_included": false,
   "predictions_recorded": 1216,
-  "settled_predictions": 990,
+  "settled_predictions": 1016,
   "models": {
     "2.0": {
       "model": "Enhanced Dixon-Coles V2",
       "predictions_recorded": 608,
-      "settled_predictions": 495,
+      "settled_predictions": 508,
       "overall": {
-        "sample_size": 495,
-        "accuracy": 0.4666666666666667,
-        "log_loss": 1.0370911460749823,
-        "brier_score": 0.20854994573955274,
-        "ranked_probability_score": 0.22440744146115263
+        "sample_size": 508,
+        "accuracy": 0.4547244094488189,
+        "log_loss": 1.041827623608433,
+        "brier_score": 0.2096605285368249,
+        "ranked_probability_score": 0.22730969028320114
       },
       "rolling": {
         "last_20": {
           "sample_size": 20,
-          "accuracy": 0.85,
-          "log_loss": 0.9495705962679777,
-          "brier_score": 0.18788942542440318,
-          "ranked_probability_score": 0.21762005721874939
+          "accuracy": 0.35,
+          "log_loss": 1.1047333130117314,
+          "brier_score": 0.2242669296119856,
+          "ranked_probability_score": 0.2947357499611073
         },
         "last_50": {
           "sample_size": 50,
-          "accuracy": 0.7,
-          "log_loss": 1.0212834374689708,
-          "brier_score": 0.20525682501690848,
-          "ranked_probability_score": 0.2236101644972847
+          "accuracy": 0.56,
+          "log_loss": 1.052419187676021,
+          "brier_score": 0.21221088472826857,
+          "ranked_probability_score": 0.25150999785823436
         }
       },
       "season_to_date": {
         "season": "2627",
-        "sample_size": 495,
-        "accuracy": 0.4666666666666667,
-        "log_loss": 1.0370911460749823,
-        "brier_score": 0.20854994573955274,
-        "ranked_probability_score": 0.22440744146115263
+        "sample_size": 508,
+        "accuracy": 0.4547244094488189,
+        "log_loss": 1.041827623608433,
+        "brier_score": 0.2096605285368249,
+        "ranked_probability_score": 0.22730969028320114
       },
       "status": {
         "level": "normal",
@@ -47,37 +47,37 @@
     "3.0": {
       "model": "V3 Ensemble",
       "predictions_recorded": 608,
-      "settled_predictions": 495,
+      "settled_predictions": 508,
       "overall": {
-        "sample_size": 495,
-        "accuracy": 0.4727272727272727,
-        "log_loss": 1.0381448678870704,
-        "brier_score": 0.20865903770006547,
-        "ranked_probability_score": 0.22445237042381552
+        "sample_size": 508,
+        "accuracy": 0.46062992125984253,
+        "log_loss": 1.0426350417704793,
+        "brier_score": 0.20971160184759757,
+        "ranked_probability_score": 0.22724777410146785
       },
       "rolling": {
         "last_20": {
           "sample_size": 20,
-          "accuracy": 0.85,
-          "log_loss": 0.9404486660730917,
-          "brier_score": 0.1857268478622814,
-          "ranked_probability_score": 0.21463430418707147
+          "accuracy": 0.35,
+          "log_loss": 1.093828621229782,
+          "brier_score": 0.2215699488264955,
+          "ranked_probability_score": 0.2904124987747724
         },
         "last_50": {
           "sample_size": 50,
-          "accuracy": 0.7,
-          "log_loss": 1.021767391085912,
-          "brier_score": 0.20539833053465792,
-          "ranked_probability_score": 0.22338193499757114
+          "accuracy": 0.56,
+          "log_loss": 1.0482658260515223,
+          "brier_score": 0.21123549258213056,
+          "ranked_probability_score": 0.24975484012029767
         }
       },
       "season_to_date": {
         "season": "2627",
-        "sample_size": 495,
-        "accuracy": 0.4727272727272727,
-        "log_loss": 1.0381448678870704,
-        "brier_score": 0.20865903770006547,
-        "ranked_probability_score": 0.22445237042381552
+        "sample_size": 508,
+        "accuracy": 0.46062992125984253,
+        "log_loss": 1.0426350417704793,
+        "brier_score": 0.20971160184759757,
+        "ranked_probability_score": 0.22724777410146785
       },
       "status": {
         "level": "normal",
@@ -87,39 +87,39 @@
   },
   "default_live_model_version": "2.0",
   "overall": {
-    "sample_size": 495,
-    "accuracy": 0.4666666666666667,
-    "log_loss": 1.0370911460749823,
-    "brier_score": 0.20854994573955274,
-    "ranked_probability_score": 0.22440744146115263
+    "sample_size": 508,
+    "accuracy": 0.4547244094488189,
+    "log_loss": 1.041827623608433,
+    "brier_score": 0.2096605285368249,
+    "ranked_probability_score": 0.22730969028320114
   },
   "rolling": {
     "last_20": {
       "sample_size": 20,
-      "accuracy": 0.85,
-      "log_loss": 0.9495705962679777,
-      "brier_score": 0.18788942542440318,
-      "ranked_probability_score": 0.21762005721874939
+      "accuracy": 0.35,
+      "log_loss": 1.1047333130117314,
+      "brier_score": 0.2242669296119856,
+      "ranked_probability_score": 0.2947357499611073
     },
     "last_50": {
       "sample_size": 50,
-      "accuracy": 0.7,
-      "log_loss": 1.0212834374689708,
-      "brier_score": 0.20525682501690848,
-      "ranked_probability_score": 0.2236101644972847
+      "accuracy": 0.56,
+      "log_loss": 1.052419187676021,
+      "brier_score": 0.21221088472826857,
+      "ranked_probability_score": 0.25150999785823436
     }
   },
   "season_to_date": {
     "season": "2627",
-    "sample_size": 495,
-    "accuracy": 0.4666666666666667,
-    "log_loss": 1.0370911460749823,
-    "brier_score": 0.20854994573955274,
-    "ranked_probability_score": 0.22440744146115263
+    "sample_size": 508,
+    "accuracy": 0.4547244094488189,
+    "log_loss": 1.041827623608433,
+    "brier_score": 0.2096605285368249,
+    "ranked_probability_score": 0.22730969028320114
   },
   "status": {
     "level": "normal",
     "message": "No material live deterioration is visible at the current sample size."
   },
-  "updated_at": "2026-11-03T00:56:45.009424+00:00"
+  "updated_at": "2026-11-03T14:10:26.984411+00:00"
 }
