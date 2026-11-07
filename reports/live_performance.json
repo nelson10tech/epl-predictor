@@ -1,12 +1,12 @@
 {
   "performance_type": "live_prospective",
   "historical_backtest_included": false,
-  "predictions_recorded": 1276,
+  "predictions_recorded": 1296,
   "settled_predictions": 1016,
   "models": {
     "2.0": {
       "model": "Enhanced Dixon-Coles V2",
-      "predictions_recorded": 638,
+      "predictions_recorded": 648,
       "settled_predictions": 508,
       "overall": {
         "sample_size": 508,
@@ -46,7 +46,7 @@
     },
     "3.0": {
       "model": "V3 Ensemble",
-      "predictions_recorded": 638,
+      "predictions_recorded": 648,
       "settled_predictions": 508,
       "overall": {
         "sample_size": 508,
@@ -121,5 +121,5 @@
     "level": "normal",
     "message": "No material live deterioration is visible at the current sample size."
   },
-  "updated_at": "2026-11-06T19:22:56.086105+00:00"
+  "updated_at": "2026-11-07T05:56:05.658976+00:00"
 }
