@@ -2,78 +2,8 @@
   "source": "openfootball/football.json",
   "source_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
   "license": "Public Domain",
-  "fetched_at": "2026-11-07T21:48:04.926041+00:00",
+  "fetched_at": "2026-11-08T05:58:21.297686+00:00",
   "fixtures": [
-    {
-      "date": "2026-11-07",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Arsenal",
-      "away_team": "Hull"
-    },
-    {
-      "date": "2026-11-07",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Brighton",
-      "away_team": "Brentford"
-    },
-    {
-      "date": "2026-11-07",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Crystal Palace",
-      "away_team": "Liverpool"
-    },
-    {
-      "date": "2026-11-07",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Everton",
-      "away_team": "Coventry"
-    },
-    {
-      "date": "2026-11-07",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Fulham",
-      "away_team": "Newcastle"
-    },
-    {
-      "date": "2026-11-07",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Ipswich",
-      "away_team": "Bournemouth"
-    },
-    {
-      "date": "2026-11-07",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Leeds",
-      "away_team": "Tottenham"
-    },
-    {
-      "date": "2026-11-07",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Man United",
-      "away_team": "Aston Villa"
-    },
-    {
-      "date": "2026-11-07",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Nott'm Forest",
-      "away_team": "Man City"
-    },
-    {
-      "date": "2026-11-07",
-      "season": "2627",
-      "kickoff": "15:00",
-      "home_team": "Sunderland",
-      "away_team": "Chelsea"
-    },
     {
       "date": "2026-11-21",
       "season": "2627",
